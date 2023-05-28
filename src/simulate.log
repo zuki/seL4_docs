@@ -1,0 +1,1619 @@
+SeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+BFF8B340+BFECB340 CA00
+                                                                               
+
+
+Booting from ROM..Boot config: debug_port = 0x3f8
+Boot config: disable_iommu = false
+Detected 1 boot module(s):
+  module #0: start=0xa14000 end=0xd9e3b8 size=0x38a3b8 name='images/sel4test-dr6
+Parsing GRUB physical memory map
+	Physical Memory Region from 0 size 9fc00 type 1
+	Physical Memory Region from 9fc00 size 400 type 2
+	Physical Memory Region from f0000 size 10000 type 2
+	Physical Memory Region from 100000 size bfee0000 type 1
+Adding physical memory region 0x100000-0xbffe0000
+	Physical Memory Region from bffe0000 size 20000 type 2
+	Physical Memory Region from fffc0000 size 40000 type 2
+Multiboot gave us no video information
+ACPI: RSDP paddr=0xf59e0
+ACPI: RSDP vaddr=0xf59e0
+ACPI: RSDT paddr=0xbffe1905
+ACPI: RSDT vaddr=0xbffe1905
+Kernel loaded to: start=0x100000 end=0xa13000 size=0x913000 entry=0x1002ea
+ACPI: RSDT paddr=0xbffe1905
+ACPI: RSDT vaddr=0xbffe1905
+ACPI: FADT paddr=0xbffe17b9
+ACPI: FADT vaddr=0xbffe17b9
+ACPI: FADT flags=0x80a5
+ACPI: MADT paddr=0xbffe182d
+ACPI: MADT vaddr=0xbffe182d
+ACPI: MADT apic_addr=0xfee00000
+ACPI: MADT flags=0x1
+ACPI: MADT_APIC apic_id=0x0
+ACPI: MADT_IOAPIC ioapic_id=0 ioapic_addr=0xfec00000 gsib=0
+ACPI: MADT_ISO bus=0 source=0 gsi=2 flags=0x0
+ACPI: MADT_ISO bus=0 source=5 gsi=5 flags=0xd
+ACPI: MADT_ISO bus=0 source=9 gsi=9 flags=0xd
+ACPI: MADT_ISO bus=0 source=10 gsi=10 flags=0xd
+ACPI: MADT_ISO bus=0 source=11 gsi=11 flags=0xd
+ACPI: 1 CPU(s) detected
+ELF-loading userland images from boot modules:
+size=0x3d1000 v_entry=0x40e3a2 v_start=0x400000 v_end=0x7d1000 p_start=0xd9f000n
+Moving loaded userland images to final location: from=0xd9f000 to=0xa13000 size=
+Starting node #0 with APIC ID 0
+Mapping kernel window is done
+available phys memory regions: 1
+  [100000..bffe0000]
+reserved virt address space regions: 1
+  [ffffff8000100000..ffffff8000de4000]
+Booting all finished, dropped to user space
+Node 0 of 1
+IOPT levels:     4294967295
+IPC buffer:      0x7d1000
+Empty slots:     [1087 --> 8192)
+sharedFrames:    [0 --> 0)
+userImageFrames: [19 --> 996)
+userImagePaging: [14 --> 18)
+untypeds:        [996 --> 1087)
+Initial thread domain: 0
+Initial thread cnode size: 13
+List of untypeds
+------------------
+Paddr    | Size   | Device
+0 | 20 | 1
+0xbffe0000 | 17 | 1
+0xc0000000 | 29 | 1
+0xe0000000 | 28 | 1
+0xf0000000 | 27 | 1
+0xf8000000 | 26 | 1
+0xfc000000 | 25 | 1
+0xfe000000 | 23 | 1
+0xfe800000 | 22 | 1
+0xfec01000 | 12 | 1
+0xfec02000 | 13 | 1
+0xfec04000 | 14 | 1
+0xfec08000 | 15 | 1
+0xfec10000 | 16 | 1
+0xfec20000 | 17 | 1
+0xfec40000 | 18 | 1
+0xfec80000 | 19 | 1
+0xfed00000 | 20 | 1
+0xfee01000 | 12 | 1
+0xfee02000 | 13 | 1
+0xfee04000 | 14 | 1
+0xfee08000 | 15 | 1
+0xfee10000 | 16 | 1
+0xfee20000 | 17 | 1
+0xfee40000 | 18 | 1
+0xfee80000 | 19 | 1
+0xfef00000 | 20 | 1
+0xff000000 | 23 | 1
+0xff800000 | 22 | 1
+0xffc00000 | 21 | 1
+0xffe00000 | 20 | 1
+0xfff00000 | 19 | 1
+0xfff80000 | 18 | 1
+0xfffc0000 | 17 | 1
+0xfffe0000 | 16 | 1
+0xffff0000 | 15 | 1
+0xffff8000 | 14 | 1
+0xffffc000 | 13 | 1
+0xffffe000 | 12 | 1
+0xfffff000 | 11 | 1
+0xfffff800 | 10 | 1
+0xfffffc00 | 9 | 1
+0xfffffe00 | 8 | 1
+0xffffff00 | 7 | 1
+0xffffff80 | 6 | 1
+0xffffffc0 | 5 | 1
+0xffffffe0 | 4 | 1
+0x100000000 | 32 | 1
+0x200000000 | 33 | 1
+0x400000000 | 34 | 1
+0x800000000 | 35 | 1
+0x1000000000 | 36 | 1
+0x2000000000 | 37 | 1
+0x4000000000 | 38 | 1
+0x8000000000 | 46 | 1
+0x408000000000 | 45 | 1
+0x608000000000 | 44 | 1
+0x708000000000 | 43 | 1
+0x788000000000 | 42 | 1
+0x7c8000000000 | 41 | 1
+0x7e8000000000 | 40 | 1
+0x7f8000000000 | 39 | 1
+0x100000 | 20 | 0
+0x200000 | 21 | 0
+0x400000 | 22 | 0
+0xde4000 | 14 | 0
+0xde8000 | 15 | 0
+0xdf0000 | 16 | 0
+0xe00000 | 21 | 0
+0x1000000 | 24 | 0
+0x2000000 | 25 | 0
+0x4000000 | 26 | 0
+0x8000000 | 27 | 0
+0x10000000 | 28 | 0
+0x20000000 | 29 | 0
+0x40000000 | 30 | 0
+0x80000000 | 29 | 0
+0xa0000000 | 28 | 0
+0xb0000000 | 27 | 0
+0xb8000000 | 26 | 0
+0xbc000000 | 25 | 0
+0xbe000000 | 24 | 0
+0xbf000000 | 23 | 0
+0xbf800000 | 22 | 0
+0xbfc00000 | 21 | 0
+0xbfe00000 | 20 | 0
+0xbff00000 | 19 | 0
+0xbffc9800 | 11 | 0
+0xbffca000 | 13 | 0
+0xbffcc000 | 14 | 0
+0xbffd0000 | 16 | 0
+Untyped summary
+1 untypeds of size 4
+1 untypeds of size 5
+1 untypeds of size 6
+1 untypeds of size 7
+1 untypeds of size 8
+1 untypeds of size 9
+1 untypeds of size 10
+2 untypeds of size 11
+3 untypeds of size 12
+4 untypeds of size 13
+5 untypeds of size 14
+4 untypeds of size 15
+5 untypeds of size 16
+4 untypeds of size 17
+3 untypeds of size 18
+4 untypeds of size 19
+6 untypeds of size 20
+4 untypeds of size 21
+4 untypeds of size 22
+3 untypeds of size 23
+2 untypeds of size 24
+3 untypeds of size 25
+3 untypeds of size 26
+3 untypeds of size 27
+3 untypeds of size 28
+3 untypeds of size 29
+1 untypeds of size 30
+1 untypeds of size 32
+1 untypeds of size 33
+1 untypeds of size 34
+1 untypeds of size 35
+1 untypeds of size 36
+1 untypeds of size 37
+1 untypeds of size 38
+1 untypeds of size 39
+1 untypeds of size 40
+1 untypeds of size 41
+1 untypeds of size 42
+1 untypeds of size 43
+1 untypeds of size 44
+1 untypeds of size 45
+1 untypeds of size 46
+Switching to a safer, bigger stack... 
+seL4 Test
+=========
+
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 214 
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 107r
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 5361
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 268r
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 134 
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 671o
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 3351
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 167r
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 838o
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 419r
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 2091
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 104 
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 5248
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 262r
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 131r
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 6553
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 327r
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 163 
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 8191
+vspace_reserve_range_at@vspace.h:738 vspace is NULL
+create_reservations@elf.c:245 Failed to make reservation: 0x400000, 4096
+elf_reserve_regions_in_vspace@elf.c:438 Failed to create reservations
+sel4utils_elf_reserve@elf.c:465 Failed to reserve regions
+Starting test suite sel4test
+Starting test 0: Test that there are tests
+Starting test 1: SYSCALL0000
+Starting test 2: SYSCALL0001
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @ 
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @.
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @c
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @I
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @a
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @e
+Starting test 3: SYSCALL0002
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @a
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @t
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @.
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+Starting test 4: SYSCALL0003
+Starting test 5: SYSCALL0004
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @m
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @m
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @t
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @d
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @n
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @m
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @l
+Starting test 6: SYSCALL0005
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+Starting test 7: SYSCALL0006
+          Starting test 8: SYSCALL0010
+Starting test 9: SYSCALL0011
+Starting test 10: SYSCALL0012
+Starting test 11: SYSCALL0013
+Starting test 12: SYSCALL0014
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @a
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @r
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @l
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @ 
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @r
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @e
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+Starting test 13: SYSCALL0015
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @C
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @e
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @d
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @.
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @i
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @t
+Starting test 14: SYSCALL0016
+Starting test 15: SYSCALL0017
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @a
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @e
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @.
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff80bffc9400 "sel4test-driver" @4
+Starting test 16: TIMER0001
+Starting test 17: TIMER0002
+Starting test 18: BIND0001
+Running test BIND0001 (Test that a bound tcb waiting on a sync endpoint receive)
+Test BIND0001 passed
+Starting test 19: BIND0002
+Running test BIND0002 (Test that a bound tcb waiting on its bound notification )
+Test BIND0002 passed
+Starting test 20: BIND0003
+Running test BIND0003 (Test IPC ordering 1) bound tcb waits on bound notificati)
+Test BIND0003 passed
+Starting test 21: BIND0004
+Running test BIND0004 (Test IPC ordering 2) bound tcb waits on bound notificati)
+Test BIND0004 passed
+Starting test 22: CANCEL_BADGED_SENDS_0001
+Running test CANCEL_BADGED_SENDS_0001 (Basic endpoint cancelBadgedSends testing)
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff1bc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fc
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7e400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7ec00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fo
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800016f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800016fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fi
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001ba400 "child of: '36'" @4126f8
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e0400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e0c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe05400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe05c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2b400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2bc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe50400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe50c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe76400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe76c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9b400 "child of: '36'" @4126fv
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9bc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfec0400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfec0c00 "child of: '36'" @4126f1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfee6400 "child of: '36'" @4126fa
+Test CANCEL_BADGED_SENDS_0001 passed
+Starting test 23: CANCEL_BADGED_SENDS_0002
+Running test CANCEL_BADGED_SENDS_0002 (cancelBadgedSends deletes caps)
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f9
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f3
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fd
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fv
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f6
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126f6
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fc
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f3
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f6
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fk
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126f5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fd
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fv
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fi
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126f7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126ft
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126f#
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126f7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fd
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fv
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126f2
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126f3
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fu
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fo
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fk
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fc
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f3
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126f#
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126ft
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126f0
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126f3
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f3
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126f6
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f2
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f#
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126f7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126f2
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fe
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126f6
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126f7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fc
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fk
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fu
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fc
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fd
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126f1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fi
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126f5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126f2
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fc
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126f4
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fk
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fe
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126f5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126fc
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126ft
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fe
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f4
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126f5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fo
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f4
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fu
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126fo
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126f6
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f#
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52c00 "child of: '36'" @4126fo
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fo
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fv
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126f2
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126f6
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126fv
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52c00 "child of: '36'" @4126fv
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77400 "child of: '36'" @4126f1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126f9
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126f1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126f4
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126f0
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126f1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126ft
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126fu
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52c00 "child of: '36'" @4126fe
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77400 "child of: '36'" @4126f1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77c00 "child of: '36'" @4126f2
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fe
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126f#
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fk
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126f1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9d400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fo
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126f3
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9d400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9dc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126f#
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fu
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126f5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77c00 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9d400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9dc00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfec3400 "child of: '36'" @4126f4
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fn
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126f7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fe
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126f7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126fp
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126fk
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126f7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52c00 "child of: '36'" @4126fc
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77400 "child of: '36'" @4126fv
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77c00 "child of: '36'" @4126fu
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9d400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9dc00 "child of: '36'" @4126f#
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfec3400 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfec3c00 "child of: '36'" @4126f.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126ft
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fc
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126f#
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126fk
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126fd
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126f7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9d400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9dc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfec3400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfec3c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfee8400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff30c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff56c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7f400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff7fc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000124c00 "child of: '36'" @4126fl
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014a400 "child of: '36'" @4126f1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff800014ac00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170400 "child of: '36'" @4126f#
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000170c00 "child of: '36'" @4126f>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff8000195c00 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bb400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001bbc00 "child of: '36'" @4126f1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1400 "child of: '36'" @4126fe
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80001e1c00 "child of: '36'" @4126fv
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06400 "child of: '36'" @4126fo
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe06c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2c400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe2cc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe52c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe77c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9d400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfe9dc00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfec3400 "child of: '36'" @4126f 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfec3c00 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfee8400 "child of: '36'" @4126fa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bfee8c00 "child of: '36'" @4126f 
+Test CANCEL_BADGED_SENDS_0002 passed
+Starting test 24: CNODEOP0001
+Running test CNODEOP0001 (Basic seL4_CNode_Copy() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNod 
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNo 
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNodo
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNoy
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNol
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNo:
+Test CNODEOP0001 passed
+Starting test 25: CNODEOP0002
+Running test CNODEOP0002 (Basic seL4_CNode_Delete() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNo 
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNo>
+Test CNODEOP0002 passed
+Starting test 26: CNODEOP0003
+Running test CNODEOP0003 (Basic seL4_CNode_Mint() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNodn
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNo 
+Test CNODEOP0003 passed
+Starting test 27: CNODEOP0004
+Running test CNODEOP0004 (Basic seL4_CNode_Move() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNo.
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNodo
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNon
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNoi
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNodM
+Test CNODEOP0004 passed
+Starting test 28: CNODEOP0005
+Running test CNODEOP0005 (Basic seL4_CNode_Mutate() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNor
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNodp
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNodp
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNoda
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNodt
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNo 
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNo.
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNod
+Test CNODEOP0005 passed
+Starting test 29: CNODEOP0006
+Running test CNODEOP0006 (Basic seL4_CNode_CancelBadgedSends() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNod:
+<<seL4(CPU 0) [decodeCNodeInvocation/224 T0xffffff80bc0f2400 "36" @4030e1]: CNov
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNo>
+Test CNODEOP0006 passed
+Starting test 30: CNODEOP0007
+Running test CNODEOP0007 (Basic seL4_CNode_Revoke() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNodt
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNov
+Test CNODEOP0007 passed
+Starting test 31: CNODEOP0008
+Running test CNODEOP0008 (Basic seL4_CNode_Rotate() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNos
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNodp
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNoda
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNodo
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNodt
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNod 
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNodm
+<<seL4(CPU 0) [decodeCNodeInvocation/266 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNode
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+Test CNODEOP0008 passed
+Starting test 32: CNODEOP0009
+Running test CNODEOP0009 (Basic seL4_CNode_SaveCaller() testing)
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff80bc1d2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/209 T0xffffff80bc1d2400 "36" @4030e1]: CNos
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNodo
+Test CNODEOP0009 passed
+Starting test 33: CSPACE0001
+Running test CSPACE0001 (Test full cspace resolution)
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103ac
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a8
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103ae
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103aa
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a:
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103ai
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103ak
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103al
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a8
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103al
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103am
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a:
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103al
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a9
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a4
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a9
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a6
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a6
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a4
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a8
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a9
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a8
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a7
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a.
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103ao
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a>
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103af
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a9
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a2
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a4
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a5
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103al
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a1
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a 
+<<seL4(CPU 0) [decodeInvocation/645 T0xffffff80bff21c00 "child of: '36'" @4103a0
+Test CSPACE0001 passed
+Starting test 34: DOMAINS0001
+Running test DOMAINS0001 (Change domain successfully())
+Test DOMAINS0001 passed
+Starting test 35: DOMAINS0002
+Running test DOMAINS0002 (Try non-existant domain())
+<<seL4(CPU 0) [decodeDomainInvocation/1583 T0xffffff80bc0f2400 "36" @411b43]: D>
+Test DOMAINS0002 passed
+Starting test 36: DOMAINS0003
+Running test DOMAINS0003 (Invoke non-domain cap())
+<<seL4(CPU 0) [decodeTCBInvocation/887 T0xffffff80bc1d2400 "36" @411b43]: TCB: >
+Test DOMAINS0003 passed
+Starting test 37: DOMAINS0004
+Running test DOMAINS0004 (Run threads in domains())
+Test DOMAINS0004 passed
+Starting test 38: FPU0000
+Running test FPU0000 (Ensure that simple FPU operations work)
+Test FPU0000 passed
+Starting test 39: FPU0001
+Running test FPU0001 (Ensure multiple threads can use FPU simultaneously)
+Test FPU0001 passed
+Starting test 40: FRAMEDIPC0001
+Running test FRAMEDIPC0001 (Test that we cannot create a thread with an IPC buf)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @41ac3b]: CNod
+<<seL4(CPU 0) [checkValidIPCBuffer/654 T0xffffff80bc1d2400 "36" @41ac3b]: IPC Bu
+Test FRAMEDIPC0001 passed
+Starting test 41: FRAMEDIPC0002
+Running test FRAMEDIPC0002 (Test that we cannot switch a threads IPC buffer to )
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @41ac3b]: CNod
+<<seL4(CPU 0) [checkValidIPCBuffer/654 T0xffffff80bc0f2400 "36" @41ac3b]: IPC Bu
+Test FRAMEDIPC0002 passed
+Starting test 42: FRAMEDIPC0003
+Running test FRAMEDIPC0003 (Test that deleting a frame cap unmaps the frame)
+Test FRAMEDIPC0003 passed
+Starting test 43: FRAMEEXPORTS0001
+Running test FRAMEEXPORTS0001 (Test that we can access all exported frames)
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 107r
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 2091
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 409 
+Test FRAMEEXPORTS0001 passed
+Starting test 44: IOPORTS1000
+Running test IOPORTS1000 (Test fault if directly using I/O ports)
+Test IOPORTS1000 passed
+Starting test 45: IPC0001
+Running test IPC0001 (Test SMP seL4_Send + seL4_Recv)
+Test IPC0001 passed
+Starting test 46: IPC0002
+Running test IPC0002 (Test SMP seL4_Call + seL4_ReplyRecv)
+Test IPC0002 passed
+Starting test 47: IPC0003
+Running test IPC0003 (Test SMP seL4_Send + seL4_Reply + seL4_Recv)
+Test IPC0003 passed
+Starting test 48: IPC0004
+Running test IPC0004 (Test seL4_NBSend + seL4_Recv)
+Test IPC0004 passed
+Starting test 49: IPC0010
+Running test IPC0010 (Test suspending an IPC mid-Call())
+Test IPC0010 passed
+Starting test 50: IPC1001
+Running test IPC1001 (Test SMP inter-AS seL4_Send + seL4_Recv)
+Test IPC1001 passed
+Starting test 51: IPC1002
+Running test IPC1002 (Test SMP inter-AS seL4_Call + seL4_ReplyRecv)
+Test IPC1002 passed
+Starting test 52: IPC1003
+Running test IPC1003 (Test SMP inter-AS seL4_Send + seL4_Reply + seL4_Recv)
+Test IPC1003 passed
+Starting test 53: IPC1004
+Running test IPC1004 (Test inter-AS seL4_NBSend + seL4_Recv)
+Test IPC1004 passed
+Starting test 54: IPCRIGHTS0001
+Running test IPCRIGHTS0001 (seL4_Send needs write)
+<<seL4(CPU 0) [decodeInvocation/658 T0xffffff80bc1d2400 "36" @4284f7]: Attempted
+<<seL4(CPU 0) [decodeInvocation/658 T0xffffff80bc1d2400 "36" @4284f7]: Attemptec
+Test IPCRIGHTS0001 passed
+Starting test 55: IPCRIGHTS0002
+Running test IPCRIGHTS0002 (seL4_Recv needs read)
+Test IPCRIGHTS0002 passed
+Starting test 56: IPCRIGHTS0003
+Running test IPCRIGHTS0003 (seL4_Send with caps needs grant)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bff1bc00 "child of: '36'" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bff1bc00 "child of: '36'" @4
+Test IPCRIGHTS0003 passed
+Starting test 57: IPCRIGHTS0004
+Running test IPCRIGHTS0004 (seL4_Call needs grant or grant-reply)
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNode
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNo/
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNop
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNode
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNode
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNo.
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff80bc0f2400 "36" @4030e1]: CNo 
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNode
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNode
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc0f2400 "36" @4030e1]: CNode
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @4030e1]: CNod
+Test IPCRIGHTS0004 passed
+Starting test 58: IPCRIGHTS0005
+Running test IPCRIGHTS0005 (seL4_Reply grant depends of the grant of previous s)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bff1bc00 "child of: '36'" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bff1bc00 "child of: '36'" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNode
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bff1bc00 "child of: '36'" @:
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff80bc1d2400 "36" @4030e1]: CNode
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @4030e1]: CNod
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bff1bc00 "child of: '36'" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bff1bc00 "child of: '36'" @4
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bff1bc00 "child of: '36'" @4
+Test IPCRIGHTS0005 passed
+Starting test 59: NBWAIT0001
+Running test NBWAIT0001 (Test seL4_NBRecv)
+Test NBWAIT0001 passed
+Starting test 60: PAGEFAULT0001
+Running test PAGEFAULT0001 (Test read page fault)
+Test PAGEFAULT0001 passed
+Starting test 61: PAGEFAULT0002
+Running test PAGEFAULT0002 (Test write page fault)
+Test PAGEFAULT0002 passed
+Starting test 62: PAGEFAULT0003
+Running test PAGEFAULT0003 (Test execute page fault)
+Test PAGEFAULT0003 passed
+Starting test 63: PAGEFAULT0004
+Running test PAGEFAULT0004 (Test unknown system call)
+Test PAGEFAULT0004 passed
+Starting test 64: PAGEFAULT0005
+Running test PAGEFAULT0005 (Test undefined instruction)
+Test PAGEFAULT0005 passed
+Starting test 65: PAGEFAULT1001
+Running test PAGEFAULT1001 (Test read page fault (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNou
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+Test PAGEFAULT1001 passed
+Starting test 66: PAGEFAULT1002
+Running test PAGEFAULT1002 (Test write page fault (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNot
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+Test PAGEFAULT1002 passed
+Starting test 67: PAGEFAULT1003
+Running test PAGEFAULT1003 (Test execute page fault (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNom
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNot
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNoi
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc0f2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+Test PAGEFAULT1003 passed
+Starting test 68: PAGEFAULT1004
+Running test PAGEFAULT1004 (Test unknown system call (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNom
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNo 
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff80bc1d2400 "36" @465602]: CNod
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+Test PAGEFAULT1004 passed
+Starting test 69: PREEMPT_REVOKE
+Running test PREEMPT_REVOKE (Test preemption path in revoke)
+Test PREEMPT_REVOKE passed
+Starting test 70: REGRESSIONS0001
+Running test REGRESSIONS0001 (Ensure WriteRegisters functions correctly)
+Test REGRESSIONS0001 passed
+Starting test 71: RETYPE0000
+Running test RETYPE0000 (Retype test)
+<<seL4(CPU 0) [decodeUntypedInvocation/146 T0xffffff80bc0f2400 "36" @41dcd0]: Ut
+<<seL4(CPU 0) [decodeUntypedInvocation/154 T0xffffff80bc0f2400 "36" @41dcd0]: Uw
+<<seL4(CPU 0) [decodeUntypedInvocation/138 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/146 T0xffffff80bc0f2400 "36" @41dcd0]: U5
+<<seL4(CPU 0) [decodeUntypedInvocation/154 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+Test RETYPE0000 passed
+Starting test 72: RETYPE0001
+Running test RETYPE0001 (Incremental retype test)
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff80bc1d2400 "36" @41dcd0]: Unc
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff80bc1d2400 "36" @41dcd0]: Unt
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff80bc1d2400 "36" @41dcd0]: Unt
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff80bc1d2400 "36" @41dcd0]: Unt
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff80bc1d2400 "36" @41dcd0]: Unt
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff80bc1d2400 "36" @41dcd0]: Unt
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: U 
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: U 
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: U 
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: U>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: U2
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Uy
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Ue
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Un
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: U 
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: U8
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: U(
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Uy
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: Um
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc1d2400 "36" @41dcd0]: U8
+Test RETYPE0001 passed
+Starting test 73: RETYPE0002
+Running test RETYPE0002 (Incremental retype test #2)
+<<seL4(CPU 0) [decodeUntypedInvocation/146 T0xffffff80bc0f2400 "36" @41dcd0]: U0
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff80bc0f2400 "36" @41dcd0]: U 
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff80bc0f2400 "36" @41dcd0]: Un
+Test RETYPE0002 passed
+Starting test 74: SCHED0000
+Running test SCHED0000 (Test suspending and resuming a thread (flaky))
+Test SCHED0000 passed
+Starting test 75: SCHED0002
+Running test SCHED0002 (Test resuming ourselves)
+Test SCHED0002 passed
+Starting test 76: SCHED0003
+Running test SCHED0003 (Test TCB suspend/resume)
+Test SCHED0003 passed
+Starting test 77: SCHED0004
+Running test SCHED0004 (Test threads at all priorities)
+Test SCHED0004 passed
+Starting test 78: SCHED0005
+Running test SCHED0005 (Test set priority)
+<<seL4(CPU 0) [decodeSetPriority/1186 T0xffffff80bff30400 "child of: '36'" @43d2
+<<seL4(CPU 0) [decodeSetPriority/1186 T0xffffff80bff1bc00 "child of: '36'" @43d5
+<<seL4(CPU 0) [decodeSetMCPriority/1230 T0xffffff80bff1bc00 "child of: '36'" @43
+Test SCHED0005 passed
+Starting test 79: SCHED0006
+Running test SCHED0006 (Test IPC priorities for Send)
+Test SCHED0006 passed
+Starting test 80: SCHED0020
+Running test SCHED0020 (test set prio to a higher prio runs higher prio thread)
+Test SCHED0020 passed
+Starting test 81: SERSERV_CLIENT_001
+Running test SERSERV_CLIENT_001 (Connect from client threads)
+Test SERSERV_CLIENT_001 passed
+Starting test 82: SERSERV_CLIENT_002
+Running test SERSERV_CLIENT_002 (Printf from client threads)
+Hello, world!
+Test SERSERV_CLIENT_002 passed
+Starting test 83: SERSERV_CLIENT_003
+Running test SERSERV_CLIENT_003 (Write from client threads)
+Hello, world!
+Test SERSERV_CLIENT_003 passed
+Starting test 84: SERSERV_CLIENT_004
+Running test SERSERV_CLIENT_004 (Printf, then write, then reset connection, anda
+Hello, world!
+Hello, world!
+Hello, world!
+Hello, world!
+Test SERSERV_CLIENT_004 passed
+Starting test 85: SERSERV_CLIENT_005
+Running test SERSERV_CLIENT_005 (Connect, then disconnect from server on all th)
+Test SERSERV_CLIENT_005 passed
+Starting test 86: SERSERV_CLI_PROC_001
+Running test SERSERV_CLI_PROC_001 (Connect to server from a client in another V)
+Test SERSERV_CLI_PROC_001 passed
+Starting test 87: SERSERV_CLI_PROC_002
+Running test SERSERV_CLI_PROC_002 (Connect to server and printf(, true), from a)
+Hello, world!
+Test SERSERV_CLI_PROC_002 passed
+Starting test 88: SERSERV_CLI_PROC_003
+Running test SERSERV_CLI_PROC_003 (Connect to server and write(, true), from a )
+Hello, world!
+Test SERSERV_CLI_PROC_003 passed
+Starting test 89: SERSERV_CLI_PROC_004
+Running test SERSERV_CLI_PROC_004 (Connect to server, printf(), write(, true), )
+Hello, world!
+Hello, world!
+Hello, world!
+Hello, world!
+Test SERSERV_CLI_PROC_004 passed
+Starting test 90: SERSERV_CLI_PROC_005
+Running test SERSERV_CLI_PROC_005 (Connect to server then disconnect on all cli)
+Test SERSERV_CLI_PROC_005 passed
+Starting test 91: SERSERV_PARENT_001
+Running test SERSERV_PARENT_001 (Serial server spawn test)
+Test SERSERV_PARENT_001 passed
+Starting test 92: SERSERV_PARENT_002
+Running test SERSERV_PARENT_002 (Test connecting to the server from a parent th)
+Test SERSERV_PARENT_002 passed
+Starting test 93: SERSERV_PARENT_003
+Running test SERSERV_PARENT_003 (Printf() from a connected parent thread)
+Hello, world!
+Test SERSERV_PARENT_003 passed
+Starting test 94: SERSERV_PARENT_004
+Running test SERSERV_PARENT_004 (Write() from a connected parent thread)
+Hello, world!
+Test SERSERV_PARENT_004 passed
+Starting test 95: SERSERV_PARENT_005
+Running test SERSERV_PARENT_005 (Test printf() and write() from a parent thread)
+Hello, world!
+Hello, world!
+Hello, world!
+Hello, world!
+Test SERSERV_PARENT_005 passed
+Starting test 96: SERSERV_PARENT_006
+Running test SERSERV_PARENT_006 (Kill the Server from the Parent thread)
+Test SERSERV_PARENT_006 passed
+Starting test 97: SERSERV_PARENT_007
+Running test SERSERV_PARENT_007 (Test a series of unexpected input values to sp)
+Test SERSERV_PARENT_007 passed
+Starting test 98: SERSERV_PARENT_008
+Running test SERSERV_PARENT_008 (Test a series of unexpected input values to co)
+Test SERSERV_PARENT_008 passed
+Starting test 99: SERSERV_PARENT_009
+Running test SERSERV_PARENT_009 (Test a series of unexpected input values to pr)
+serial_server_printf@clientapi.c:178 Serserv Client: printf: NULL passed for re.
+	Is connection handle valid?
+serial_server_printf@clientapi.c:178 Serserv Client: printf: NULL passed for reg
+	Is connection handle valid?
+Test SERSERV_PARENT_009 passed
+Starting test 100: SERSERV_PARENT_010
+Running test SERSERV_PARENT_010 (Test a series of unexpected input values to wr)
+serial_server_write@clientapi.c:221 Serserv Client: printf: NULL passed for requ
+	Is connection handle valid?
+serial_server_write@clientapi.c:221 Serserv Client: printf: NULL passed for requ
+	Is connection handle valid?
+Test SERSERV_PARENT_010 passed
+Starting test 101: STACK_ALIGNMENT_001
+Running test STACK_ALIGNMENT_001 (Testing x86 Stack Alignment)
+Test STACK_ALIGNMENT_001 passed
+Starting test 102: SYNC001
+Running test SYNC001 (libsel4sync Test binary semaphores)
+Test SYNC001 passed
+Starting test 103: SYNC002
+Running test SYNC002 (libsel4sync Test semaphores)
+Test SYNC002 passed
+Starting test 104: SYNC003
+Running test SYNC003 (libsel4sync Test monitors)
+Test SYNC003 passed
+Starting test 105: SYNC004
+Running test SYNC004 (libsel4sync Test monitors - broadcast)
+Test SYNC004 passed
+Starting test 106: THREADS0004
+Running test THREADS0004 (seL4_TCB_Configure with a NULL CSpace should fail)
+<<seL4(CPU 0) [decodeTCBConfigure/1121 T0xffffff80bc1d2400 "36" @44f5a8]: TCB Co
+Test THREADS0004 passed
+Starting test 107: THREADS0005
+Running test THREADS0005 (seL4_TCB_SetSpace with a NULL CSpace should fail)
+<<seL4(CPU 0) [decodeSetSpace/1516 T0xffffff80bc0f2400 "36" @44f5a8]: TCB SetSpa
+Test THREADS0005 passed
+Starting test 108: TLS0001
+Running test TLS0001 (Test root thread accessing __thread variables)
+Test TLS0001 passed
+Starting test 109: TLS0002
+Running test TLS0002 (Test multiple threads using __thread variables)
+Test TLS0002 passed
+Starting test 110: TLS0006
+Running test TLS0006 (sel4utils_thread with distinct TLS should not interfere)
+Test TLS0006 passed
+Starting test 111: TRIVIAL0000
+Running test TRIVIAL0000 (Ensure the test framework functions)
+Test TRIVIAL0000 passed
+Starting test 112: TRIVIAL0001
+Running test TRIVIAL0001 (Ensure the allocator works)
+Test TRIVIAL0001 passed
+Starting test 113: TRIVIAL0002
+Running test TRIVIAL0002 (Ensure the allocator works more than once)
+Test TRIVIAL0002 passed
+Starting test 114: VSPACE0000
+Running test VSPACE0000 (Test threads in different cspace/vspace)
+vagrant@ubuntu-bionic:~/sel4/seL4test/build-x86$ 
+
