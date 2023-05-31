@@ -1,0 +1,1499 @@
+U-Boot> fatload mmc 0 0x10000000 sel4test-driver-image-arm-bcm2837
+4582872 bytes read in 201 ms (21.7 MiB/s)
+U-Boot> bootelf 0x10000000
+## Starting application at 0x20000000 ...
+
+ELF-loader started on CPU: ARM Ltd. Cortex-A53 r0p4
+  paddr=[20000000..2045ffff]
+ELF-loading image 'kernel'
+  paddr=[1000000..1037fff]
+  vaddr=[e0000000..e0037fff]
+  virt_entry=e0000000
+ELF-loading image 'sel4test-driver'
+  paddr=[1038000..13dffff]
+  vaddr=[10000..3b7fff]
+  virt_entry=4a0fc
+Enabling MMU and paging
+Jumping to kernel-image entry point...
+
+DIDRv: 6, armv 80, coproc baseline only? no.
+Bootstrapping kernel
+Booting all finished, dropped to user space
+Node 0 of 1
+IOPT levels:     0
+IPC buffer:      0x3b8000
+Empty slots:     [974 --> 4096)
+sharedFrames:    [0 --> 0)
+userImageFrames: [16 --> 952)
+userImagePaging: [12 --> 16)
+untypeds:        [952 --> 974)
+Initial thread domain: 0
+Initial thread cnode size: 12
+List of untypeds
+------------------
+Paddr    | Size   | Device
+0x1000000 | 16 | 0
+0x13e4000 | 14 | 0
+0x13e8000 | 15 | 0
+0x13f0000 | 16 | 0
+0x1400000 | 22 | 0
+0x1800000 | 23 | 0
+0x2000000 | 24 | 0
+0x3000000 | 25 | 0
+0x5000000 | 25 | 0
+0x7000000 | 23 | 0
+0x7800000 | 22 | 0
+0x7c00000 | 21 | 0
+0x7e00000 | 20 | 0
+0x7f00000 | 19 | 0
+0x7f80000 | 18 | 0
+0x7fc0000 | 17 | 0
+0x7fe0000 | 15 | 0
+0x7fe8000 | 13 | 0
+0x3f300000 | 12 | 1
+0x3f980000 | 12 | 1
+0x3f215000 | 12 | 1
+0x3f00b000 | 12 | 1
+Untyped summary
+4 untypeds of size 12
+1 untypeds of size 13
+1 untypeds of size 14
+2 untypeds of size 15
+2 untypeds of size 16
+1 untypeds of size 17
+1 untypeds of size 18
+1 untypeds of size 19
+1 untypeds of size 20
+1 untypeds of size 21
+2 untypeds of size 22
+2 untypeds of size 23
+1 untypeds of size 24
+2 untypeds of size 25
+Switching to a safer, bigger stack... 
+seL4 Test
+=========
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 2141
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 1071
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 5361
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 2681
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 1341
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 6711
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 3351
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 1671
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 8381
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 4191
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 2091
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 1041
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 5241
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 2621
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 1311
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 6551
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 3271
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 1631
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 8191
+
+vspace_reserve_range_at@vspace.h:645 vspace is NULL
+create_reservations@elf.c:254 Failed to make reservation: 0x10000, 794624
+elf_reserve_regions_in_vspace@elf.c:447 Failed to create reservations
+sel4utils_elf_reserve@elf.c:482 Failed to reserve regions
+Starting test suite sel4test
+Starting test 0: Test that there are tests
+Starting test 1: SYSCALL0000
+Starting test 2: SYSCALL0001
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+Starting test 3: SYSCALL0002
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+Starting test 4: SYSCALL0003
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+Starting test 5: SYSCALL0004
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @144c0]: >
+Starting test 6: SYSCALL0005
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+Starting test 7: SYSCALL0006
+          Starting test 8: SYSCALL0010
+Starting test 9: SYSCALL0011
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @145a8]: Attempted>
+Starting test 10: SYSCALL0012
+Starting test 11: SYSCALL0013
+Starting test 12: SYSCALL0014
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+Starting test 13: SYSCALL0015
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @14440]: >
+Starting test 14: SYSCALL0016
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+<<seL4(CPU 0) [handleReply/360 T0xe6fea400 "sel4test-driver" @14488]: Attempted>
+Starting test 15: SYSCALL0017
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+<<seL4(CPU 0) [decodeCNodeInvocation/53 T0xe6fea400 "sel4test-driver" @145a8]: >
+Starting test 16: TIMER0001
+Starting test 17: TIMER0002
+Starting test 18: BIND0001
+Running test BIND0001 (Test that a bound tcb waiting on a sync endpoint receive)
+Test BIND0001 passed
+Starting test 19: BIND0002
+Running test BIND0002 (Test that a bound tcb waiting on its bound notification )
+Test BIND0002 passed
+Starting test 20: BIND0003
+Running test BIND0003 (Test IPC ordering 1) bound tcb waits on bound notificati)
+Test BIND0003 passed
+Starting test 21: BIND0004
+Running test BIND0004 (Test IPC ordering 2) bound tcb waits on bound notificati)
+Test BIND0004 passed
+Starting test 22: BREAKPOINT_001
+Running test BREAKPOINT_001 (Attempt to set and trigger an instruction breakpoi)
+Test BREAKPOINT_001 passed
+Starting test 23: BREAKPOINT_002
+Running test BREAKPOINT_002 (Attempt to set and trigger a data breakpoint)
+Test BREAKPOINT_002 passed
+Starting test 24: BREAKPOINT_003
+Running test BREAKPOINT_003 (Attempt to set, then get, an instruction breakpoin)
+Test BREAKPOINT_003 passed
+Starting test 25: BREAKPOINT_004
+Running test BREAKPOINT_004 (Attempt to set, then get, a data breakpoint expect)
+Test BREAKPOINT_004 passed
+Starting test 26: BREAKPOINT_005
+Running test BREAKPOINT_005 (Attempt to set, then unset, then query the status )
+Test BREAKPOINT_005 passed
+Starting test 27: BREAKPOINT_006
+Running test BREAKPOINT_006 (Attempt to set, then unset, then query the status )
+Test BREAKPOINT_006 passed
+Starting test 28: BREAKPOINT_007
+Running test BREAKPOINT_007 (Attempt to pass various invalid values to the invo)
+<<seL4(CPU 0) [decodeSetBreakpoint/500 T0xe41f2400 "BREAKPOINT_007" @1a9fc]: De>
+<<seL4(CPU 0) [decodeSetBreakpoint/515 T0xe41f2400 "BREAKPOINT_007" @1a9fc]: De>
+<<seL4(CPU 0) [decodeSetBreakpoint/521 T0xe41f2400 "BREAKPOINT_007" @1a9fc]: De>
+<<seL4(CPU 0) [decodeSetBreakpoint/535 T0xe41f2400 "BREAKPOINT_007" @1a9fc]: De>
+Test BREAKPOINT_007 passed
+Starting test 29: BREAK_REQUEST_001
+Running test BREAK_REQUEST_001 (Use an INT3/BKPT instruction to trigger a break)
+Test BREAK_REQUEST_001 passed
+Starting test 30: CACHEFLUSH0001
+Running test CACHEFLUSH0001 (Test a cache maintenance on pages)
+Test CACHEFLUSH0001 passed
+Starting test 31: CACHEFLUSH0002
+Running test CACHEFLUSH0002 (Test a cache maintenance on page directories)
+Test CACHEFLUSH0002 passed
+Starting test 32: CACHEFLUSH0003
+Running test CACHEFLUSH0003 (Test that cache maintenance can be done on large p)
+Test CACHEFLUSH0003 passed
+Starting test 33: CANCEL_BADGED_SENDS_0001
+Running test CANCEL_BADGED_SENDS_0001 (Basic endpoint cancelBadgedSends testing)
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f5f400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f5fc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4c400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4cc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e68c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e83400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e83c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea7400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea7c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecb400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecbc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c14400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c14c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c38400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c38c00 "child of: 'CANCEL_BADGED_SENDS>
+Test CANCEL_BADGED_SENDS_0001 passed
+Starting test 34: CANCEL_BADGED_SENDS_0002
+Running test CANCEL_BADGED_SENDS_0002 (cancelBadgedSends deletes caps)
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecc400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecc400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6eccc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecc400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6eccc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecc400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6eccc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecc400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6eccc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c15400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecc400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6eccc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c15400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c15c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecc400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6eccc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c15400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c15c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c39400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecc400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6eccc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c15400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c15c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c39400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c39c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fc8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f8dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6fb3c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f17c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3b400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f3bc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6f60c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e04c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e28c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4d400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e4dc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e69c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6e84c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ea8c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ecc400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6eccc00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6ef0c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c15400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c15c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c39400 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c39c00 "child of: 'CANCEL_BADGED_SENDS>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe6c5d400 "child of: 'CANCEL_BADGED_SENDS>
+Test CANCEL_BADGED_SENDS_0002 passed
+Starting test 35: CNODEOP0001
+Running test CNODEOP0001 (Basic seL4_CNode_Copy() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0001" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe4012400 "CNODEOP0001" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0001" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe4012400 "CNODEOP0001" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0001" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0001" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0001" @10fe0]: CNo>
+Test CNODEOP0001 passed
+Starting test 36: CNODEOP0002
+Running test CNODEOP0002 (Basic seL4_CNode_Delete() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0002" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0002" @10fe0]: CNo>
+Test CNODEOP0002 passed
+Starting test 37: CNODEOP0003
+Running test CNODEOP0003 (Basic seL4_CNode_Mint() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe4012400 "CNODEOP0003" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0003" @10fe0]: CNo>
+Test CNODEOP0003 passed
+Starting test 38: CNODEOP0004
+Running test CNODEOP0004 (Basic seL4_CNode_Move() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0004" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0004" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0004" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0004" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0004" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0004" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0004" @10fe0]: CNod>
+Test CNODEOP0004 passed
+Starting test 39: CNODEOP0005
+Running test CNODEOP0005 (Basic seL4_CNode_Mutate() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0005" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe4012400 "CNODEOP0005" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe4012400 "CNODEOP0005" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe4012400 "CNODEOP0005" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe4012400 "CNODEOP0005" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0005" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0005" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0005" @10fe0]: CNo>
+Test CNODEOP0005 passed
+Starting test 40: CNODEOP0006
+Running test CNODEOP0006 (Basic seL4_CNode_CancelBadgedSends() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0006" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/221 T0xe41f2400 "CNODEOP0006" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0006" @10fe0]: CNo>
+Test CNODEOP0006 passed
+Starting test 41: CNODEOP0007
+Running test CNODEOP0007 (Basic seL4_CNode_Revoke() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe4012400 "CNODEOP0007" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "CNODEOP0007" @10fe0]: CNo>
+Test CNODEOP0007 passed
+Starting test 42: CNODEOP0008
+Running test CNODEOP0008 (Basic seL4_CNode_Rotate() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0008" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0008" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0008" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0008" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0008" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0008" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0008" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/263 T0xe41f2400 "CNODEOP0008" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe41f2400 "CNODEOP0008" @10fe0]: CNod>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0008" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0008" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0008" @10fe0]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "CNODEOP0008" @10fe0]: CNo>
+Test CNODEOP0008 passed
+Starting test 43: CNODEOP0009
+Running test CNODEOP0009 (Basic seL4_CNode_SaveCaller() testing)
+<<seL4(CPU 0) [invokeCNodeSaveCaller/377 T0xe4012400 "CNODEOP0009" @24360]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/207 T0xe4012400 "CNODEOP0009" @24360]: CNo>
+<<seL4(CPU 0) [decodeCNodeInvocation/94 T0xe4012400 "CNODEOP0009" @10fe0]: CNod>
+Test CNODEOP0009 passed
+Starting test 44: CSPACE0001
+Running test CSPACE0001 (Test full cspace resolution)
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+<<seL4(CPU 0) [decodeInvocation/530 T0xe0006c00 "child of: 'CSPACE0001'" @26b18>
+Test CSPACE0001 passed
+Starting test 45: DOMAINS0001
+Running test DOMAINS0001 (Change domain successfully())
+Test DOMAINS0001 passed
+Starting test 46: DOMAINS0002
+Running test DOMAINS0002 (Try non-existant domain())
+<<seL4(CPU 0) [decodeDomainInvocation/1283 T0xe41f2400 "DOMAINS0002" @285a4]: D>
+Test DOMAINS0002 passed
+Starting test 47: DOMAINS0003
+Running test DOMAINS0003 (Invoke non-domain cap())
+<<seL4(CPU 0) [decodeTCBInvocation/781 T0xe4012400 "DOMAINS0003" @285a4]: TCB: >
+Test DOMAINS0003 passed
+Starting test 48: DOMAINS0004
+Running test DOMAINS0004 (Run threads in domains())
+Test DOMAINS0004 passed
+Starting test 49: FPU0000
+Running test FPU0000 (Ensure that simple FPU operations work)
+Test FPU0000 passed
+Starting test 50: FPU0001
+Running test FPU0001 (Ensure multiple threads can use FPU simultaneously)
+Test FPU0001 passed
+Starting test 51: FRAMEDIPC0001
+Running test FRAMEDIPC0001 (Test that we cannot create a thread with an IPC buf)
+<<seL4(CPU 0) [decodeCNodeInvocation/100 T0xe4012400 "FRAMEDIPC0001" @31e60]: C>
+<<seL4(CPU 0) [checkValidIPCBuffer/746 T0xe4012400 "FRAMEDIPC0001" @31e60]: Req>
+Test FRAMEDIPC0001 passed
+Starting test 52: FRAMEDIPC0002
+Running test FRAMEDIPC0002 (Test that we cannot switch a threads IPC buffer to )
+<<seL4(CPU 0) [decodeCNodeInvocation/100 T0xe41f2400 "FRAMEDIPC0002" @31e60]: C>
+<<seL4(CPU 0) [checkValidIPCBuffer/746 T0xe41f2400 "FRAMEDIPC0002" @31e60]: Req>
+Test FRAMEDIPC0002 passed
+Starting test 53: FRAMEDIPC0003
+Running test FRAMEDIPC0003 (Test that deleting a frame cap unmaps the frame)
+Test FRAMEDIPC0003 passed
+Starting test 54: FRAMEEXPORTS0001
+Running test FRAMEEXPORTS0001 (Test that we can access all exported frames)
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 1671
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 1041
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 6551
+
+vka_alloc_object_at_maybe_dev@object.h:58 Failed to allocate object of size 4091
+
+Test FRAMEEXPORTS0001 passed
+Starting test 55: FRAMEXN0001
+Running test FRAMEXN0001 (Test that we can map a small frame XN)
+Test FRAMEXN0001 passed
+Starting test 56: FRAMEXN0002
+Running test FRAMEXN0002 (Test that we can map a large frame XN)
+Test FRAMEXN0002 passed
+Starting test 57: IPC0001
+Running test IPC0001 (Test SMP seL4_Send + seL4_Recv)
+Test IPC0001 passed
+Starting test 58: IPC0002
+Running test IPC0002 (Test SMP seL4_Call + seL4_ReplyRecv)
+Test IPC0002 passed
+Starting test 59: IPC0003
+Running test IPC0003 (Test SMP seL4_Send + seL4_Reply + seL4_Recv)
+Test IPC0003 passed
+Starting test 60: IPC0004
+Running test IPC0004 (Test seL4_NBSend + seL4_Recv)
+Test IPC0004 passed
+Starting test 61: IPC0010
+Running test IPC0010 (Test suspending an IPC mid-Call())
+Test IPC0010 passed
+Starting test 62: IPC1001
+Running test IPC1001 (Test SMP inter-AS seL4_Send + seL4_Recv)
+Test IPC1001 passed
+Starting test 63: IPC1002
+Running test IPC1002 (Test SMP inter-AS seL4_Call + seL4_ReplyRecv)
+Test IPC1002 passed
+Starting test 64: IPC1003
+Running test IPC1003 (Test SMP inter-AS seL4_Send + seL4_Reply + seL4_Recv)
+Test IPC1003 passed
+Starting test 65: IPC1004
+Running test IPC1004 (Test inter-AS seL4_NBSend + seL4_Recv)
+Test IPC1004 passed
+Starting test 66: NBWAIT0001
+Running test NBWAIT0001 (Test seL4_NBRecv)
+Test NBWAIT0001 passed
+Starting test 67: PAGEFAULT0001
+Running test PAGEFAULT0001 (Test read page fault)
+Test PAGEFAULT0001 passed
+Starting test 68: PAGEFAULT0002
+Running test PAGEFAULT0002 (Test write page fault)
+Test PAGEFAULT0002 passed
+Starting test 69: PAGEFAULT0003
+Running test PAGEFAULT0003 (Test execute page fault)
+Test PAGEFAULT0003 passed
+Starting test 70: PAGEFAULT0004
+Running test PAGEFAULT0004 (Test unknown system call)
+Test PAGEFAULT0004 passed
+Starting test 71: PAGEFAULT0005
+Running test PAGEFAULT0005 (Test undefined instruction)
+Test PAGEFAULT0005 passed
+Starting test 72: PAGEFAULT1001
+Running test PAGEFAULT1001 (Test read page fault (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1001" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+Test PAGEFAULT1001 passed
+Starting test 73: PAGEFAULT1002
+Running test PAGEFAULT1002 (Test write page fault (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1002" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+Test PAGEFAULT1002 passed
+Starting test 74: PAGEFAULT1003
+Running test PAGEFAULT1003 (Test execute page fault (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe41f2400 "PAGEFAULT1003" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+Test PAGEFAULT1003 passed
+Starting test 75: PAGEFAULT1004
+Running test PAGEFAULT1004 (Test unknown system call (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/106 T0xe4012400 "PAGEFAULT1004" @7ce94]: C>
+sel4utils_copy_path_to_process@process.c:136 Failed to copy cap
+
+Test PAGEFAULT1004 passed
+Starting test 76: PREEMPT_REVOKE
+Running test PREEMPT_REVOKE (Test preemption path in revoke)
+Test PREEMPT_REVOKE passed
+Starting test 77: PT0001
+Running test PT0001 (Fun with page tables on ARM)
+<<seL4(CPU 0) [decodeARMFrameInvocation/2522 T0xe4012400 "PT0001" @4497c]: ARMP>
+<<seL4(CPU 0) [decodeARMFrameInvocation/2560 T0xe4012400 "PT0001" @4497c]: ARMP>
+<<seL4(CPU 0) [decodeARMFrameInvocation/2560 T0xe4012400 "PT0001" @4497c]: ARMP>
+<<seL4(CPU 0) [decodeARMFrameInvocation/2462 T0xe4012400 "PT0001" @4497c]: ARMP>
+<<seL4(CPU 0) [decodeARMFrameInvocation/2462 T0xe4012400 "PT0001" @4497c]: ARMP>
+<<seL4(CPU 0) [decodeARMFrameInvocation/2522 T0xe4012400 "PT0001" @4497c]: ARMP>
+<<seL4(CPU 0) [decodeARMFrameInvocation/2462 T0xe4012400 "PT0001" @4497c]: ARMP>
+<<seL4(CPU 0) [decodeARMFrameInvocation/2542 T0xe4012400 "PT0001" @4497c]: ARMP>
+clear_entries_mid@vspace_internal.h:172 Cannot clear reserved entries mid level
+Test PT0001 passed
+Starting test 78: PT0002
+Running test PT0002 (Reusing virtual addresses flushes TLB)
+Test PT0002 passed
+Starting test 79: REGRESSIONS0001
+Running test REGRESSIONS0001 (Ensure WriteRegisters functions correctly)
+Test REGRESSIONS0001 passed
+Starting test 80: REGRESSIONS0002
+Running test REGRESSIONS0002 (Test the load-exclusive monitor is cleared on con)
+Test REGRESSIONS0002 passed
+Starting test 81: RETYPE0000
+Running test RETYPE0000 (Retype test)
+<<seL4(CPU 0) [decodeUntypedInvocation/144 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/152 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/136 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/144 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/152 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xe4012400 "RETYPE0000" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xe4012400 "RETYPE0000" @35a74]: Un>
+Test RETYPE0000 passed
+Starting test 82: RETYPE0001
+Running test RETYPE0001 (Incremental retype test)
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/88 T0xe41f2400 "RETYPE0001" @35a74]: Unt>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe41f2400 "RETYPE0001" @35a74]: Un>
+Test RETYPE0001 passed
+Starting test 83: RETYPE0002
+Running test RETYPE0002 (Incremental retype test #2)
+<<seL4(CPU 0) [decodeUntypedInvocation/144 T0xe4012400 "RETYPE0002" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xe4012400 "RETYPE0002" @35a74]: Un>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xe4012400 "RETYPE0002" @35a74]: Un>
+Test RETYPE0002 passed
+Starting test 84: SCHED0000
+Running test SCHED0000 (Test suspending and resuming a thread (flaky))
+Test SCHED0000 passed
+Starting test 85: SCHED0002
+Running test SCHED0002 (Test resuming ourselves)
+Test SCHED0002 passed
+Starting test 86: SCHED0003
+Running test SCHED0003 (Test TCB suspend/resume)
+Test SCHED0003 passed
+Starting test 87: SCHED0004
+Running test SCHED0004 (Test threads at all priorities)
+Test SCHED0004 passed
+Starting test 88: SCHED0005
+Running test SCHED0005 (Test set priority)
+<<seL4(CPU 0) [decodeSetPriority/1044 T0xe6fc8400 "child of: 'SCHED0005'" @5461>
+<<seL4(CPU 0) [decodeSetPriority/1044 T0xe0006400 "child of: 'SCHED0005'" @5461>
+<<seL4(CPU 0) [decodeSetMCPriority/1081 T0xe0006400 "child of: 'SCHED0005'" @54>
+Test SCHED0005 passed
+Starting test 89: SCHED0006
+Running test SCHED0006 (Test IPC priorities for Send)
+Test SCHED0006 passed
+Starting test 90: SCHED0020
+Running test SCHED0020 (test set prio to a higher prio runs higher prio thread)
+Test SCHED0020 passed
+Starting test 91: SERSERV_CLIENT_001
+Running test SERSERV_CLIENT_001 (Connect from client threads)
+Test SERSERV_CLIENT_001 passed
+Starting test 92: SERSERV_CLIENT_002
+Running test SERSERV_CLIENT_002 (Printf from client threads)
+Hello, world!
+Test SERSERV_CLIENT_002 passed
+Starting test 93: SERSERV_CLIENT_003
+Running test SERSERV_CLIENT_003 (Write from client threads)
+Hello, world!
+Test SERSERV_CLIENT_003 passed
+Starting test 94: SERSERV_CLIENT_004
+Running test SERSERV_CLIENT_004 (Printf, then write, then reset connection, and)
+Hello, world!
+Hello, world!
+Hello, world!
+Hello, world!
+Test SERSERV_CLIENT_004 passed
+Starting test 95: SERSERV_CLIENT_005
+Running test SERSERV_CLIENT_005 (Connect, then disconnect from server on all th)
+Test SERSERV_CLIENT_005 passed
+Starting test 96: SERSERV_CLI_PROC_001
+Running test SERSERV_CLI_PROC_001 (Connect to server from a client in another V)
+Test SERSERV_CLI_PROC_001 passed
+Starting test 97: SERSERV_CLI_PROC_002
+Running test SERSERV_CLI_PROC_002 (Connect to server and printf(, true), from a)
+Hello, world!
+Test SERSERV_CLI_PROC_002 passed
+Starting test 98: SERSERV_CLI_PROC_003
+Running test SERSERV_CLI_PROC_003 (Connect to server and write(, true), from a )
+Hello, world!
+Test SERSERV_CLI_PROC_003 passed
+Starting test 99: SERSERV_CLI_PROC_004
+Running test SERSERV_CLI_PROC_004 (Connect to server, printf(), write(, true), )
+Hello, world!
+Hello, world!
+Hello, world!
+Hello, world!
+Test SERSERV_CLI_PROC_004 passed
+Starting test 100: SERSERV_CLI_PROC_005
+Running test SERSERV_CLI_PROC_005 (Connect to server then disconnect on all cli)
+Test SERSERV_CLI_PROC_005 passed
+Starting test 101: SERSERV_PARENT_001
+Running test SERSERV_PARENT_001 (Serial server spawn test)
+Test SERSERV_PARENT_001 passed
+Starting test 102: SERSERV_PARENT_002
+Running test SERSERV_PARENT_002 (Test connecting to the server from a parent th)
+Test SERSERV_PARENT_002 passed
+Starting test 103: SERSERV_PARENT_003
+Running test SERSERV_PARENT_003 (Printf() from a connected parent thread)
+Hello, world!
+Test SERSERV_PARENT_003 passed
+Starting test 104: SERSERV_PARENT_004
+Running test SERSERV_PARENT_004 (Write() from a connected parent thread)
+Hello, world!
+Test SERSERV_PARENT_004 passed
+Starting test 105: SERSERV_PARENT_005
+Running test SERSERV_PARENT_005 (Test printf() and write() from a parent thread)
+Hello, world!
+Hello, world!
+Hello, world!
+Hello, world!
+Test SERSERV_PARENT_005 passed
+Starting test 106: SERSERV_PARENT_006
+Running test SERSERV_PARENT_006 (Kill the Server from the Parent thread)
+Test SERSERV_PARENT_006 passed
+Starting test 107: SERSERV_PARENT_007
+Running test SERSERV_PARENT_007 (Test a series of unexpected input values to sp)
+Test SERSERV_PARENT_007 passed
+Starting test 108: SERSERV_PARENT_008
+Running test SERSERV_PARENT_008 (Test a series of unexpected input values to co)
+Test SERSERV_PARENT_008 passed
+Starting test 109: SERSERV_PARENT_009
+Running test SERSERV_PARENT_009 (Test a series of unexpected input values to pr)
+serial_server_printf@clientapi.c:184 Serserv Client: printf: NULL passed for re.
+        Is connection handle valid?
+serial_server_printf@clientapi.c:184 Serserv Client: printf: NULL passed for re.
+        Is connection handle valid?
+Test SERSERV_PARENT_009 passed
+Starting test 110: SERSERV_PARENT_010
+Running test SERSERV_PARENT_010 (Test a series of unexpected input values to wr)
+serial_server_write@clientapi.c:227 Serserv Client: printf: NULL passed for req.
+        Is connection handle valid?
+serial_server_write@clientapi.c:227 Serserv Client: printf: NULL passed for req.
+        Is connection handle valid?
+Test SERSERV_PARENT_010 passed
+Starting test 111: SYNC001
+Running test SYNC001 (libsel4sync Test binary semaphores)
+Test SYNC001 passed
+Starting test 112: SYNC002
+Running test SYNC002 (libsel4sync Test semaphores)
+Test SYNC002 passed
+Starting test 113: SYNC003
+Running test SYNC003 (libsel4sync Test monitors)
+Test SYNC003 passed
+Starting test 114: SYNC004
+Running test SYNC004 (libsel4sync Test monitors - broadcast)
+Test SYNC004 passed
+Starting test 115: THREADS0004
+Running test THREADS0004 (seL4_TCB_Configure with a NULL CSpace should fail)
+<<seL4(CPU 0) [decodeTCBConfigure/990 T0xe4012400 "THREADS0004" @65b08]: TCB Co>
+Test THREADS0004 passed
+Starting test 116: THREADS0005
+Running test THREADS0005 (seL4_TCB_SetSpace with a NULL CSpace should fail)
+<<seL4(CPU 0) [decodeSetSpace/1234 T0xe41f2400 "THREADS0005" @65b08]: TCB SetSp>
+Test THREADS0005 passed
+Starting test 117: TLS0001
+Running test TLS0001 (Test root thread accessing __thread variables)
+Test TLS0001 passed
+Starting test 118: TLS0002
+Running test TLS0002 (Test multiple threads using __thread variables)
+Test TLS0002 passed
+Starting test 119: TLS0006
+Running test TLS0006 (sel4utils_thread with distinct TLS should not interfere)
+Test TLS0006 passed
+Starting test 120: TRIVIAL0000
+Running test TRIVIAL0000 (Ensure the test framework functions)
+Test TRIVIAL0000 passed
+Starting test 121: TRIVIAL0001
+Running test TRIVIAL0001 (Ensure the allocator works)
+Test TRIVIAL0001 passed                                                   
+Starting test 122: TRIVIAL0002                                            
+Running test TRIVIAL0002 (Ensure the allocator works more than once)      
+Test TRIVIAL0002 passed                                                   
+Starting test 123: VSPACE0000                                             
+Running test VSPACE0000 (Test threads in different cspace/vspace)         
+Test VSPACE0000 passed                                                    
+Starting test 124: VSPACE0001                                             
+Running test VSPACE0001 (Test unmapping a page after deleting the PD)     
+Test VSPACE0001 passed                                                    
+Starting test 125: VSPACE0002                                             
+Running test VSPACE0002 (Test create ASID pool)                           
+<<seL4(CPU 0) [decodeARMMMUInvocation/2943 T0xe4012400 "VSPACE0002" @697e0]: AS>
+Test VSPACE0002 passed                                                    
+Starting test 127: Test all tests ran                                     
+Test suite passed. 127 tests passed. 39 tests disabled.                   
+All is well in the universe                                               
+                                                                          
+                                                                          
+seL4 root server abort()ed
+Debug halt syscall from user thread 0xe6fea400 "sel4test-driver"
+halting...
+Kernel entry via Unknown syscall, word: 523
+
