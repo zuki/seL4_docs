@@ -7,6 +7,10 @@
 - [seL4プロジェクトの構成とビルド](config_build_sel4_project.md)
 - [プロジェクトにビルドシステムを組み込む](incorporating_into_project.md)
 
+# README, コードコメントの翻訳
+
+- [seL4-toos/elfloader-toolのREADME](elfloader-tool_README.md)
+
 # 実行メモ
 
 - [QEMU上のseL4の実行メモ](sel4-test_memo.md)
