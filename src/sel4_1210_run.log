@@ -1,0 +1,1610 @@
+U-Boot> fatload mmc 0 0x10000000 sel4test-driver-image-arm-bcm2837
+4714744 bytes read in 207 ms (21.7 MiB/s)
+U-Boot> go 0x10000000
+## Starting application at 0x10000000 ...
+
+ELF-loader started on CPU: ARM Ltd. Cortex-A53 r0p4
+  paddr=[a24000..ea30f7]
+No DTB passed in from boot loader.
+Looking for DTB in CPIO archive...found at b158f8.
+Loaded DTB from b158f8.
+   paddr=[23c000..23ffff]
+ELF-loading image 'kernel' to 0
+  paddr=[0..23bfff]
+  vaddr=[ffffff8000000000..ffffff800023bfff]
+  virt_entry=ffffff8000000000
+ELF-loading image 'sel4test-driver' to 240000
+  paddr=[240000..625fff]
+  vaddr=[400000..7e5fff]
+  virt_entry=40f088
+Enabling MMU and paging
+Jumping to kernel-image entry point...
+
+Bootstrapping kernel
+Booting all finished, dropped to user space
+Node 0 of 1
+IOPT levels:     0
+IPC buffer:      0x7e6000
+Empty slots:     [1074 --> 8192)
+sharedFrames:    [0 --> 0)
+userImageFrames: [23 --> 1021)
+userImagePaging: [14 --> 18)
+untypeds:        [1021 --> 1074)
+Initial thread domain: 0
+Initial thread cnode size: 13
+List of untypeds
+------------------
+Paddr    | Size   | Device
+0x8000000 | 27 | 1
+0x10000000 | 28 | 1
+0x20000000 | 29 | 1
+0x40001000 | 12 | 1
+0x40002000 | 13 | 1
+0x40004000 | 14 | 1
+0x40008000 | 15 | 1
+0x40010000 | 16 | 1
+0x40020000 | 17 | 1
+0x40040000 | 18 | 1
+0x40080000 | 19 | 1
+0x40100000 | 20 | 1
+0x40200000 | 21 | 1
+0x40400000 | 22 | 1
+0x40800000 | 23 | 1
+0x41000000 | 24 | 1
+0x42000000 | 25 | 1
+0x44000000 | 26 | 1
+0x48000000 | 27 | 1
+0x50000000 | 28 | 1
+0x60000000 | 29 | 1
+0x80000000 | 31 | 1
+0x100000000 | 32 | 1
+0x200000000 | 33 | 1
+0x400000000 | 34 | 1
+0x800000000 | 35 | 1
+0x1000000000 | 36 | 1
+0x2000000000 | 37 | 1
+0x4000000000 | 38 | 1
+0x8000000000 | 39 | 1
+0 | 16 | 0
+0x626000 | 13 | 0
+0x628000 | 15 | 0
+0x630000 | 16 | 0
+0x640000 | 18 | 0
+0x680000 | 19 | 0
+0x700000 | 20 | 0
+0x800000 | 23 | 0
+0x1000000 | 24 | 0
+0x2000000 | 25 | 0
+0x4000000 | 25 | 0
+0x6000000 | 24 | 0
+0x7000000 | 23 | 0
+0x7800000 | 22 | 0
+0x7c00000 | 21 | 0
+0x7e00000 | 20 | 0
+0x7f00000 | 19 | 0
+0x7fd0800 | 11 | 0
+0x7fd1000 | 12 | 0
+0x7fd2000 | 13 | 0
+0x7fd4000 | 14 | 0
+0x7fd8000 | 15 | 0
+0x7fe0000 | 17 | 0
+Untyped summary
+1 untypeds of size 11
+2 untypeds of size 12
+3 untypeds of size 13
+2 untypeds of size 14
+3 untypeds of size 15
+3 untypeds of size 16
+2 untypeds of size 17
+2 untypeds of size 18
+3 untypeds of size 19
+3 untypeds of size 20
+2 untypeds of size 21
+2 untypeds of size 22
+3 untypeds of size 23
+3 untypeds of size 24
+3 untypeds of size 25
+1 untypeds of size 26
+2 untypeds of size 27
+2 untypeds of size 28
+2 untypeds of size 29
+1 untypeds of size 31
+1 untypeds of size 32
+1 untypeds of size 33
+1 untypeds of size 34
+1 untypeds of size 35
+1 untypeds of size 36
+1 untypeds of size 37
+1 untypeds of size 38
+1 untypeds of size 39
+Switching to a safer, bigger stack... 
+seL4 Test
+=========
+
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 2147483648, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 1073741824, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 536870912, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 268435456, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 134217728, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 67108864, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 33554432, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 16777216, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 8388608, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 4194304, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 2097152, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 1048576, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 524288, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 262144, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 131072, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 65536, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 32768, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 16384, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 8192, error 1
+vspace_reserve_range_at@vspace.h:738 vspace is NULL
+create_reservations@elf.c:243 Failed to make reservation: 0x400000, 897024
+elf_reserve_regions_in_vspace@elf.c:436 Failed to create reservations
+sel4utils_elf_reserve@elf.c:463 Failed to reserve regions
+Starting test suite sel4test
+Starting test 0: Test that there are tests
+Starting test 1: SYSCALL0000
+Starting test 2: SYSCALL0001
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+Starting test 3: SYSCALL0002
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+Starting test 4: SYSCALL0003
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+Starting test 5: SYSCALL0004
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404cc4]: CNodeCap: Illega>
+Starting test 6: SYSCALL0005
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+Starting test 7: SYSCALL0006
+          Starting test 8: SYSCALL0010
+Starting test 9: SYSCALL0011
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404da4]: Attempted reply operation>
+Starting test 10: SYSCALL0012
+Starting test 11: SYSCALL0013
+Starting test 12: SYSCALL0014
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+Starting test 13: SYSCALL0015
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404c54]: CNodeCap: Illega>
+Starting test 14: SYSCALL0016
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+<<seL4(CPU 0) [handleReply/494 T0xffffff8007fd0400 "sel4test-driver" @404c98]: Attempted reply operation>
+Starting test 15: SYSCALL0017
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+<<seL4(CPU 0) [decodeCNodeInvocation/54 T0xffffff8007fd0400 "sel4test-driver" @404da4]: CNodeCap: Illega>
+Starting test 16: TIMER0001
+Starting test 17: TIMER0002
+Starting test 18: BIND0001
+Running test BIND0001 (Test that a bound tcb waiting on a sync endpoint receives normal sync ipc and not)
+Test BIND0001 passed
+Starting test 19: BIND0002
+Running test BIND0002 (Test that a bound tcb waiting on its bound notification recieves notifications)
+Test BIND0002 passed
+Starting test 20: BIND0003
+Running test BIND0003 (Test IPC ordering 1) bound tcb waits on bound notification 2, true) another tcb s)
+Test BIND0003 passed
+Starting test 21: BIND0004
+Running test BIND0004 (Test IPC ordering 2) bound tcb waits on bound notification 1, true) another tcb s)
+Test BIND0004 passed
+Starting test 22: CACHEFLUSH0001
+Running test CACHEFLUSH0001 (Test a cache maintenance on pages)
+Test CACHEFLUSH0001 passed
+Starting test 23: CACHEFLUSH0002
+Running test CACHEFLUSH0002 (Test a cache maintenance on page directories)
+Test CACHEFLUSH0002 passed
+Starting test 24: CACHEFLUSH0003
+Running test CACHEFLUSH0003 (Test that cache maintenance can be done on large pages)
+Test CACHEFLUSH0003 passed
+Starting test 25: CANCEL_BADGED_SENDS_0001
+Running test CANCEL_BADGED_SENDS_0001 (Basic endpoint cancelBadgedSends testing.)
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ff5c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000698400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000698c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f09400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f09c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2e400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2ec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f54400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f54c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800071f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800071fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000745400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000745c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000790400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000790c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b5400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b5c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007db400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007dbc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007e00400 "child of: '28'" @41192c]: Attempted to invoke a>
+Test CANCEL_BADGED_SENDS_0001 passed
+Starting test 26: CANCEL_BADGED_SENDS_0002
+Running test CANCEL_BADGED_SENDS_0002 (cancelBadgedSends deletes caps)
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007dc400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007dc400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007dcc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007dc400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007dcc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007e02400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800064ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000670c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000699c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006be400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006bec00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80006e4c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0a400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f0ac00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2f400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f2fc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f55c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007f7bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000720c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000746c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076b400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff800076bc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8000791c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007b7c00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007dc400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff80007dcc00 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007e02400 "child of: '28'" @41192c]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007e02c00 "child of: '28'" @41192c]: Attempted to invoke a>
+Test CANCEL_BADGED_SENDS_0002 passed
+Starting test 27: CNODEOP0001
+Running test CNODEOP0001 (Basic seL4_CNode_Copy() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800404e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800404e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800404e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800404e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800404e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800404e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800404e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+Test CNODEOP0001 passed
+Starting test 28: CNODEOP0002
+Running test CNODEOP0002 (Basic seL4_CNode_Delete() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004256400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004256400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+Test CNODEOP0002 passed
+Starting test 29: CNODEOP0003
+Running test CNODEOP0003 (Basic seL4_CNode_Mint() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004036400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+Test CNODEOP0003 passed
+Starting test 30: CNODEOP0004
+Running test CNODEOP0004 (Basic seL4_CNode_Move() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004236400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004236400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004236400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004236400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+Test CNODEOP0004 passed
+Starting test 31: CNODEOP0005
+Running test CNODEOP0005 (Basic seL4_CNode_Mutate() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+Test CNODEOP0005 passed
+Starting test 32: CNODEOP0006
+Running test CNODEOP0006 (Basic seL4_CNode_CancelBadgedSends() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800400e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/224 T0xffffff800400e400 "28" @4007c0]: CNode CancelBadgedSends: Tar>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+Test CNODEOP0006 passed
+Starting test 33: CNODEOP0007
+Running test CNODEOP0007 (Basic seL4_CNode_Revoke() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004066400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004066400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+Test CNODEOP0007 passed
+Starting test 34: CNODEOP0008
+Running test CNODEOP0008 (Basic seL4_CNode_Rotate() testing)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/266 T0xffffff8004226400 "28" @4007c0]: CNode Rotate: Pivot slot the>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004226400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+Test CNODEOP0008 passed
+Starting test 35: CNODEOP0009
+Running test CNODEOP0009 (Basic seL4_CNode_SaveCaller() testing)
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff8004056400 "28" @4007c0]: CNode SaveCaller: Reply cap >
+<<seL4(CPU 0) [decodeCNodeInvocation/209 T0xffffff8004056400 "28" @4007c0]: CNode SaveCaller: Destinatio>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff8004056400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+Test CNODEOP0009 passed
+Starting test 36: CSPACE0001
+Running test CSPACE0001 (Test full cspace resolution)
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+<<seL4(CPU 0) [decodeInvocation/637 T0xffffff8007ffbc00 "child of: '28'" @40f388]: Attempted to invoke a>
+Test CSPACE0001 passed
+Starting test 37: DOMAINS0001
+Running test DOMAINS0001 (Change domain successfully())
+Test DOMAINS0001 passed
+Starting test 38: DOMAINS0002
+Running test DOMAINS0002 (Try non-existant domain())
+<<seL4(CPU 0) [decodeDomainInvocation/1565 T0xffffff8004256400 "28" @410c90]: Domain Configure: invalid >
+Test DOMAINS0002 passed
+Starting test 39: DOMAINS0003
+Running test DOMAINS0003 (Invoke non-domain cap())
+<<seL4(CPU 0) [decodeTCBInvocation/869 T0xffffff8004036400 "28" @410c90]: TCB: Illegal operation.>>
+Test DOMAINS0003 passed
+Starting test 40: DOMAINS0004
+Running test DOMAINS0004 (Run threads in domains())
+Test DOMAINS0004 passed
+Starting test 41: FPU0000
+Running test FPU0000 (Ensure that simple FPU operations work)
+Test FPU0000 passed
+Starting test 42: FPU0001
+Running test FPU0001 (Ensure multiple threads can use FPU simultaneously)
+Test FPU0001 passed
+Starting test 43: FRAMEDIPC0001
+Running test FRAMEDIPC0001 (Test that we cannot create a thread with an IPC buffer that is a frame)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004066400 "28" @41a728]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [checkValidIPCBuffer/621 T0xffffff8004066400 "28" @41a728]: IPC Buffer is an invalid cap.>>
+Test FRAMEDIPC0001 passed
+Starting test 44: FRAMEDIPC0002
+Running test FRAMEDIPC0002 (Test that we cannot switch a threads IPC buffer to a device frame)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004226400 "28" @41a728]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [checkValidIPCBuffer/621 T0xffffff8004226400 "28" @41a728]: IPC Buffer is an invalid cap.>>
+Test FRAMEDIPC0002 passed
+Starting test 45: FRAMEDIPC0003
+Running test FRAMEDIPC0003 (Test that deleting a frame cap unmaps the frame)
+Test FRAMEDIPC0003 passed
+Starting test 46: FRAMEEXPORTS0001
+Running test FRAMEEXPORTS0001 (Test that we can access all exported frames)
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 2097152, error 1
+vka_alloc_object_at_maybe_dev@object.h:57 Failed to allocate object of size 4096, error 1
+Test FRAMEEXPORTS0001 passed
+Starting test 47: FRAMEXN0001
+Running test FRAMEXN0001 (Test that we can map a small frame XN)
+Test FRAMEXN0001 passed
+Starting test 48: FRAMEXN0002
+Running test FRAMEXN0002 (Test that we can map a large frame XN)
+Test FRAMEXN0002 passed
+Starting test 49: IPC0001
+Running test IPC0001 (Test SMP seL4_Send + seL4_Recv)
+Test IPC0001 passed
+Starting test 50: IPC0002
+Running test IPC0002 (Test SMP seL4_Call + seL4_ReplyRecv)
+Test IPC0002 passed
+Starting test 51: IPC0003
+Running test IPC0003 (Test SMP seL4_Send + seL4_Reply + seL4_Recv)
+Test IPC0003 passed
+Starting test 52: IPC0004
+Running test IPC0004 (Test seL4_NBSend + seL4_Recv)
+Test IPC0004 passed
+Starting test 53: IPC0010
+Running test IPC0010 (Test suspending an IPC mid-Call())
+Test IPC0010 passed
+Starting test 54: IPC1001
+Running test IPC1001 (Test SMP inter-AS seL4_Send + seL4_Recv)
+Test IPC1001 passed
+Starting test 55: IPC1002
+Running test IPC1002 (Test SMP inter-AS seL4_Call + seL4_ReplyRecv)
+Test IPC1002 passed
+Starting test 56: IPC1003
+Running test IPC1003 (Test SMP inter-AS seL4_Send + seL4_Reply + seL4_Recv)
+Test IPC1003 passed
+Starting test 57: IPC1004
+Running test IPC1004 (Test inter-AS seL4_NBSend + seL4_Recv)
+Test IPC1004 passed
+Starting test 58: IPCRIGHTS0001
+Running test IPCRIGHTS0001 (seL4_Send needs write)
+<<seL4(CPU 0) [decodeInvocation/650 T0xffffff8004256400 "28" @427050]: Attempted to invoke a read-only e>
+<<seL4(CPU 0) [decodeInvocation/650 T0xffffff8004256400 "28" @427050]: Attempted to invoke a read-only e>
+Test IPCRIGHTS0001 passed
+Starting test 59: IPCRIGHTS0002
+Running test IPCRIGHTS0002 (seL4_Recv needs read)
+Test IPCRIGHTS0002 passed
+Starting test 60: IPCRIGHTS0003
+Running test IPCRIGHTS0003 (seL4_Send with caps needs grant)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8007ff5c00 "child of: '28'" @4007c0]: CNode Copy/Mint/>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8007ff5c00 "child of: '28'" @4007c0]: CNode Copy/Mint/>
+Test IPCRIGHTS0003 passed
+Starting test 61: IPCRIGHTS0004
+Running test IPCRIGHTS0004 (seL4_Call needs grant or grant-reply)
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff800402e400 "28" @4007c0]: CNode SaveCaller: Reply cap >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff800402e400 "28" @4007c0]: CNode SaveCaller: Reply cap >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff800402e400 "28" @4007c0]: CNode SaveCaller: Reply cap >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff800402e400 "28" @4007c0]: CNode SaveCaller: Reply cap >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff800402e400 "28" @4007c0]: CNode SaveCaller: Reply cap >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [invokeCNodeSaveCaller/374 T0xffffff800402e400 "28" @4007c0]: CNode SaveCaller: Reply cap >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+Test IPCRIGHTS0004 passed
+Starting test 62: IPCRIGHTS0005
+Running test IPCRIGHTS0005 (seL4_Reply grant depends of the grant of previous seL4_Recv)
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8007ff5c00 "child of: '28'" @4007c0]: CNode Copy/Mint/>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8007ff5c00 "child of: '28'" @4007c0]: CNode Copy/Mint/>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800400e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8007ff5c00 "child of: '28'" @4007c0]: CNode Copy/Mint/>
+<<seL4(CPU 0) [decodeCNodeInvocation/95 T0xffffff800400e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate: >
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @4007c0]: CNode Copy/Mint/Move/Mutate:>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8007ff5c00 "child of: '28'" @4007c0]: CNode Copy/Mint/>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8007ff5c00 "child of: '28'" @4007c0]: CNode Copy/Mint/>
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8007ff5c00 "child of: '28'" @4007c0]: CNode Copy/Mint/>
+Test IPCRIGHTS0005 passed
+Starting test 63: NBWAIT0001
+Running test NBWAIT0001 (Test seL4_NBRecv)
+Test NBWAIT0001 passed
+Starting test 64: PAGEFAULT0001
+Running test PAGEFAULT0001 (Test read page fault)
+Test PAGEFAULT0001 passed
+Starting test 65: PAGEFAULT0002
+Running test PAGEFAULT0002 (Test write page fault)
+Test PAGEFAULT0002 passed
+Starting test 66: PAGEFAULT0003
+Running test PAGEFAULT0003 (Test execute page fault)
+Test PAGEFAULT0003 passed
+Starting test 67: PAGEFAULT0004
+Running test PAGEFAULT0004 (Test unknown system call)
+Test PAGEFAULT0004 passed
+Starting test 68: PAGEFAULT0005
+Running test PAGEFAULT0005 (Test undefined instruction)
+Test PAGEFAULT0005 passed
+Starting test 69: PAGEFAULT1001
+Running test PAGEFAULT1001 (Test read page fault (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004036400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+Test PAGEFAULT1001 passed
+Starting test 70: PAGEFAULT1002
+Running test PAGEFAULT1002 (Test write page fault (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff8004236400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+Test PAGEFAULT1002 passed
+Starting test 71: PAGEFAULT1003
+Running test PAGEFAULT1003 (Test execute page fault (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800402e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+Test PAGEFAULT1003 passed
+Starting test 72: PAGEFAULT1004
+Running test PAGEFAULT1004 (Test unknown system call (inter-AS))
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+<<seL4(CPU 0) [decodeCNodeInvocation/107 T0xffffff800400e400 "28" @467994]: CNode Copy/Mint/Move/Mutate:>
+sel4utils_copy_path_to_process@process.c:131 Failed to copy cap
+
+Test PAGEFAULT1004 passed
+Starting test 73: PREEMPT_REVOKE
+Running test PREEMPT_REVOKE (Test preemption path in revoke)
+Test PREEMPT_REVOKE passed
+Starting test 74: PT0001
+Running test PT0001 (Fun with page tables on ARM)
+<<seL4(CPU 0) [decodeARMFrameInvocation/2124 T0xffffff8004226400 "28" @42f5c4]: ARMPageMap: Attempting t>
+clear_entries_mid@vspace_internal.h:169 Cannot clear reserved entries mid level
+Test PT0001 passed
+Starting test 75: REGRESSIONS0001
+Running test REGRESSIONS0001 (Ensure WriteRegisters functions correctly)
+Test REGRESSIONS0001 passed
+Starting test 76: REGRESSIONS0002
+Running test REGRESSIONS0002 (Test the load-exclusive monitor is cleared on context switch)
+Test REGRESSIONS0002 passed
+Starting test 77: RETYPE0000
+Running test RETYPE0000 (Retype test)
+<<seL4(CPU 0) [decodeUntypedInvocation/146 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Number of >
+<<seL4(CPU 0) [decodeUntypedInvocation/154 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Requested >
+<<seL4(CPU 0) [decodeUntypedInvocation/138 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Destinatio>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Slot #0 in>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Slot #1 in>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Slot #2 in>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Slot #3 in>
+<<seL4(CPU 0) [decodeUntypedInvocation/146 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Number of >
+<<seL4(CPU 0) [decodeUntypedInvocation/154 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Requested >
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Slot #0 in>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Slot #1 in>
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff800404e400 "28" @41e10c]: Untyped Retype: Slot #2 in>
+Test RETYPE0000 passed
+Starting test 78: RETYPE0001
+Running test RETYPE0001 (Incremental retype test)
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Invalid obj>
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Invalid obj>
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Invalid obj>
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Invalid obj>
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Invalid obj>
+<<seL4(CPU 0) [decodeUntypedInvocation/81 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Invalid obj>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004256400 "28" @41e10c]: Untyped Retype: Insufficie>
+Test RETYPE0001 passed
+Starting test 79: RETYPE0002
+Running test RETYPE0002 (Incremental retype test #2)
+<<seL4(CPU 0) [decodeUntypedInvocation/146 T0xffffff8004036400 "28" @41e10c]: Untyped Retype: Number of >
+<<seL4(CPU 0) [decodeUntypedInvocation/166 T0xffffff8004036400 "28" @41e10c]: Untyped Retype: Slot #101 >
+<<seL4(CPU 0) [decodeUntypedInvocation/205 T0xffffff8004036400 "28" @41e10c]: Untyped Retype: Insufficie>
+Test RETYPE0002 passed
+Starting test 80: SCHED0000
+Running test SCHED0000 (Test suspending and resuming a thread (flaky))
+Test SCHED0000 passed
+Starting test 81: SCHED0002
+Running test SCHED0002 (Test resuming ourselves)
+Test SCHED0002 passed
+Starting test 82: SCHED0003
+Running test SCHED0003 (Test TCB suspend/resume)
+Test SCHED0003 passed
+Starting test 83: SCHED0004
+Running test SCHED0004 (Test threads at all priorities)
+Test SCHED0004 passed
+Starting test 84: SCHED0005
+Running test SCHED0005 (Test set priority)
+<<seL4(CPU 0) [decodeSetPriority/1168 T0xffffff800064a400 "child of: '28'" @43e304]: TCB SetPriority: Re>
+<<seL4(CPU 0) [decodeSetPriority/1168 T0xffffff8007ff5c00 "child of: '28'" @43e304]: TCB SetPriority: Re>
+<<seL4(CPU 0) [decodeSetMCPriority/1212 T0xffffff8007ff5c00 "child of: '28'" @43e304]: TCB SetMCPriority>
+Test SCHED0005 passed
+Starting test 85: SCHED0006
+Running test SCHED0006 (Test IPC priorities for Send)
+Test SCHED0006 passed
+Starting test 86: SCHED0020
+Running test SCHED0020 (test set prio to a higher prio runs higher prio thread)
+Test SCHED0020 passed
+Starting test 87: SCHED0021
+Running test SCHED0021 (Test for pre-emption during running of many threads with equal prio)
+Test SCHED0021 passed
+Starting test 88: SERSERV_CLIENT_001
+Running test SERSERV_CLIENT_001 (Connect from client threads)
+Test SERSERV_CLIENT_001 passed
+Starting test 89: SERSERV_CLIENT_002
+Running test SERSERV_CLIENT_002 (Printf from client threads)
+Hello, world!
+Test SERSERV_CLIENT_002 passed
+Starting test 90: SERSERV_CLIENT_003
+Running test SERSERV_CLIENT_003 (Write from client threads)
+Hello, world!
+Test SERSERV_CLIENT_003 passed
+Starting test 91: SERSERV_CLIENT_004
+Running test SERSERV_CLIENT_004 (Printf, then write, then reset connection, and Printf, then write again)
+Hello, world!
+Hello, world!
+Hello, world!
+Hello, world!
+Test SERSERV_CLIENT_004 passed
+Starting test 92: SERSERV_CLIENT_005
+Running test SERSERV_CLIENT_005 (Connect, then disconnect from server on all threads, then kill server f)
+Test SERSERV_CLIENT_005 passed
+Starting test 93: SERSERV_CLI_PROC_001
+Running test SERSERV_CLI_PROC_001 (Connect to server from a client in another VSpace and CSpace)
+Test SERSERV_CLI_PROC_001 passed
+Starting test 94: SERSERV_CLI_PROC_002
+Running test SERSERV_CLI_PROC_002 (Connect to server and printf(, true), from a client in another VSpace)
+Hello, world!
+Test SERSERV_CLI_PROC_002 passed
+Starting test 95: SERSERV_CLI_PROC_003
+Running test SERSERV_CLI_PROC_003 (Connect to server and write(, true), from a client in another VSpace )
+Hello, world!
+Test SERSERV_CLI_PROC_003 passed
+Starting test 96: SERSERV_CLI_PROC_004
+Running test SERSERV_CLI_PROC_004 (Connect to server, printf(), write(, true), then disconnect, then rec)
+Hello, world!
+Hello, world!
+Hello, world!
+Hello, world!
+Test SERSERV_CLI_PROC_004 passed
+Starting test 97: SERSERV_CLI_PROC_005
+Running test SERSERV_CLI_PROC_005 (Connect to server then disconnect on all clients (in different VSpace)
+Test SERSERV_CLI_PROC_005 passed
+Starting test 98: SERSERV_PARENT_001
+Running test SERSERV_PARENT_001 (Serial server spawn test)
+Test SERSERV_PARENT_001 passed
+Starting test 99: SERSERV_PARENT_002
+Running test SERSERV_PARENT_002 (Test connecting to the server from a parent thread)
+Test SERSERV_PARENT_002 passed
+Starting test 100: SERSERV_PARENT_003
+Running test SERSERV_PARENT_003 (Printf() from a connected parent thread)
+Hello, world!
+Test SERSERV_PARENT_003 passed
+Starting test 101: SERSERV_PARENT_004
+Running test SERSERV_PARENT_004 (Write() from a connected parent thread)
+Hello, world!
+Test SERSERV_PARENT_004 passed
+Starting test 102: SERSERV_PARENT_005
+Running test SERSERV_PARENT_005 (Test printf() and write() from a parent thread when after a connection )
+Hello, world!
+Hello, world!
+Hello, world!
+Hello, world!
+Test SERSERV_PARENT_005 passed
+Starting test 103: SERSERV_PARENT_006
+Running test SERSERV_PARENT_006 (Kill the Server from the Parent thread)
+Test SERSERV_PARENT_006 passed
+Starting test 104: SERSERV_PARENT_007
+Running test SERSERV_PARENT_007 (Test a series of unexpected input values to spawn_thread)
+Test SERSERV_PARENT_007 passed
+Starting test 105: SERSERV_PARENT_008
+Running test SERSERV_PARENT_008 (Test a series of unexpected input values to connect())
+Test SERSERV_PARENT_008 passed
+Starting test 106: SERSERV_PARENT_009
+Running test SERSERV_PARENT_009 (Test a series of unexpected input values to printf())
+serial_server_printf@clientapi.c:178 Serserv Client: printf: NULL passed for required arguments.
+        Is connection handle valid?
+serial_server_printf@clientapi.c:178 Serserv Client: printf: NULL passed for required arguments.
+        Is connection handle valid?
+Test SERSERV_PARENT_009 passed
+Starting test 107: SERSERV_PARENT_010
+Running test SERSERV_PARENT_010 (Test a series of unexpected input values to write())
+serial_server_write@clientapi.c:221 Serserv Client: printf: NULL passed for required arguments.
+        Is connection handle valid?
+serial_server_write@clientapi.c:221 Serserv Client: printf: NULL passed for required arguments.
+        Is connection handle valid?
+Test SERSERV_PARENT_010 passed
+Starting test 108: SYNC001
+Running test SYNC001 (libsel4sync Test binary semaphores)
+Test SYNC001 passed
+Starting test 109: SYNC002
+Running test SYNC002 (libsel4sync Test semaphores)
+Test SYNC002 passed
+Starting test 110: SYNC003
+Running test SYNC003 (libsel4sync Test monitors)
+Test SYNC003 passed
+Starting test 111: SYNC004
+Running test SYNC004 (libsel4sync Test monitors - broadcast)
+Test SYNC004 passed
+Starting test 112: THREADS0004
+Running test THREADS0004 (seL4_TCB_Configure with a NULL CSpace should fail)
+<<seL4(CPU 0) [decodeTCBConfigure/1103 T0xffffff800400e400 "28" @4501e8]: TCB Configure: CSpace cap is i>
+Test THREADS0004 passed
+Starting test 113: THREADS0005
+Running test THREADS0005 (seL4_TCB_SetSpace with a NULL CSpace should fail)
+<<seL4(CPU 0) [decodeSetSpace/1498 T0xffffff8004066400 "28" @4501e8]: TCB SetSpace: Invalid CNode cap.>>
+Test THREADS0005 passed
+Starting test 114: TLS0001
+Running test TLS0001 (Test root thread accessing __thread variables)
+Test TLS0001 passed
+Starting test 115: TLS0002
+Running test TLS0002 (Test multiple threads using __thread variables)
+Test TLS0002 passed
+Starting test 116: TLS0006                                                            
+Running test TLS0006 (sel4utils_thread with distinct TLS should not interfere)        
+Test TLS0006 passed                                                                   
+Starting test 117: TRIVIAL0000                                                        
+Running test TRIVIAL0000 (Ensure the test framework functions)                        
+Test TRIVIAL0000 passed                                                               
+Starting test 118: TRIVIAL0001                                                        
+Running test TRIVIAL0001 (Ensure the allocator works)                                 
+Test TRIVIAL0001 passed                                                               
+Starting test 119: TRIVIAL0002                                                        
+Running test TRIVIAL0002 (Ensure the allocator works more than once)                  
+Test TRIVIAL0002 passed                                                               
+Starting test 120: VSPACE0000                                                         
+Running test VSPACE0000 (Test threads in different cspace/vspace)                     
+Test VSPACE0000 passed                                                                
+Starting test 121: VSPACE0001                                                         
+Running test VSPACE0001 (Test unmapping a page after deleting the PD)                 
+Test VSPACE0001 passed                                                                
+Starting test 122: VSPACE0002                                                         
+Running test VSPACE0002 (Test create ASID pool)
+Test VSPACE0002 passed
+Starting test 123: VSPACE0003
+Running test VSPACE0003 (Test create multiple ASID pools)
+Test VSPACE0003 passed
+Starting test 124: VSPACE0004
+Running test VSPACE0004 (Test running out of ASID pools)
+Test VSPACE0004 passed
+Starting test 125: VSPACE0005
+Running test VSPACE0005 (Test overassigning ASID pool)
+Test VSPACE0005 passed
+Starting test 126: VSPACE0006
+Running test VSPACE0006 (Test touching all available ASID pools)
+Test VSPACE0006 passed
+Starting test 128: Test all tests ran
+Test suite passed. 128 tests passed. 41 tests disabled.
+All is well in the universe
+
+

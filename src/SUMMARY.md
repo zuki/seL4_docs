@@ -18,4 +18,5 @@
 # 実行メモ
 
 - [QEMU上のseL4の実行メモ](sel4-test_memo.md)
-- [Raspi3B+上のseL4の実行メモ](sel4_rpi3.md)
+- [rpi3 32版の実行メモ](sel4_rpi3.md)
+- [rpi3 64版の実行メモ](sel4_rpi3_64.md)
