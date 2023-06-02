@@ -1,4 +1,4 @@
-# seL3をraspiで動かす
+# rpi3 32版の実行メモ
 
 ```
 $ mkdir build-rpi && c build-rpi
@@ -213,7 +213,9 @@ Kernel entry via Unknown syscall, word: 1
 
 ## u-bootをコンパイル
 
-ubuntu2004上で作業
+- ubuntu2004上で作業
+- `multiple definitions`対策のコード修正
+- キャッシュを無効にするためのパッチ適用
 
 ```
 $ git clone https://github.com/u-boot/u-boot.git u-boot
@@ -1095,7 +1097,7 @@ $ ninja
 
 ## コミットを発見
 
-[commit 5a34161: Do not generate data symbols for enums](https://github.com/seL4/seL4/commit/5a341610c4a4bc14f9cd86f31e39a34223c754d1#diff-abbb42a89b63341bd26357c8addae2ee68025e835e477bedc71e419401ddd054)がそれらしい
+[commit 5a34161: Do not generate data symbols for enums](https://github.com/seL4/seL4/commit/5a341610c4a4bc14f9cd86f31e39a34223c754d1#diff-abbb42a89b63341bd26357c8addae2ee68025e835e477bedc71e419401ddd054)がそれらしい。適用して実行すると`multiple definitions`によるエラーは解決した。
 
 ```diff
 $ git diff
@@ -1392,9 +1394,16 @@ cc1: all warnings being treated as errors
 ninja: build stopped: subcommand failed.
 ```
 
-エラーが変わった。
+- エラーが変わった。
+    ```
+    `error: converting a packed ‘struct testcase’ pointer (alignment 1) to a ‘testcase_t’ {aka ‘struct testcase’} pointer (alignment 64) may result in an unaligned pointer value [-Werror=address-of-packed-member]`
+    ```
 
-```
+## コンパイラオプションに`-Werror=address-of-packed-member`をつけて実行
+
+結果は同じだった
+
+```bash
 $ cd ../projects/sel4test
 $ git diff
 diff --git a/apps/sel4test-driver/CMakeLists.txt b/apps/sel4test-driver/CMakeLists.txt
@@ -1436,12 +1445,13 @@ index 418a79f..a4abdbc 100644
  DeclareRootserver(sel4test-driver)
 
 $ ninja
-## 結果は同じ
-...
-
-## gccの旧バージョン(gcc 10)をインストールする
-
 ```
+
+## gccの旧バージョン(gcc 10)を試す
+
+結果は同じでEABIバージョンが違うというエラーとなる
+
+```bash
 $ sudo apt install gcc-10-arm-linux-gnueabi g++-10-arm-linux-gnueabi
 
 ## update-alternativesに登録して選択
@@ -1488,9 +1498,9 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-結果は同じでEABIバージョンが違うというエラーとなる
-
 ## elfloader-tool/archive.oを直接修正
+
+これでうまく行った。これをビルドプロセスのどこで指定するのかは今のところ不明。
 
 ```bash
 $ arm-linux-gnueabi-readelf -h sel4test/build-rpi3/elfloader-tool/archive.o
@@ -1557,7 +1567,7 @@ $ xxd sel4/build-rpi/elfloader/archive.o
 
 elfヘッダーの`^`の部分をhexeditで直接変更でうまく行った。archive.oは
 
-```
+```bash
 $ ninja
 [2/2] Generating ../../../../images/sel4test-driver-image-arm-bcm2837          // imageの作成に成功
 $ ls images
@@ -1566,7 +1576,7 @@ sel4test-driver-image-arm-bcm2837
 
 raspiで実行するとエラーはあるが最後まで実行された[ログ](sel4_run.log)。
 
-```
+```bash
 U-Boot> fatload mmc 0 0x10000000 sel4test-driver-image-arm-bcm2837
 4582872 bytes read in 201 ms (21.7 MiB/s)
 U-Boot> bootelf 0x10000000
