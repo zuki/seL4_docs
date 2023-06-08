@@ -451,7 +451,7 @@ bcm_system_timer_init@system_timer.c:214 Failed to allocate with fdt
 # CURRENT: util_libs/libplatsupport/src/mach/bcm/ltimer.c
 # 10.0.x-compatible: src/plat/bcm2837/ltimer.c
 ltimer_default_init@ltimer.c:112 system timer initialisation failed
-# CURRENT : sel4test/apps/sel4test-tests/src/main.c
+# CURRENT : sel4test/apps/sel4test-driver/src/main.c
 init_timer@main.c:181 [Cond failed: error]
         Failed to setup the timers
 seL4 root server abort()ed
