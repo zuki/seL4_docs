@@ -24,3 +24,4 @@
 - [rpi3 64版masterの調査メモ](src/memos/sel4_master_rpi3.md)
 - [rapi3b+のデバイスツリーの割り込み関連の調査](src/memos/interrupt_controller_rpi3.md)
 - [masterとv12.1.0の違い](src/memos/diff_master_v1201.md)
+- [tftpからのロード](src/memos/tftp.md)
