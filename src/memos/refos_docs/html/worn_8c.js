@@ -1,0 +1,25 @@
+var worn_8c =
+[
+    [ "worn", "structworn.html", "structworn" ],
+    [ "RACE_EXCEPTION", "worn_8c.html#afd46ee9687c8edc75261c0d3ac5a55b9", null ],
+    [ "w_blocks", "worn_8c.html#a903e52306a23a5d2a7123f1e0eca01c8", null ],
+    [ "bypass_obj", "worn_8c.html#acd31fb3fce41b2fa37b0556364fe171f", null ],
+    [ "clear_bypasses", "worn_8c.html#a77195bfffea4cea88a90989296c348e2", null ],
+    [ "extra_pref", "worn_8c.html#a5ebac5438558682a47fb6dd7e404e388", null ],
+    [ "FDECL", "worn_8c.html#a5229ab83aba90e267b4c0765887601f4", null ],
+    [ "FDECL", "worn_8c.html#a72f84ef6e9d9ff1840d6d6abe4877a0f", null ],
+    [ "FDECL", "worn_8c.html#afc1a5ef7d3c77ee6721ee1d80cf8972c", null ],
+    [ "find_mac", "worn_8c.html#a03e1b53b51c959a61e4c205e65d1095a", null ],
+    [ "m_dowear", "worn_8c.html#a7e0d383cf09a999a333ec1154d0d52f3", null ],
+    [ "m_dowear_type", "worn_8c.html#a84588b4c1d29698164d2dc5583654edf", null ],
+    [ "m_lose_armor", "worn_8c.html#a2ed9f1278ca77ca1b6f903bbd4150ba8", null ],
+    [ "mon_adjust_speed", "worn_8c.html#adaf11e4f4e6b2b5d86738411700e6050", null ],
+    [ "mon_break_armor", "worn_8c.html#af06e1b52b22b9e6641e37d0199a11132", null ],
+    [ "mon_set_minvis", "worn_8c.html#a56f8afd7b14461c6d2cb639b68d4c44d", null ],
+    [ "racial_exception", "worn_8c.html#a5b642b7d8b636062537ac732cdcfc11f", null ],
+    [ "setnotworn", "worn_8c.html#ad72610189befffb6382242d8cb32a7c7", null ],
+    [ "setworn", "worn_8c.html#ae7018d12ec8662328050dfd7bd8dc903", null ],
+    [ "update_mon_intrinsics", "worn_8c.html#af698b30adfe86cacfe152fa4010d46c8", null ],
+    [ "which_armor", "worn_8c.html#a260cadb0c77a7032f8e53716072e6cd7", null ],
+    [ "worn", "worn_8c.html#ac3ea2ce501a5358748d6f5fbfc7cbba1", null ]
+];

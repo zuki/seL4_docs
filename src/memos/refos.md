@@ -209,3 +209,23 @@ refos:/$ exec fileserv/tetris
 [実行ログ](refos.log)
 
 ![tetris](refos_tetris.png)
+
+## デザイン文書の作成
+
+[デザイン文書](refos_docs/design.pdf)
+
+```bash
+$ sudo apt install texlive-latex-base mscgen texlive-latex-extra texlive-fonts-recommended
+$ sudo apt install sudo apt install texlive-font-utils    # epstopdf
+$ make desing
+...
+[DESIGN] OK. Please open file '/home/vagrant/refos/projects/refos/design/paper.pdf'
+```
+
+## Doxygenコードドキュメントの作成
+
+[コードドキュメント](refos_docs/html/index.html)
+
+```bash
+$ make docs
+```

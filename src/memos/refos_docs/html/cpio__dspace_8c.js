@@ -1,0 +1,26 @@
+var cpio__dspace_8c =
+[
+    [ "CPIO_RAMFS_MAX_CREATED_FILES", "cpio__dspace_8c.html#aa4a0086e5e1bdadb9bf3d0f73e440e99", null ],
+    [ "CPIO_RAMFS_MAX_FILENAME", "cpio__dspace_8c.html#aac63b4cafa690f7ca6e7c8df36f2fa9e", null ],
+    [ "CPIO_RAMFS_MAX_FILESSIZE", "cpio__dspace_8c.html#ab682652d1c3d20feb874a3cb0ad466b8", null ],
+    [ "check_dispatch_data", "cpio__dspace_8c.html#a6847d34046e229c4521a40622f1432bf", null ],
+    [ "data_close_handler", "cpio__dspace_8c.html#aaa88805b981576fc216d4ed2ddf32ad6", null ],
+    [ "data_datamap_handler", "cpio__dspace_8c.html#a468c5755d7e8e7a2364989f8d77a9104", null ],
+    [ "data_dataunmap_handler", "cpio__dspace_8c.html#a6fc794f4dd8fb4db6c14e0b4e5e07bc6", null ],
+    [ "data_expand_handler", "cpio__dspace_8c.html#aebf4f97e4237a9aef54e986037ead95c", null ],
+    [ "data_get_size_handler", "cpio__dspace_8c.html#a8f467689598681a4111930cdf090e850", null ],
+    [ "data_getc_handler", "cpio__dspace_8c.html#a08f3d6d288f069a08680260fc6544886", null ],
+    [ "data_have_data_handler", "cpio__dspace_8c.html#abad70d2ce56d0aa71ae9098e7f37737e", null ],
+    [ "data_init_data_handler", "cpio__dspace_8c.html#a1c32b40603a758e6ca3dfb599f22635e", null ],
+    [ "data_lseek_handler", "cpio__dspace_8c.html#a71b2715b466f18406f0aa2022485fcd3", null ],
+    [ "data_open_handler", "cpio__dspace_8c.html#aa22b8843c4e4ebaaa72014a37e0fdd3e", null ],
+    [ "data_provide_data_from_parambuffer_handler", "cpio__dspace_8c.html#a77c3ea7b04b734c9f1df00a3672eb37e", null ],
+    [ "data_read_handler", "cpio__dspace_8c.html#a8bd815927bc7032b7ee951d6dc92a519", null ],
+    [ "data_unhave_data_handler", "cpio__dspace_8c.html#a4bf9659ca3b6887e3168502704898c4f", null ],
+    [ "data_write_handler", "cpio__dspace_8c.html#a0157f31fc2033f43c938106ad4d1be8f", null ],
+    [ "_cpio_archive", "cpio__dspace_8c.html#a2e21db8f2801f4adae4fa0b5e69c75cf", null ],
+    [ "_ramfs_archive", "cpio__dspace_8c.html#a84984293bccde44b237beda66ed65084", null ],
+    [ "_ramfs_curfile", "cpio__dspace_8c.html#a8c96227bd52c0e7567fd07c811e7df1c", null ],
+    [ "_ramfs_filename", "cpio__dspace_8c.html#af0e056907bdd8e05910fb8a44f2a1cb9", null ],
+    [ "_ramfs_filesz", "cpio__dspace_8c.html#aa32388f4b893e20de05be36d9eb8d789", null ]
+];

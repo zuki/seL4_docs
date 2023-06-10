@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['vterm_5fblack_14571',['VTERM_BLACK',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa2b607730ed9c7eeb6b354a34157436f6',1,'ega_vterm.h']]],
+  ['vterm_5fbrown_14572',['VTERM_BROWN',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa86a089d3bf1cceaa26bd075ec13bab62',1,'ega_vterm.h']]],
+  ['vterm_5fdark_5fgray_14573',['VTERM_DARK_GRAY',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa8bd721099685712fc430e1aacffd95e5',1,'ega_vterm.h']]],
+  ['vterm_5fhigh_5fblue_14574',['VTERM_HIGH_BLUE',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fae1db693619120c8a10b9b2e443da10d7',1,'ega_vterm.h']]],
+  ['vterm_5fhigh_5fcyan_14575',['VTERM_HIGH_CYAN',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa33c86bd9ab230cffc635ee67ddab2633',1,'ega_vterm.h']]],
+  ['vterm_5fhigh_5fgreen_14576',['VTERM_HIGH_GREEN',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa8296f24bf448389d898e02c6291c6486',1,'ega_vterm.h']]],
+  ['vterm_5fhigh_5fmagenta_14577',['VTERM_HIGH_MAGENTA',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa0c70d879de7c466a3733ca0396195c61',1,'ega_vterm.h']]],
+  ['vterm_5fhigh_5fred_14578',['VTERM_HIGH_RED',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fadca2d1c33fd27ca2bcc9e2ba42f5c2e1',1,'ega_vterm.h']]],
+  ['vterm_5fhigh_5fwhite_14579',['VTERM_HIGH_WHITE',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa190c549f1b04fb1a00799b57850599be',1,'ega_vterm.h']]],
+  ['vterm_5fhigh_5fyellow_14580',['VTERM_HIGH_YELLOW',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa0cbac0f8f79100334af03b3a63957876',1,'ega_vterm.h']]],
+  ['vterm_5flight_5fgray_14581',['VTERM_LIGHT_GRAY',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8faf9becb3f19c479a2d9ce97f9587b36b7',1,'ega_vterm.h']]],
+  ['vterm_5flow_5fblue_14582',['VTERM_LOW_BLUE',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa06a2bf08fc69a06558c0522ef3791fc5',1,'ega_vterm.h']]],
+  ['vterm_5flow_5fcyan_14583',['VTERM_LOW_CYAN',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fae700b92308a6ef7d8a3630bb3c163669',1,'ega_vterm.h']]],
+  ['vterm_5flow_5fgreen_14584',['VTERM_LOW_GREEN',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8faf6e0c07d881fc14130ef3ecc73e0e5c9',1,'ega_vterm.h']]],
+  ['vterm_5flow_5fmagenta_14585',['VTERM_LOW_MAGENTA',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fae3626255eb3a1c0ddbea1fee1a6695b6',1,'ega_vterm.h']]],
+  ['vterm_5flow_5fred_14586',['VTERM_LOW_RED',['../ega__vterm_8h.html#ab58766a79f1f75cda7d1d50c5624fd8fa2b3de1a036d72a347280eff025312a07',1,'ega_vterm.h']]]
+];

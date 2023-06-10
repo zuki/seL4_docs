@@ -1,0 +1,28 @@
+var snake_8c =
+[
+    [ "clrscr", "snake_8c.html#ada0430ff0133c72d1ab38ca336610f5a", null ],
+    [ "DELAY_AMOUNT", "snake_8c.html#a254f452889f01b95434920e08e8c82f0", null ],
+    [ "gotoxy", "snake_8c.html#a55be6a4c89f7e5a4fc47463fad864e53", null ],
+    [ "hidecursor", "snake_8c.html#a4e90f005dd83192ad858f5afea26221c", null ],
+    [ "INITIAL_SNAKE_LENGTH", "snake_8c.html#a8bd629b79bef22029d9e40d8eace1836", null ],
+    [ "MAX_SNAKE_LENGTH", "snake_8c.html#a3b57363c10b62b64db916289b0437cfb", null ],
+    [ "NUM_COLS", "snake_8c.html#a3aa3d4b4988bb6a5cfad5aefe92c207d", null ],
+    [ "NUM_ROWS", "snake_8c.html#a6019a70994460a660283265dbd136282", null ],
+    [ "printblock", "snake_8c.html#a530cbf32aacbc602c7f5341a7673f3bc", null ],
+    [ "showcursor", "snake_8c.html#a345dd1ac51921501e38a49284bb49256", null ],
+    [ "handleInput", "snake_8c.html#ae1b3e3019bc4fadd329892d1540439aa", null ],
+    [ "main", "snake_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
+    [ "newApple", "snake_8c.html#aa2b56a0b5b4670a017895d65543579e5", null ],
+    [ "newGame", "snake_8c.html#a24903cba723365d50b4c662e33e91707", null ],
+    [ "print_welcome_message", "snake_8c.html#ab0da4e752718ff59d5ad6e3dd56174ba", null ],
+    [ "renderGame", "snake_8c.html#a79eb7111efe9c8656a000fbeab8cb23e", null ],
+    [ "stepGame", "snake_8c.html#a1f3a74a7ccd94b07108b6e06122ee96c", null ],
+    [ "appleX", "snake_8c.html#a34e75f16bd12e9708d5d5163b233df63", null ],
+    [ "appleY", "snake_8c.html#ad9ce8512318be09fc4076a3806019fd1", null ],
+    [ "buffer", "snake_8c.html#aea52baa7de3b4f88bf360da1a365cbbf", null ],
+    [ "lastbuffer", "snake_8c.html#a4db06210613f8931509bb189eb83a51e", null ],
+    [ "snakeDir", "snake_8c.html#aaf9cb136b66ac6dfa9878c7e8a524a7b", null ],
+    [ "snakeLen", "snake_8c.html#ac523f7257adf206f0923d3e8fda388eb", null ],
+    [ "snakeX", "snake_8c.html#aba5be8cecc40ed9c28634b857c7f2aeb", null ],
+    [ "snakeY", "snake_8c.html#af566c1718c438d0c86df40a5ffda8121", null ]
+];

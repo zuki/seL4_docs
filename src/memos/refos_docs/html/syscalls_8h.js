@@ -1,0 +1,26 @@
+var syscalls_8h =
+[
+    [ "sys__llseek", "syscalls_8h.html#af969b82b9887923ab847879b19458815", null ],
+    [ "sys_access", "syscalls_8h.html#a52badb5c402517cc94c4602ff35ba3b0", null ],
+    [ "sys_brk", "syscalls_8h.html#a33a4af02b6d7262db01d5fab8615850c", null ],
+    [ "sys_close", "syscalls_8h.html#a741563bdcd8e72d2a51f2315a93e92cd", null ],
+    [ "sys_exit", "syscalls_8h.html#a91681ff97d3867393a4d75e4bc34d41e", null ],
+    [ "sys_exit_group", "syscalls_8h.html#a7a1ae88edc50ca4b50b21c05ab156d4d", null ],
+    [ "sys_getpid", "syscalls_8h.html#a5e01ba7255fc33e57aba7f0a8432b627", null ],
+    [ "sys_gettid", "syscalls_8h.html#a215269aed13254b37a30b664a6d97c5a", null ],
+    [ "sys_ioctl", "syscalls_8h.html#a47531c2e13fe7d9d8fe66de2ee4e19d9", null ],
+    [ "sys_lseek", "syscalls_8h.html#a9a26202ce80f6e254a810e93321a069c", null ],
+    [ "sys_mmap2", "syscalls_8h.html#a6a3fab33f5a9f89a01c8324acb969433", null ],
+    [ "sys_mremap", "syscalls_8h.html#a6661ea170e4e7ba3080ea7094abbddc4", null ],
+    [ "sys_open", "syscalls_8h.html#a376cce9542e3971ea2b46d3445735648", null ],
+    [ "sys_prlimit64", "syscalls_8h.html#a3ec8bd436110e895f74a996e0fefe9ed", null ],
+    [ "sys_read", "syscalls_8h.html#a61888e86322417e0099ac3c7c7dead46", null ],
+    [ "sys_readv", "syscalls_8h.html#aeff541008de8f38dbacb1869d6c285ea", null ],
+    [ "sys_rt_sigprocmask", "syscalls_8h.html#a547e4ba915b3c1654b4e5dd05b74ab3c", null ],
+    [ "sys_sched_yield", "syscalls_8h.html#a77d4027fbd57e4e28c12c12347f6813a", null ],
+    [ "sys_set_thread_area", "syscalls_8h.html#aad31b836c78512f75d7b153c0a99fc01", null ],
+    [ "sys_set_tid_address", "syscalls_8h.html#a566213036ee80a729775f0377f924827", null ],
+    [ "sys_tgkill", "syscalls_8h.html#ac46eff06fff8dbddf3aeb3d190320198", null ],
+    [ "sys_tkill", "syscalls_8h.html#a99114e3428fc75c359e0628695c50b77", null ],
+    [ "sys_writev", "syscalls_8h.html#a1d318a9b909932d17fb27e2cf591de5e", null ]
+];

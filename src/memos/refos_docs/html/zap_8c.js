@@ -1,0 +1,27 @@
+var zap_8c =
+[
+    [ "is_hero_spell", "zap_8c.html#a6dacd1235be38631f42ef79a7c3be61c", null ],
+    [ "MAGIC_COOKIE", "zap_8c.html#ad700351c24407143e8ba2acaf17d7240", null ],
+    [ "ZT_ACID", "zap_8c.html#a6ebcd0479bda25a079ea309552d1d2a2", null ],
+    [ "ZT_BREATH", "zap_8c.html#a0fd9814b1fa97aac62a6531ffb41c3f6", null ],
+    [ "ZT_COLD", "zap_8c.html#aee8779ac4ba6d8b52716f994f974ae3f", null ],
+    [ "ZT_DEATH", "zap_8c.html#ab3d8c0805cd637881d7fcdaa7c591754", null ],
+    [ "ZT_FIRE", "zap_8c.html#af896f5e7aec800b4718eca65abfedefb", null ],
+    [ "ZT_LIGHTNING", "zap_8c.html#a044d9ad9d9bd03a4a6c8beb5285da2f5", null ],
+    [ "ZT_MAGIC_MISSILE", "zap_8c.html#a6154841fc63c0ca83847fa7398a56b8f", null ],
+    [ "ZT_POISON_GAS", "zap_8c.html#af34560ffdaaab315d3bbd7cb0fe4d1e6", null ],
+    [ "ZT_SLEEP", "zap_8c.html#a4ee7d8a754c41e4ff9856b52742db624", null ],
+    [ "ZT_SPELL", "zap_8c.html#a11cc0b948fa4daf2d08f0336751da010", null ],
+    [ "ZT_WAND", "zap_8c.html#a9951339cfddd341e0e217e57c1c7d2aa", null ],
+    [ "FDECL", "zap_8c.html#a70ecc9bcf7c11df02cfb7abc85f366aa", null ],
+    [ "FDECL", "zap_8c.html#adb7bafca14ea83519a84b16c6b03b614", null ],
+    [ "FDECL", "zap_8c.html#af639779145ac511a1a999fddcebfd0c9", null ],
+    [ "FDECL", "zap_8c.html#ac01a840136935a74ef0a21cfd503f3fb", null ],
+    [ "FDECL", "zap_8c.html#a99df805696ae424df2b4652cbe48f0bd", null ],
+    [ "FDECL", "zap_8c.html#a25f4db035d03b486fdf8e12bf6a5b548", null ],
+    [ "FDECL", "zap_8c.html#a27c5db590c9f92cf2c31d56b68762ed6", null ],
+    [ "are_blinded_by_the_flash", "zap_8c.html#aa6615082d693c2a92563088968498c6a", null ],
+    [ "flash_types", "zap_8c.html#a366ec77264b642f0252833488244ebef", null ],
+    [ "m_using", "zap_8c.html#a70406684323454fb7fb33104cc05f904", null ],
+    [ "notonhead", "zap_8c.html#aa0fe2fdb5136cb5a8960dd3b1f24031a", null ]
+];

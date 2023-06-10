@@ -1,0 +1,25 @@
+var classNetHackQtSettings =
+[
+    [ "NetHackQtSettings", "classNetHackQtSettings.html#ad76e4d2a5b5142e93fd4be01f75bff3f", null ],
+    [ "fontChanged", "classNetHackQtSettings.html#aedc85873ee6f9ebe70109bceba4dab41", null ],
+    [ "glyphs", "classNetHackQtSettings.html#a1b0a23abb1bd74737ec6640ab6fccac3", null ],
+    [ "largeFont", "classNetHackQtSettings.html#a4310a79dd7cbdb8a905bb7365789290d", null ],
+    [ "normalFixedFont", "classNetHackQtSettings.html#a55b98286c939a5e0abc18f8ab1f8b67d", null ],
+    [ "normalFont", "classNetHackQtSettings.html#a53c8c39a6c92cde6376a67ae36ba9a7e", null ],
+    [ "resizeTiles", "classNetHackQtSettings.html#ad0dbb9befaae42d3f63afbe1dce0a4fd", null ],
+    [ "setGlyphSize", "classNetHackQtSettings.html#af0134d7c8665f58a817bca7c1e526349", null ],
+    [ "tilesChanged", "classNetHackQtSettings.html#a4c70e966e186b525ccde941717967a12", null ],
+    [ "toggleGlyphSize", "classNetHackQtSettings.html#ab18a40f74dd935c1b6dfb0e2538a00b6", null ],
+    [ "ynInMessages", "classNetHackQtSettings.html#ac6b894c64a785b14f28ddf1b99d42493", null ],
+    [ "fontsize", "classNetHackQtSettings.html#abe20d1974c3247b04d1b2d755b92e945", null ],
+    [ "heightlbl", "classNetHackQtSettings.html#a38f6e57a9551668dbd46219407e697d9", null ],
+    [ "large", "classNetHackQtSettings.html#acac51e1ea0e554eb2dbe6eecf783d07e", null ],
+    [ "normal", "classNetHackQtSettings.html#a86df56bfe2cd97a6d45a8d3325334111", null ],
+    [ "normalfixed", "classNetHackQtSettings.html#aa5aa4bec82f3db5187cfb7bd8549c020", null ],
+    [ "othersize", "classNetHackQtSettings.html#a875bdf452d69d2dda5c785808538c817", null ],
+    [ "theglyphs", "classNetHackQtSettings.html#a5f266d486269b67477007a4a848922a5", null ],
+    [ "tileheight", "classNetHackQtSettings.html#ab55954c702c1f9e3e912c9a5c763a098", null ],
+    [ "tilewidth", "classNetHackQtSettings.html#a0407cbea95ad807c98ca7bd9c7913400", null ],
+    [ "whichsize", "classNetHackQtSettings.html#ac761d5961ac831001e4f68cbe2b75265", null ],
+    [ "widthlbl", "classNetHackQtSettings.html#a378b10ecfb03608b7a59c5f1b53648e8", null ]
+];

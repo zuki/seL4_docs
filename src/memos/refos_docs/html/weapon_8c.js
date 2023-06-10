@@ -1,0 +1,26 @@
+var weapon_8c =
+[
+    [ "P_NAME", "weapon_8c.html#af1d043127f8cc970710f203aa27c4abd", null ],
+    [ "PN_ATTACK_SPELL", "weapon_8c.html#ad10a7347bd44baf5b0d014538f1aa967", null ],
+    [ "PN_BARE_HANDED", "weapon_8c.html#a22262df5339653138aac3ce877ae220f", null ],
+    [ "PN_CLERIC_SPELL", "weapon_8c.html#a150eb420496fab91abd7b757ba9dbb00", null ],
+    [ "PN_DIVINATION_SPELL", "weapon_8c.html#aa32624546a084f14198a667028366501", null ],
+    [ "PN_ENCHANTMENT_SPELL", "weapon_8c.html#a9d9a8c8e196d98db3d144c6e037a4aed", null ],
+    [ "PN_ESCAPE_SPELL", "weapon_8c.html#aee9d3c9ae6ef56655fb6f7f5249985ce", null ],
+    [ "PN_HAMMER", "weapon_8c.html#ac8c194376eb4a232fd199a051d5e0256", null ],
+    [ "PN_HEALING_SPELL", "weapon_8c.html#a6bdb95fda3670805e8abb43834f11654", null ],
+    [ "PN_MATTER_SPELL", "weapon_8c.html#a74aa8da89ad952b541d892a7bda10ccc", null ],
+    [ "PN_POLEARMS", "weapon_8c.html#a1497c23b844d59964a342eec3b7ac55a", null ],
+    [ "PN_RIDING", "weapon_8c.html#a92a85d730972867d850fcbbb42f178de", null ],
+    [ "PN_SABER", "weapon_8c.html#a574ffd384a210d92c22edbd3075cec04", null ],
+    [ "PN_TWO_WEAPONS", "weapon_8c.html#aa09c31a2ff4208286395689660afc32e", null ],
+    [ "PN_WHIP", "weapon_8c.html#a5beb1501240d66a7c3968782eb31fe1a", null ],
+    [ "FDECL", "weapon_8c.html#a83a237a15b17156c4e62132b7bef2e92", null ],
+    [ "FDECL", "weapon_8c.html#ab8b73f4a155c173ca6ea37c709583dbb", null ],
+    [ "FDECL", "weapon_8c.html#ac3d3aa00b868f05262e46a8fe82bb12f", null ],
+    [ "FDECL", "weapon_8c.html#ae704962aa353548739b16f027047f778", null ],
+    [ "FDECL", "weapon_8c.html#a6bfdeee8d49b041d9d759c55662c54be", null ],
+    [ "barehands_or_martial", "weapon_8c.html#a57a8eb8985bab9134ec2c6c3128fff41", null ],
+    [ "odd_skill_names", "weapon_8c.html#adfd946d693792b12407186c5fbbd45ca", null ],
+    [ "skill_names_indices", "weapon_8c.html#abac7450fbbc116651ec2335e927ed211", null ]
+];

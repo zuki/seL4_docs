@@ -1,0 +1,20 @@
+var vspace_8c =
+[
+    [ "VSPACE_WINDOW_VERBOSE_DEBUG", "vspace_8c.html#a16f62e21492db914be598c85f92899fe", null ],
+    [ "vs_create_window", "vspace_8c.html#adc81e92adb8e64d57fc1ffc3b71365f1", null ],
+    [ "vs_delete_window", "vspace_8c.html#a9a4a4d42b4efaf412dc609db42cf70c4", null ],
+    [ "vs_get_frame", "vspace_8c.html#a01ba1b56f1a145430e914b065ecf7976", null ],
+    [ "vs_initialise", "vspace_8c.html#ab810071185364e7fcbd975eb2cdea70f", null ],
+    [ "vs_map", "vspace_8c.html#a8411c54b9268006b8c16ea9504f716d6", null ],
+    [ "vs_map_across_vspace", "vspace_8c.html#acb2974a17841b837927b9f05e285ac6b", null ],
+    [ "vs_map_device", "vspace_8c.html#a1bb9b18cffcb1783945d90f011b5a961", null ],
+    [ "vs_ref", "vspace_8c.html#ad00be7ff92cb53f8d1045b404cfb410b", null ],
+    [ "vs_release", "vspace_8c.html#a7072443ae84e87ddf92830aeddb4d84f", null ],
+    [ "vs_resize_window", "vspace_8c.html#acaa21b9b1e3cfc02f78542172c664e84", null ],
+    [ "vs_track_obj", "vspace_8c.html#a1531d782785f205acb1b0a29ce9beece", null ],
+    [ "vs_unmap", "vspace_8c.html#a3d5dc0a9565cade759bbf35b95ac3aac", null ],
+    [ "vs_unmap_frame", "vspace_8c.html#a7ee5eb2cff24cb3e75054d5d0850dac3", null ],
+    [ "vs_unmap_window", "vspace_8c.html#a9f172d5df3de973b07118b3465794595", null ],
+    [ "vs_unref", "vspace_8c.html#a07a16eaba97b45e951db40cb40584f99", null ],
+    [ "vs_vspace_allocated_object_bookkeeping_callback", "vspace_8c.html#a36f89fbe853c3d3991e5cafbdf172627", null ]
+];

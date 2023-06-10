@@ -1,0 +1,26 @@
+var dgn__comp_8h =
+[
+    [ "YYSTYPE", "unionYYSTYPE.html", "unionYYSTYPE" ],
+    [ "A_DUNGEON", "dgn__comp_8h.html#a6c30cee0e6e9938a4f03024b27ce28a1", null ],
+    [ "ALIGNMENT", "dgn__comp_8h.html#a450f9d8af07bfe2f313dbe3a78738a5e", null ],
+    [ "BRANCH", "dgn__comp_8h.html#a5652aaf0ba5376a02bef5d911095a582", null ],
+    [ "CHBRANCH", "dgn__comp_8h.html#a21117a0b9d435f0548106761532fd43d", null ],
+    [ "CHLEVEL", "dgn__comp_8h.html#ae36adb4b8de31d2b0bcf40c80fb237d0", null ],
+    [ "DESCRIPTION", "dgn__comp_8h.html#a5f024226e6b8e20da1226b39ce384857", null ],
+    [ "DESCRIPTOR", "dgn__comp_8h.html#adad87aea406b463c91bd49da2cd89345", null ],
+    [ "ENTRY", "dgn__comp_8h.html#a7542714e8c7019113b62db816c78d50c", null ],
+    [ "INTEGER", "dgn__comp_8h.html#a91d43eadec33c80149f92e5abf5df58c", null ],
+    [ "LEVALIGN", "dgn__comp_8h.html#ad437dbf4277e8d4ffe7143fe1c012f6d", null ],
+    [ "LEVEL", "dgn__comp_8h.html#a73f717b7aae31163c2a85f67883bf0ed", null ],
+    [ "LEVELDESC", "dgn__comp_8h.html#a7070dc41e28a9baf8f9aa005d845ae1b", null ],
+    [ "NO_DOWN", "dgn__comp_8h.html#aa0a223cdf1de63a9ebc026b5743e1515", null ],
+    [ "NO_UP", "dgn__comp_8h.html#a27b13c50f51e7e832a0ceb3961e90c0d", null ],
+    [ "PORTAL", "dgn__comp_8h.html#ae001c6e4f3b589ed0ed081bca5611e3f", null ],
+    [ "PROTOFILE", "dgn__comp_8h.html#a43bd0338247a8c6327e644f71b42e9b9", null ],
+    [ "RNDCHLEVEL", "dgn__comp_8h.html#a55ccc324d7ffdd75aa1e64a3ed5d2089", null ],
+    [ "RNDLEVEL", "dgn__comp_8h.html#a053c62527b230cd0fae1bdf87e114603", null ],
+    [ "STAIR", "dgn__comp_8h.html#abdc07ae4385cbd8f3f9d0c20fdd87a4d", null ],
+    [ "STRING", "dgn__comp_8h.html#a0f4d394a3ab4e09bff60f714c66dc5ee", null ],
+    [ "UP_OR_DOWN", "dgn__comp_8h.html#a4f0a59728f32588d2eb4bc41c17b400d", null ],
+    [ "yylval", "dgn__comp_8h.html#a539b86ee4bb46824a194f22eb69903d9", null ]
+];

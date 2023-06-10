@@ -1,0 +1,25 @@
+var attrib_8h =
+[
+    [ "attribs", "structattribs.html", "structattribs" ],
+    [ "A_CHA", "attrib_8h.html#ae4773cfa1f5c2e5eeef1e23baa6e1c3f", null ],
+    [ "A_CON", "attrib_8h.html#a82a29f9d3d2390f61fc68b2a352b5da3", null ],
+    [ "A_DEX", "attrib_8h.html#ad8117dfaac470310d7540a3e8dcc00e0", null ],
+    [ "A_INT", "attrib_8h.html#a583ef0a9b22ce89bcf0df81228b424b5", null ],
+    [ "A_MAX", "attrib_8h.html#a8f8289cfc29e0bb2a2626262bfeedf21", null ],
+    [ "A_STR", "attrib_8h.html#ad53430e3d611a366ec4b5c457b4c67f7", null ],
+    [ "A_WIS", "attrib_8h.html#a4206d6431732a698ede8a237d5c17142", null ],
+    [ "ABASE", "attrib_8h.html#a530e7241d82543590fdc65277c88a739", null ],
+    [ "ABON", "attrib_8h.html#a511d43df89f227242b84f385e6dc2eac", null ],
+    [ "ACURR", "attrib_8h.html#ab83869fac11f870c2193469440573f84", null ],
+    [ "ACURRSTR", "attrib_8h.html#a07133008845b3b4f8e36bf7c49c9046d", null ],
+    [ "AEXE", "attrib_8h.html#a9351581ba40f83dcf83c566c19882dec", null ],
+    [ "AMAX", "attrib_8h.html#adfa30b8be05d1635d619e03dc89480ac", null ],
+    [ "ATEMP", "attrib_8h.html#a41f7a3bc3f4088df70480e3ead1ec2e1", null ],
+    [ "ATIME", "attrib_8h.html#ae298e0e637b2f2e3999d66839c3b3e3b", null ],
+    [ "ATTRMAX", "attrib_8h.html#ac5c8cf9976f668909b7bf655d143866d", null ],
+    [ "ATTRMIN", "attrib_8h.html#a4e8f3f83a3909379d224a0957a5b44d9", null ],
+    [ "MCURR", "attrib_8h.html#a9f4b532b2a9986eb9a247b7809863e7c", null ],
+    [ "MMAX", "attrib_8h.html#ac738d4b4d114ee8f9ad4296fa73bdec1", null ],
+    [ "STR18", "attrib_8h.html#a66a5edfb2b1d12ca5d01ee986ce5cda8", null ],
+    [ "STR19", "attrib_8h.html#ae85ec0287e589bfeec70955d612eecb3", null ]
+];

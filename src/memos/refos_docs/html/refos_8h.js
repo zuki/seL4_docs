@@ -1,0 +1,26 @@
+var refos_8h =
+[
+    [ "DATASERV_METHODS_BASE", "refos_8h.html#aaa923d20d1f093b8b14291a6ef38409b", null ],
+    [ "DEVICE_METHODS_BASE", "refos_8h.html#ab09f8450f766b815916ebf21b2ade538", null ],
+    [ "MEMSERV_METHODS_BASE", "refos_8h.html#a7446308090b80336bfe7a2d65305ceac", null ],
+    [ "NAMESERV_METHODS_BASE", "refos_8h.html#a8b5100f027d20b3fa8cb50d6f30ef06f", null ],
+    [ "PROCSERV_MAX_PROCESSES", "refos_8h.html#a8ad602bbe39c20abd5af86f5e8bce989", null ],
+    [ "PROCSERV_METHODS_BASE", "refos_8h.html#a091b3e2836e3e3ec5d590cec5647915d", null ],
+    [ "PROCSERV_NOTIFY_TAG", "refos_8h.html#ab288ef2235e77659daa87112bf8e7329", null ],
+    [ "REFOS_CDEPTH", "refos_8h.html#a421229d81afe90e472a1535d104c1fdb", null ],
+    [ "REFOS_CSPACE", "refos_8h.html#a148ce24093dda39a44869cf2d463dc80", null ],
+    [ "REFOS_CSPACE_DEPTH", "refos_8h.html#adbed433bdd0c87328a96d917c7bc2185", null ],
+    [ "REFOS_CSPACE_GUARD", "refos_8h.html#a61dd8637376e966a42da49fe437e5fe1", null ],
+    [ "REFOS_CSPACE_RADIX", "refos_8h.html#a53dbbf64ca51969d36ab6509a02e589e", null ],
+    [ "REFOS_CSPACE_RECV_TEMPSWAP", "refos_8h.html#adbbd227ee754b1087f1a273c9ed96fad", null ],
+    [ "REFOS_DEVICE_IO_PORTS", "refos_8h.html#a008d6a5a1ac5c906272901e87fae5cdf", null ],
+    [ "REFOS_LIVENESS", "refos_8h.html#ad5c2d9049c8e49699b8417fe8cbdca5d", null ],
+    [ "REFOS_NAMESERV_EP", "refos_8h.html#ab57020629f2764292eb7835281f1fc26", null ],
+    [ "REFOS_PAGE_ALIGN", "refos_8h.html#a16e8e349001f723b03c2263f84fd7405", null ],
+    [ "REFOS_PAGE_SIZE", "refos_8h.html#a0928ee9c4bf6581eab888ff5514a8af2", null ],
+    [ "REFOS_PROCSERV_EP", "refos_8h.html#a978fb8c44a6cff0073eb70ddf7ef18c3", null ],
+    [ "REFOS_THREAD_CAP_RECV", "refos_8h.html#abbfa2aa9f59fd9788bb24a50402f9eb6", null ],
+    [ "REFOS_THREAD_TCB", "refos_8h.html#a9b75625e75488c4005a0c14c1bc9daa8", null ],
+    [ "SERV_METHODS_BASE", "refos_8h.html#af3ff77e86acabe3a3e56fe7d0170f718", null ],
+    [ "refos_round_up_npages", "refos_8h.html#af333eac988e6de1311196708f6607735", null ]
+];

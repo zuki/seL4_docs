@@ -1,0 +1,27 @@
+var structNhWindow =
+[
+    [ "ascent_height", "structNhWindow.html#ad5549ce4698cc7698236146ebee4c2a9", null ],
+    [ "char_width", "structNhWindow.html#a6744c3a07c381cf7a485b336d7e30755", null ],
+    [ "drawn", "structNhWindow.html#a8d324543f7ad278513ccdb303ebec2d6", null ],
+    [ "font_number", "structNhWindow.html#a69b70dabcb069d8584b5bdf7acb31a61", null ],
+    [ "font_size", "structNhWindow.html#a2748f3b69f3d3e42fdaf8171cbbdb367", null ],
+    [ "how", "structNhWindow.html#ac6a901247ddc4de0deff8f4d67b716ae", null ],
+    [ "its_window", "structNhWindow.html#a68dc7295b79e14f4a78a0040c15888e5", null ],
+    [ "last_more_lin", "structNhWindow.html#a0645528f32a19a8be138755283ffe5fe", null ],
+    [ "menuChar", "structNhWindow.html#a8b268c04721668c1c60bc2bcf8e2c617", null ],
+    [ "menuInfo", "structNhWindow.html#a89047d040986f9093c06241a64f5c6ee", null ],
+    [ "menuSelected", "structNhWindow.html#af71d68bfa21e395133a3df5ad7d16a5b", null ],
+    [ "miLen", "structNhWindow.html#ad3a28bda1cad1fb265f19d598da63cf5", null ],
+    [ "miSelLen", "structNhWindow.html#acf4c482c6ba7d237118a81148d838c17", null ],
+    [ "miSize", "structNhWindow.html#adf87c11968010efad19a04910e5cb890", null ],
+    [ "row_height", "structNhWindow.html#a2df8c3e9deac0c0d0a5d9793b7470055", null ],
+    [ "save_lin", "structNhWindow.html#a5df57289ac1b5436228829358f8f9f38", null ],
+    [ "scrollBar", "structNhWindow.html#a37c4c6314ea6315bb4e99c33d432d491", null ],
+    [ "scrollPos", "structNhWindow.html#a4c65211aa8af5e5dd5049aaf7c4b7ef3", null ],
+    [ "windowText", "structNhWindow.html#a24bc4dcae5833a3e4a53fd6313380c1f", null ],
+    [ "windowTextLen", "structNhWindow.html#a5705364a1f7bdbf0d56b1c420c3d5fdc", null ],
+    [ "x_curs", "structNhWindow.html#ab56661eb993dd6ee08d94c6d81175452", null ],
+    [ "x_size", "structNhWindow.html#a10d785f6f3a83f1148b0cfee07fd71ef", null ],
+    [ "y_curs", "structNhWindow.html#a1ce884e1926c5e62d509589c419c0b80", null ],
+    [ "y_size", "structNhWindow.html#ace64e7fc7598255924aaa8334766feff", null ]
+];

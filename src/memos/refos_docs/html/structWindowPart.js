@@ -1,0 +1,25 @@
+var structWindowPart =
+[
+    [ "black", "structWindowPart.html#a8cd1216d558aee91873212dfd1fe8dcb", null ],
+    [ "blue", "structWindowPart.html#a29cada8a26ea125799f501be4371bdca", null ],
+    [ "bright_blue", "structWindowPart.html#a84bcfe34f7e5c0b2f2e4f395cd72b9b7", null ],
+    [ "bright_cyan", "structWindowPart.html#ad5ff26f06972c0d1bb38ecc0596b62a1", null ],
+    [ "bright_green", "structWindowPart.html#ad9f52ea1c1ec13b6fa0313dc75debf95", null ],
+    [ "bright_magenta", "structWindowPart.html#a547ade03ce493bb130c6b25ccd169aaa", null ],
+    [ "brown", "structWindowPart.html#a97c07c322b095a2fb4e6d857bd1134d4", null ],
+    [ "columns", "structWindowPart.html#a84cba698ad83d05300c32768817f0afc", null ],
+    [ "cyan", "structWindowPart.html#a19b4039208c46af3a7a9a8460bd8236f", null ],
+    [ "expose_callback", "structWindowPart.html#afa6864c4003c472a85b2895bf96d9455", null ],
+    [ "font", "structWindowPart.html#ac697050ca10e4b0ab08f5440e35eebd4", null ],
+    [ "foreground", "structWindowPart.html#a73d40b151072677a7815695fe3699907", null ],
+    [ "gray", "structWindowPart.html#a2f2673c38a69c2359f0be2c025d80ceb", null ],
+    [ "green", "structWindowPart.html#af654accb46ccf3d4d6af30c6b6f2741d", null ],
+    [ "input_callback", "structWindowPart.html#a031081e3a85215289cf74575f4ea8cd0", null ],
+    [ "magenta", "structWindowPart.html#ab156f6994a064eb0bb2732f925c85e1f", null ],
+    [ "orange", "structWindowPart.html#a3544eaf79902d2f60d6a813efc8cca30", null ],
+    [ "red", "structWindowPart.html#a06fb532b433d74cbb1a57e7a5ce667b4", null ],
+    [ "resize_callback", "structWindowPart.html#a3901f202301b9598dc03caeebab9cab0", null ],
+    [ "rows", "structWindowPart.html#a4663a7f4178ce04f165cce9495bc7b82", null ],
+    [ "white", "structWindowPart.html#afb94901758f1adb37e099156d7c490f2", null ],
+    [ "yellow", "structWindowPart.html#a581e30a1cf0fca459d1faf6166e3f837", null ]
+];
