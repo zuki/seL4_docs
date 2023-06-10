@@ -1,0 +1,718 @@
+$ make simulate-kzm
+qemu-system-arm -nographic -M kzm \
+	-kernel images/refos-image
+
+ELF-loader started on CPU: ARM Ltd. ARMv6 Part: 0xb36 r1p3
+  paddr=[82000000..8268ffff]
+ELF-loading image 'kernel'
+  paddr=[80000000..80031fff]
+  vaddr=[f0000000..f0031fff]
+  virt_entry=f0000000
+ELF-loading image 'process_server'
+  paddr=[80032000..80863fff]
+  vaddr=[10000..841fff]
+  virt_entry=2a790
+Enabling MMU and paging
+Jumping to kernel-image entry point...
+
+Bootstrapping kernel
+[00.0] PROCSERV |  initialise_welcome_message(): ================= RefOS Version 2.0 =================
+[00.1] PROCSERV |  initialise_welcome_message():   Built on Jun 10 2023 09:43:00.
+[00.2] PROCSERV |  initialise_welcome_message():   © Copyright 2016 Data61, CSIRO
+[00.3] PROCSERV |  initialise_welcome_message(): =====================================================
+1 untypeds of size 11
+36 untypeds of size 12
+2 untypeds of size 13
+4 untypeds of size 14
+1 untypeds of size 15
+3 untypeds of size 16
+1 untypeds of size 17
+1 untypeds of size 18
+2 untypeds of size 19
+1 untypeds of size 20
+2 untypeds of size 21
+2 untypeds of size 22
+1 untypeds of size 23
+2 untypeds of size 24
+6 untypeds of size 25
+1 untypeds of size 26
+[00.4] PROCSERV |  initialise(): Allocating main process server endpoint...
+[00.5] PROCSERV |  initialise(): Setting recv cslot...
+[00.6] PROCSERV |  initialise(): Initialising process server modules...
+[00.7] PROCSERV |  pd_init(): Initialising static Page Directory pool (sized 64)...
+[00.8] PROCSERV |  pid_init(): Initialising process ID allocation table...
+[00.9] PROCSERV |  w_init(): Initialising window allocation table (max 8192 windows).
+[00.10] PROCSERV |  ram_dspace_init(): Initialising RAM dataspace allocation table (max 8192 dspaces).
+[00.11] PROCSERV |  initialise(): PROCSERV initialised.
+[00.12] PROCSERV |  initialise(): ==========================================
+
+[00.13] PROCSERV |  main(): ======== RefOS Process Server ========
+ROOT_TASK_TESTS | Running unit tests.
+ROOT_TASK_TESTS | Testing kalloc ............................................... PASSED.
+ROOT_TASK_TESTS | Testing cvector .............................................. PASSED.
+ROOT_TASK_TESTS | Testing cqueue ............................................... PASSED.
+ROOT_TASK_TESTS | Testing chash ................................................ PASSED.
+ROOT_TASK_TESTS | Testing cpool ................................................ PASSED.
+ROOT_TASK_TESTS | Testing cbpool ............................................... PASSED.
+ROOT_TASK_TESTS | Testing PID .................................................. PASSED.
+ROOT_TASK_TESTS | Testing page directory ....................................... PASSED.
+ROOT_TASK_TESTS | Testing vspace (run 1) ....................................... PASSED.
+ROOT_TASK_TESTS | Testing vspace mapping ....................................... [00.14] PROCSERV |  w_associate_print():     • Associated window 0: winID 1 addr 0x10000 →→→ 0x18000, size 0x8000
+[00.15] PROCSERV |  w_associate_print():     • Associated window 0: winID 1 addr 0x10000 →→→ 0x18000, size 0x8000
+[00.16] PROCSERV |  w_associate_print():     • Associated window 0: winID 1 addr 0x10000 →→→ 0x18000, size 0x8000
+[00.17] PROCSERV |  w_associate_print():     • Associated window 0: winID 1 addr 0x10000 →→→ 0x18000, size 0x8000
+PASSED.
+ROOT_TASK_TESTS | Testing vspace (run 2) ....................................... PASSED.
+ROOT_TASK_TESTS | Testing thread ............................................... [00.18] PROCSERV |  thread_config(): Configuring new thread 0x699fc8..
+[00.19] PROCSERV |  thread_config(): Configuring new thread 0x699ffc..
+[00.20] PROCSERV |  thread_config(): Configuring new thread 0x69a030..
+[00.21] PROCSERV |  thread_config(): Configuring new thread 0x69a064..
+[00.22] PROCSERV |  thread_config(): Configuring new thread 0x69a098..
+[00.23] PROCSERV |  thread_config(): Configuring new thread 0x69a0cc..
+[00.24] PROCSERV |  thread_config(): Configuring new thread 0x69a100..
+[00.25] PROCSERV |  thread_config(): Configuring new thread 0x69a134..
+[00.26] PROCSERV |  thread_config(): Configuring new thread 0x69a168..
+[00.27] PROCSERV |  thread_config(): Configuring new thread 0x69a19c..
+[00.28] PROCSERV |  thread_config(): Configuring new thread 0x69a1d0..
+[00.29] PROCSERV |  thread_config(): Configuring new thread 0x69a204..
+[00.30] PROCSERV |  thread_config(): Configuring new thread 0x69a238..
+[00.31] PROCSERV |  thread_config(): Configuring new thread 0x69a26c..
+[00.32] PROCSERV |  thread_config(): Configuring new thread 0x69a2a0..
+[00.33] PROCSERV |  thread_config(): Configuring new thread 0x69a2d4..
+[00.34] PROCSERV |  thread_config(): Configuring new thread 0x69a308..
+[00.35] PROCSERV |  thread_config(): Configuring new thread 0x69a33c..
+[00.36] PROCSERV |  thread_config(): Configuring new thread 0x69a370..
+[00.37] PROCSERV |  thread_config(): Configuring new thread 0x69a3a4..
+[00.38] PROCSERV |  thread_config(): Configuring new thread 0x69a3d8..
+[00.39] PROCSERV |  thread_config(): Configuring new thread 0x69a40c..
+[00.40] PROCSERV |  thread_config(): Configuring new thread 0x69a440..
+[00.41] PROCSERV |  thread_config(): Configuring new thread 0x69a474..
+[00.42] PROCSERV |  thread_config(): Configuring new thread 0x69a4a8..
+[00.43] PROCSERV |  thread_config(): Configuring new thread 0x69a4dc..
+[00.44] PROCSERV |  thread_config(): Configuring new thread 0x69a510..
+[00.45] PROCSERV |  thread_config(): Configuring new thread 0x69a544..
+[00.46] PROCSERV |  thread_config(): Configuring new thread 0x69a578..
+[00.47] PROCSERV |  thread_config(): Configuring new thread 0x69a5ac..
+[00.48] PROCSERV |  thread_config(): Configuring new thread 0x69a5e0..
+[00.49] PROCSERV |  thread_config(): Configuring new thread 0x69a614..
+PASSED.
+ROOT_TASK_TESTS | Testing windows .............................................. [00.50] PROCSERV |  w_init(): Initialising window allocation table (max 8192 windows).
+PASSED.
+ROOT_TASK_TESTS | Testing window associations .................................. PASSED.
+ROOT_TASK_TESTS | Testing ram dataspace list ................................... [00.51] PROCSERV |  ram_dspace_init(): Initialising RAM dataspace allocation table (max 8192 dspaces).
+PASSED.
+ROOT_TASK_TESTS | Testing ram dataspace read/write ............................. [00.52] PROCSERV |  ram_dspace_init(): Initialising RAM dataspace allocation table (max 8192 dspaces).
+[00.53] PROCSERV |  ram_dspace_init(): Initialising RAM dataspace allocation table (max 8192 dspaces).
+[00.54] PROCSERV |  ram_dspace_init(): Initialising RAM dataspace allocation table (max 8192 dspaces).
+[00.55] PROCSERV |  ram_dspace_init(): Initialising RAM dataspace allocation table (max 8192 dspaces).
+[00.56] PROCSERV |  ram_dspace_init(): Initialising RAM dataspace allocation table (max 8192 dspaces).
+[00.57] PROCSERV |  ram_dspace_init(): Initialising RAM dataspace allocation table (max 8192 dspaces).
+PASSED.
+ROOT_TASK_TESTS | Testing client watch ......................................... [00.58] PROCSERV |  client_watch(): Adding client_watch pid 786 notifyEP 0xd27
+[00.59] PROCSERV |  client_watch(): Adding client_watch pid 50 notifyEP 0xd23
+[00.60] PROCSERV |  client_watch(): Adding client_watch pid 242 notifyEP 0xd21
+[00.61] PROCSERV |  client_watch(): Adding client_watch pid 111 notifyEP 0xd1b
+PASSED.
+ROOT_TASK_TESTS | Testing ram dataspace content init ........................... [00.62] PROCSERV |  ram_dspace_init(): Initialising RAM dataspace allocation table (max 8192 dspaces).
+PASSED.
+ROOT_TASK_TESTS | Testing nameserv lib ......................................... PASSED.
+ROOT_TASK_TESTS | All is well in the universe.
+[00.63] PROCSERV |  proc_load_direct(): Allocating PID and PCB...
+[00.64] PROCSERV |  proc_load_direct(): Allocated PID 2047!...
+[00.65] PROCSERV |  proc_load_direct(): Configuring process for PID 2047!...
+[00.66] PROCSERV |  thread_config(): Configuring new thread 0x6ddba0..
+[00.67] PROCSERV |  proc_load_direct(): Allocating PID and PCB...
+[00.68] PROCSERV |  proc_load_direct(): Allocated PID 2046!...
+[00.69] PROCSERV |  proc_load_direct(): Configuring process for PID 2046!...
+[00.70] PROCSERV |  thread_config(): Configuring new thread 0x6ddc00..
+[00.71] PROCSERV |  proc_load_direct(): Allocating PID and PCB...
+[00.72] PROCSERV |  proc_load_direct(): Allocated PID 2045!...
+[00.73] PROCSERV |  proc_load_direct(): Configuring process for PID 2045!...
+[00.74] PROCSERV |  thread_config(): Configuring new thread 0x6ddc60..
+[00.75] PROCSERV |  proc_load_direct(): Allocating PID and PCB...
+[00.76] PROCSERV |  proc_load_direct(): Allocated PID 2044!...
+[00.77] PROCSERV |  proc_load_direct(): Configuring process for PID 2044!...
+[00.78] PROCSERV |  thread_config(): Configuring new thread 0x6bcdc0..
+[00.79] PROCSERV |  proc_load_direct(): Allocating PID and PCB...
+[00.80] PROCSERV |  proc_load_direct(): Allocated PID 2043!...
+[00.81] PROCSERV |  proc_load_direct(): Configuring process for PID 2043!...
+[00.82] PROCSERV |  thread_config(): Configuring new thread 0x6de020..
+[00.1] CONSERV |  conserv_init(): RefOS Console server initialising...
+[00.2] CONSERV |  conserv_init():     Initialising conserv device IO manager...
+[00.3] CONSERV |  conserv_init():     Initialising conserv serial device...
+[00.84] PROCSERV |  ram_dspace_set_to_paddr(): Checking pages...
+[00.85] PROCSERV |  ram_dspace_set_to_paddr(): procserv_find_device...
+[00.86] PROCSERV |  ram_dspace_set_to_paddr(): procserv_find_device OK...
+[00.4] CONSERV |  conserv_init():     Serial device initialised at vaddr 0xc0001000
+[00.5] CONSERV |  srv_common_init(): Initialising conserver common server state...
+[00.6] CONSERV |  srv_common_init():     creating conserver anon endpoint...
+[00.90] PROCSERV |  proc_new_endpoint_internal_handler(): Process server creating endpoint!
+[00.7] CONSERV |  srv_common_init():     creating conserver async endpoint...
+[00.92] PROCSERV |  proc_new_async_endpoint_internal_handler(): Process server creating async endpoint!
+[00.8] CONSERV |  srv_common_init():     creating async death and/or fault notification badged EP...
+[00.9] CONSERV |  srv_common_init():     binding notification AEP...
+[00.10] CONSERV |  srv_common_init():     registering under the mountpoint [dev_console]...
+[00.94] PROCSERV |  nsv_register_handler(): Process server name register [dev_console]! :D 
+[00.11] CONSERV |  srv_common_init():     initialising client table for conserver...
+[00.12] CONSERV |  srv_common_init():     initialising client table default handlers for conserver...
+[00.13] CONSERV |  srv_common_init():     initialising notification buffer for conserver...
+[00.14] CONSERV |  srv_common_init():     initialising procserv param buffer for conserver...
+[00.15] CONSERV |  dev_irq_init(): Initialising IRQ handler state...
+[00.104] PROCSERV |  proc_get_irq_handler_handler(): Process 2047 (console_server) getting IRQ number 45...
+[00.16] CONSERV |  conserv_init(): conserv_init over...
+[00.17] CONSERV |  srv_ctable_connect_direct_handler(): Adding new conserver client cID = 1. Hi! (:D)
+[00.107] PROCSERV |  client_watch(): Adding client_watch pid 2046 notifyEP 0x320e
+[00.18] CONSERV |  serv_ping_handler(): CONSOLE SERVER RECIEVED PING!!! HI THERE! (•_•)
+[00.0] FILESERV |  fileserv_init(): RefOS Fileserver initialising...
+[00.1] FILESERV |  srv_common_init(): Initialising fileserver common server state...
+[00.2] FILESERV |  srv_common_init():     creating fileserver anon endpoint...
+[00.109] PROCSERV |  proc_new_endpoint_internal_handler(): Process server creating endpoint!
+[00.3] FILESERV |  srv_common_init():     creating fileserver async endpoint...
+[00.111] PROCSERV |  proc_new_async_endpoint_internal_handler(): Process server creating async endpoint!
+[00.4] FILESERV |  srv_common_init():     creating async death and/or fault notification badged EP...
+[00.5] FILESERV |  srv_common_init():     binding notification AEP...
+[00.6] FILESERV |  srv_common_init():     registering under the mountpoint [fileserv]...
+[00.113] PROCSERV |  nsv_register_handler(): Process server name register [fileserv]! :D 
+[00.7] FILESERV |  srv_common_init():     initialising client table for fileserver...
+[00.8] FILESERV |  srv_common_init():     initialising client table default handlers for fileserver...
+[00.9] FILESERV |  srv_common_init():     initialising notification buffer for fileserver...
+[00.10] FILESERV |  srv_common_init():     initialising procserv param buffer for fileserver...
+[00.11] FILESERV |  fileserv_init():     initialising pager frame block...
+[00.12] FILESERV |  pager_init():         Initialising frame block allocator pool...
+[00.13] FILESERV |  pager_init():         Creating pager frame block...
+[00.14] FILESERV |  pager_init():         Allocating frame block window...
+[00.15] FILESERV |  pager_init():         Allocated frame block window 0xc0005000 --> 0xc0085000...
+[00.16] FILESERV |  pager_init():         Datamapping frame block...
+[00.17] FILESERV |  fileserv_init():     initialising dataspace allocation table...
+[00.0] SELFLOADER |  main(): --- Starting RefOS process selfloader ---
+[00.1] SELFLOADER |  main():     Connect to the server for [fileserv/timer_server]
+[00.18] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.127] PROCSERV |  client_watch(): Adding client_watch pid 2044 notifyEP 0x3238
+[00.19] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.20] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.2] SELFLOADER |  main():     Mapping the ELF header for reading... [fileserv/timer_server]
+[00.21] FILESERV |  data_open_handler(): Opening timer_server...
+[00.22] FILESERV |  data_datamap_handler(): Associating dataspace 1 --> windowID 13
+[00.3] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x00008000 --> 0x0001c7c0 
+[00.23] FILESERV |  data_init_data_handler(): Associating dataspace 1 --> external dataspace 8
+[00.4] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x0001d000 --> 0x000c0a00 
+[00.24] FILESERV |  data_init_data_handler(): Associating dataspace 1 --> external dataspace 9
+[00.5] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x0001e000 --> 0x000c1000 
+[00.6] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0xbffd0000 --> 0xbfff0000 
+[00.7] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x000c3000 --> 0x000c4000 
+[00.25] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.26] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.8] SELFLOADER |  sl_elf_start(): =============== Jumping into ELF program ==================
+[00.19] CONSERV |  srv_ctable_connect_direct_handler(): Adding new conserver client cID = 2. Hi! (:D)
+[00.235] PROCSERV |  client_watch(): Adding client_watch pid 2044 notifyEP 0x3325
+[00.20] CONSERV |  serv_ping_handler(): CONSOLE SERVER RECIEVED PING!!! HI THERE! (•_•)
+[00.1] TIMESERV |  timeserv_init():     Initialising timeserv device IO manager...
+[00.2] TIMESERV |  srv_common_init(): Initialising timeserver common server state...
+[00.3] TIMESERV |  srv_common_init():     creating timeserver anon endpoint...
+[00.247] PROCSERV |  proc_new_endpoint_internal_handler(): Process server creating endpoint!
+[00.4] TIMESERV |  srv_common_init():     creating timeserver async endpoint...
+[00.249] PROCSERV |  proc_new_async_endpoint_internal_handler(): Process server creating async endpoint!
+[00.5] TIMESERV |  srv_common_init():     creating async death and/or fault notification badged EP...
+[00.6] TIMESERV |  srv_common_init():     binding notification AEP...
+[00.7] TIMESERV |  srv_common_init():     registering under the mountpoint [dev_timer]...
+[00.251] PROCSERV |  nsv_register_handler(): Process server name register [dev_timer]! :D 
+[00.8] TIMESERV |  srv_common_init():     initialising client table for timeserver...
+[00.9] TIMESERV |  srv_common_init():     initialising client table default handlers for timeserver...
+[00.10] TIMESERV |  srv_common_init():     initialising notification buffer for timeserver...
+[00.11] TIMESERV |  srv_common_init():     initialising procserv param buffer for timeserver...
+[00.12] TIMESERV |  dev_irq_init(): Initialising IRQ handler state...
+[00.265] PROCSERV |  ram_dspace_set_to_paddr(): Checking pages...
+[00.266] PROCSERV |  ram_dspace_set_to_paddr(): procserv_find_device...
+[00.267] PROCSERV |  ram_dspace_set_to_paddr(): procserv_find_device OK...
+[00.272] PROCSERV |  ram_dspace_set_to_paddr(): Checking pages...
+[00.273] PROCSERV |  ram_dspace_set_to_paddr(): procserv_find_device...
+[00.274] PROCSERV |  ram_dspace_set_to_paddr(): procserv_find_device OK...
+[00.278] PROCSERV |  proc_get_irq_handler_handler(): Process 2044 (fileserv/timer_server) getting IRQ number 29...
+[00.280] PROCSERV |  proc_get_irq_handler_handler(): Process 2044 (fileserv/timer_server) getting IRQ number 27...
+[00.21] CONSERV |  srv_ctable_connect_direct_handler(): Adding new conserver client cID = 3. Hi! (:D)
+[00.283] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x3334
+[00.22] CONSERV |  serv_ping_handler(): CONSOLE SERVER RECIEVED PING!!! HI THERE! (•_•)
+OS_TESTS | Running RefOS OS-level tests.
+OS_TESTS | Testing bss zero .................................................... PASSED.
+OS_TESTS | Testing stack ....................................................... PASSED.
+OS_TESTS | Testing heap ........................................................ PASSED.
+[00.285] PROCSERV |  proc_ping_handler(): PROCESS SERVER RECIEVED PING!!! HELLO THERE! (´・ω・)っ由
+[00.287] PROCSERV |  proc_ping_handler(): PROCESS SERVER RECIEVED PING!!! HELLO THERE! (´・ω・)っ由
+[00.289] PROCSERV |  proc_ping_handler(): PROCESS SERVER RECIEVED PING!!! HELLO THERE! (´・ω・)っ由
+[00.291] PROCSERV |  proc_ping_handler(): PROCESS SERVER RECIEVED PING!!! HELLO THERE! (´・ω・)っ由
+[00.293] PROCSERV |  proc_ping_handler(): PROCESS SERVER RECIEVED PING!!! HELLO THERE! (´・ω・)っ由
+[00.295] PROCSERV |  proc_ping_handler(): PROCESS SERVER RECIEVED PING!!! HELLO THERE! (´・ω・)っ由
+[00.297] PROCSERV |  proc_ping_handler(): PROCESS SERVER RECIEVED PING!!! HELLO THERE! (´・ω・)っ由
+[00.299] PROCSERV |  proc_ping_handler(): PROCESS SERVER RECIEVED PING!!! HELLO THERE! (´・ω・)っ由
+OS_TESTS | Testing process server ping ......................................... PASSED.
+[00.301] PROCSERV |  proc_new_endpoint_internal_handler(): Process server creating endpoint!
+[00.303] PROCSERV |  proc_new_async_endpoint_internal_handler(): Process server creating async endpoint!
+OS_TESTS | Testing process server endpoints .................................... PASSED.
+[00.311] PROCSERV |  w_associate_print():     • Associated window 0: winID 22 addr 0x20002000 →→→ 0x2000200a, size 0xa
+[00.312] PROCSERV |  w_associate_print():     • Associated window 1: winID 23 addr 0x20004000 →→→ 0x2000400a, size 0xa
+[00.313] PROCSERV |  w_associate_print():     • Associated window 2: winID 24 addr 0x20006000 →→→ 0x2000600a, size 0xa
+[00.314] PROCSERV |  w_associate_print():     • Associated window 3: winID 25 addr 0x20008000 →→→ 0x2000800a, size 0xa
+[00.315] PROCSERV |  w_associate_print():     • Associated window 4: winID 26 addr 0x20010000 →→→ 0x2001000a, size 0xa
+[00.316] PROCSERV |  w_associate_print():     • Associated window 5: winID 3 addr 0xdff30000 →→→ 0xdff31000, size 0x1000
+[00.318] PROCSERV |  w_associate_print():     • Associated window 0: winID 22 addr 0x20002000 →→→ 0x2000200a, size 0xa
+[00.319] PROCSERV |  w_associate_print():     • Associated window 1: winID 23 addr 0x20004000 →→→ 0x2000400a, size 0xa
+[00.320] PROCSERV |  w_associate_print():     • Associated window 2: winID 24 addr 0x20006000 →→→ 0x2000600a, size 0xa
+[00.321] PROCSERV |  w_associate_print():     • Associated window 3: winID 25 addr 0x20008000 →→→ 0x2000800a, size 0xa
+[00.322] PROCSERV |  w_associate_print():     • Associated window 4: winID 26 addr 0x20010000 →→→ 0x2001000a, size 0xa
+[00.323] PROCSERV |  w_associate_print():     • Associated window 5: winID 3 addr 0xdff30000 →→→ 0xdff31000, size 0x1000
+[00.327] PROCSERV |  w_associate_print():     • Associated window 0: winID 22 addr 0x20002000 →→→ 0x2000200a, size 0xa
+[00.328] PROCSERV |  w_associate_print():     • Associated window 1: winID 23 addr 0x20004000 →→→ 0x2000400a, size 0xa
+[00.329] PROCSERV |  w_associate_print():     • Associated window 2: winID 24 addr 0x20006000 →→→ 0x2000600a, size 0xa
+[00.330] PROCSERV |  w_associate_print():     • Associated window 3: winID 3 addr 0xdff30000 →→→ 0xdff31000, size 0x1000
+[00.331] PROCSERV |  w_associate_print():     • Associated window 4: winID 25 addr 0x20008000 →→→ 0x2000800a, size 0xa
+[00.332] PROCSERV |  w_associate_print():     • Associated window 5: winID 26 addr 0x20010000 →→→ 0x2001000a, size 0xa
+[00.334] PROCSERV |  w_associate_print():     • Associated window 0: winID 22 addr 0x20002000 →→→ 0x2000200a, size 0xa
+[00.335] PROCSERV |  w_associate_print():     • Associated window 1: winID 23 addr 0x20004000 →→→ 0x2000400a, size 0xa
+[00.336] PROCSERV |  w_associate_print():     • Associated window 2: winID 24 addr 0x20006000 →→→ 0x2000600a, size 0xa
+[00.337] PROCSERV |  w_associate_print():     • Associated window 3: winID 3 addr 0xdff30000 →→→ 0xdff31000, size 0x1000
+[00.338] PROCSERV |  w_associate_print():     • Associated window 4: winID 25 addr 0x20008000 →→→ 0x2000800a, size 0xa
+[00.339] PROCSERV |  w_associate_print():     • Associated window 5: winID 26 addr 0x20010000 →→→ 0x2001000a, size 0xa
+OS_TESTS | Testing process server memwindows ................................... PASSED.
+[00.349] PROCSERV |  w_associate_print():     • Associated window 0: winID 26 addr 0x20001000 →→→ 0x20003000, size 0x2000
+[00.350] PROCSERV |  w_associate_print():     • Associated window 1: winID 25 addr 0x20003000 →→→ 0x20005000, size 0x2000
+[00.351] PROCSERV |  w_associate_print():     • Associated window 2: winID 3 addr 0xdff30000 →→→ 0xdff31000, size 0x1000
+OS_TESTS | Testing process server memwindow resize ............................. PASSED.
+OS_TESTS | Testing process server param sharing ................................ PASSED.
+[00.362] PROCSERV |  proc_new_async_endpoint_internal_handler(): Process server creating async endpoint!
+[00.364] PROCSERV |  nsv_register_handler(): Process server name register [os_test_dummy_server]! :D 
+[00.367] PROCSERV |  nsv_unregister_handler(): Process server name unregister! D:
+OS_TESTS | Testing process server registration ................................. PASSED.
+OS_TESTS | Testing anon dataspace .............................................. PASSED.
+[00.27] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.28] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.29] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.30] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.31] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.32] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.380] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.33] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.34] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.35] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.383] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.36] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.37] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.38] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.386] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.39] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.40] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.41] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.389] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.42] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.43] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.44] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.392] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.45] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.46] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+OS_TESTS | Testing fs connection ............................................... PASSED.
+[00.47] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.396] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.48] FILESERV |  data_open_handler(): Opening hello.txt...
+[00.49] FILESERV |  data_datamap_handler(): Associating dataspace 2 --> windowID 26
+OS_TESTS | Testing fs cpio dspace datamap ...................................... PASSED.
+[00.50] FILESERV |  data_init_data_handler(): Associating dataspace 2 --> external dataspace 17
+[00.51] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.52] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+OS_TESTS | Testing fs cpio dspace init_data .................................... PASSED.
+[00.53] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.415] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.54] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.55] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.56] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.57] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.58] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.426] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.59] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.60] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.61] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.62] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.63] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.437] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.64] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.65] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.66] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.67] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.68] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.448] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.69] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.70] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.71] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.72] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.73] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.459] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x335b
+[00.74] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.75] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.76] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.77] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+OS_TESTS | Testing fs serv_connect ............................................. PASSED.
+OS_TESTS | Testing rosutil calloc .............................................. PASSED.
+OS_TESTS | Testing rosutil walloc .............................................. PASSED.
+OS_TESTS | Testing share ....................................................... PASSED.
+OS_TESTS | All is well in the universe.
+TEST_OS | Starting RefOS userland environment unit tests...
+[00.485] PROCSERV |  proc_load_direct(): Allocating PID and PCB...
+[00.486] PROCSERV |  proc_load_direct(): Allocated PID 2042!...
+[00.487] PROCSERV |  proc_load_direct(): Configuring process for PID 2042!...
+[00.488] PROCSERV |  thread_config(): Configuring new thread 0x6bf470..
+[00.0] SELFLOADER |  main(): --- Starting RefOS process selfloader ---
+[00.1] SELFLOADER |  main():     Connect to the server for [/fileserv/test_user]
+[00.78] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.491] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x352d
+[00.79] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.80] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.2] SELFLOADER |  main():     Mapping the ELF header for reading... [/fileserv/test_user]
+[00.81] FILESERV |  data_open_handler(): Opening test_user...
+[00.82] FILESERV |  data_datamap_handler(): Associating dataspace 3 --> windowID 24
+[00.3] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x00008000 --> 0x0001c0a0 
+[00.83] FILESERV |  data_init_data_handler(): Associating dataspace 3 --> external dataspace 19
+[00.4] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x0001d000 --> 0x000892b9 
+[00.84] FILESERV |  data_init_data_handler(): Associating dataspace 3 --> external dataspace 20
+[00.5] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x0001e000 --> 0x0008a000 
+[00.6] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0xbffd0000 --> 0xbfff0000 
+[00.7] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x0008b000 --> 0x0008c000 
+[00.85] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.86] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.8] SELFLOADER |  sl_elf_start(): =============== Jumping into ELF program ==================
+[00.23] CONSERV |  srv_ctable_connect_direct_handler(): Adding new conserver client cID = 4. Hi! (:D)
+[00.614] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x3667
+[00.24] CONSERV |  serv_ping_handler(): CONSOLE SERVER RECIEVED PING!!! HI THERE! (•_•)
+[00.13] TIMESERV |  srv_ctable_connect_direct_handler(): Adding new timeserver client cID = 1. Hi! (:D)
+[00.624] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x3658
+[00.14] TIMESERV |  serv_ping_handler(): Timer server RECIEVED PING!!! HI THERE! ʕ•ᴥ•ʔ
+USER_TEST | Hello world!
+USER_TEST | Running RefOS User-level tests.
+USER_TEST | Testing bss zero ................................................... PASSED.
+USER_TEST | Testing stack ...................................................... PASSED.
+USER_TEST | Testing heap ....................................................... PASSED.
+USER_TEST | Testing huge malloc ................................................ PASSED.
+USER_TEST | Testing param ...................................................... PASSED.
+USER_TEST | Testing libc maths ................................................. PASSED.
+USER_TEST | Testing libc string ................................................ FAILED.
+[00.1083] PROCSERV |  proc_new_endpoint_internal_handler(): Process server creating endpoint!
+[00.1085] PROCSERV |  proc_new_async_endpoint_internal_handler(): Process server creating async endpoint!
+[00.1087] PROCSERV |  thread_config(): Configuring new thread 0x710bd0..
+[00.1089] PROCSERV |  thread_config(): Configuring new thread 0x710c10..
+[00.1091] PROCSERV |  thread_config(): Configuring new thread 0x710c70..
+[00.1093] PROCSERV |  thread_config(): Configuring new thread 0x710cd0..
+[00.1095] PROCSERV |  thread_config(): Configuring new thread 0x710d60..
+[00.1097] PROCSERV |  thread_config(): Configuring new thread 0x710da0..
+[00.1099] PROCSERV |  thread_config(): Configuring new thread 0x710e00..
+[00.1101] PROCSERV |  thread_config(): Configuring new thread 0x710e60..
+USER_TEST | Testing threads .................................................... PASSED.
+USER_TEST | Testing cvector .................................................... PASSED.
+[00.87] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.1107] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x3a85
+[00.88] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.89] FILESERV |  data_open_handler(): Opening hello.txt...
+[00.90] FILESERV |  data_close_handler(): Closing dataspace ID 4...
+[00.91] FILESERV |  dspace_oat_delete(): Deleting dataspace ID 4
+[00.92] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.93] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+USER_TEST | Testing filetable read ............................................. PASSED.
+[00.94] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.1111] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x3a85
+[00.95] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.96] FILESERV |  data_open_handler(): Opening test_file_abc...
+[00.97] FILESERV |  data_close_handler(): Closing dataspace ID 4...
+[00.98] FILESERV |  dspace_oat_delete(): Deleting dataspace ID 4
+[00.99] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.100] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.101] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.1120] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x3a85
+[00.102] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.103] FILESERV |  data_open_handler(): Opening test_file_abc...
+[00.104] FILESERV |  data_close_handler(): Closing dataspace ID 4...
+[00.105] FILESERV |  dspace_oat_delete(): Deleting dataspace ID 4
+[00.106] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.107] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+USER_TEST | Testing filetable write ............................................ PASSED.
+USER_TEST | Testing gettime .................................................... PASSED.
+USER_TEST | Test assert failed: sz == 52, function test_libc_string, file /home/vagrant/refos/apps/test_user/src/test_user.c, line 157.
+[00.1123] PROCSERV |  proc_exit_handler(): Process PID 2042 exiting with status 4660 !!!
+[00.1124] PROCSERV |  proc_syscall_postaction():     Releasing process 2042 [/fileserv/test_user]...
+[00.1125] PROCSERV |  client_watch_notify_death_callback(): Notifying client 2044 [fileserv/timer_server] of the death of 2042 with EP 0x3658...
+[00.1126] PROCSERV |  client_watch_notify_death_callback(): Notifying client 2047 [console_server] of the death of 2042 with EP 0x3667...
+[00.1127] PROCSERV |  proc_parent_reply(): proc_parent_reply childPID 2042 parentPID 2045.
+[00.25] CONSERV |  handle_conserver_death_notification(): ## Console serv Handling death notification...
+[00.26] CONSERV |  handle_conserver_death_notification():      Label: PROCSERV_NOTIFY_DEATH
+[00.27] CONSERV |  handle_conserver_death_notification():      deathID: 2042
+OS_TESTS | Back to Refos OS-level. Running userland second time.
+TEST_OS | Starting RefOS userland environment unit tests...
+[00.1130] PROCSERV |  proc_load_direct(): Allocating PID and PCB...
+[00.1131] PROCSERV |  proc_load_direct(): Allocated PID 2042!...
+[00.1132] PROCSERV |  proc_load_direct(): Configuring process for PID 2042!...
+[00.1133] PROCSERV |  thread_config(): Configuring new thread 0x710b40..
+[00.15] TIMESERV |  handle_timeserver_death_notification(): ## Timer server Handling death notification...
+[00.16] TIMESERV |  handle_timeserver_death_notification():      Label: PROCSERV_NOTIFY_DEATH
+[00.17] TIMESERV |  handle_timeserver_death_notification():      deathID: 2042
+[00.0] SELFLOADER |  main(): --- Starting RefOS process selfloader ---
+[00.1] SELFLOADER |  main():     Connect to the server for [/fileserv/test_user]
+[00.108] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.1137] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x3c68
+[00.109] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.110] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.2] SELFLOADER |  main():     Mapping the ELF header for reading... [/fileserv/test_user]
+[00.111] FILESERV |  data_open_handler(): Opening test_user...
+[00.112] FILESERV |  data_datamap_handler(): Associating dataspace 4 --> windowID 26
+[00.3] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x00008000 --> 0x0001c0a0 
+[00.113] FILESERV |  data_init_data_handler(): Associating dataspace 4 --> external dataspace 152
+[00.4] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x0001d000 --> 0x000892b9 
+[00.114] FILESERV |  data_init_data_handler(): Associating dataspace 4 --> external dataspace 153
+[00.5] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x0001e000 --> 0x0008a000 
+[00.6] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0xbffd0000 --> 0xbfff0000 
+[00.7] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x0008b000 --> 0x0008c000 
+[00.115] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.116] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.8] SELFLOADER |  sl_elf_start(): =============== Jumping into ELF program ==================
+[00.28] CONSERV |  srv_ctable_connect_direct_handler(): Adding new conserver client cID = 4. Hi! (:D)
+[00.1260] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x3d64
+[00.29] CONSERV |  serv_ping_handler(): CONSOLE SERVER RECIEVED PING!!! HI THERE! (•_•)
+[00.18] TIMESERV |  srv_ctable_connect_direct_handler(): Adding new timeserver client cID = 1. Hi! (:D)
+[00.1269] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x3d5d
+[00.19] TIMESERV |  serv_ping_handler(): Timer server RECIEVED PING!!! HI THERE! ʕ•ᴥ•ʔ
+USER_TEST | Hello world!
+USER_TEST | Running RefOS User-level tests.
+USER_TEST | Testing bss zero ................................................... PASSED.
+USER_TEST | Testing stack ...................................................... PASSED.
+USER_TEST | Testing heap ....................................................... PASSED.
+USER_TEST | Testing huge malloc ................................................ PASSED.
+USER_TEST | Testing param ...................................................... PASSED.
+USER_TEST | Testing libc maths ................................................. PASSED.
+USER_TEST | Testing libc string ................................................ FAILED.
+[00.1727] PROCSERV |  proc_new_endpoint_internal_handler(): Process server creating endpoint!
+[00.1729] PROCSERV |  proc_new_async_endpoint_internal_handler(): Process server creating async endpoint!
+[00.1731] PROCSERV |  thread_config(): Configuring new thread 0x756950..
+[00.1733] PROCSERV |  thread_config(): Configuring new thread 0x756990..
+[00.1735] PROCSERV |  thread_config(): Configuring new thread 0x7569f0..
+[00.1737] PROCSERV |  thread_config(): Configuring new thread 0x756a50..
+[00.1739] PROCSERV |  thread_config(): Configuring new thread 0x756ab0..
+[00.1741] PROCSERV |  thread_config(): Configuring new thread 0x756b10..
+[00.1743] PROCSERV |  thread_config(): Configuring new thread 0x756b70..
+[00.1745] PROCSERV |  thread_config(): Configuring new thread 0x756bd0..
+USER_TEST | Testing threads .................................................... PASSED.
+USER_TEST | Testing cvector .................................................... PASSED.
+[00.117] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.1751] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x414f
+[00.118] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.119] FILESERV |  data_open_handler(): Opening hello.txt...
+[00.120] FILESERV |  data_close_handler(): Closing dataspace ID 5...
+[00.121] FILESERV |  dspace_oat_delete(): Deleting dataspace ID 5
+[00.122] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.123] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+USER_TEST | Testing filetable read ............................................. PASSED.
+[00.124] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.1755] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x414f
+[00.125] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.126] FILESERV |  data_open_handler(): Opening test_file_abc...
+[00.127] FILESERV |  data_close_handler(): Closing dataspace ID 5...
+[00.128] FILESERV |  dspace_oat_delete(): Deleting dataspace ID 5
+[00.129] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.130] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.131] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.1764] PROCSERV |  client_watch(): Adding client_watch pid 2042 notifyEP 0x417a
+[00.132] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.133] FILESERV |  data_open_handler(): Opening test_file_abc...
+[00.134] FILESERV |  data_close_handler(): Closing dataspace ID 5...
+[00.135] FILESERV |  dspace_oat_delete(): Deleting dataspace ID 5
+[00.136] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.137] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+USER_TEST | Testing filetable write ............................................ PASSED.
+USER_TEST | Testing gettime .................................................... PASSED.
+USER_TEST | Test assert failed: sz == 52, function test_libc_string, file /home/vagrant/refos/apps/test_user/src/test_user.c, line 157.
+[00.1767] PROCSERV |  proc_exit_handler(): Process PID 2042 exiting with status 4660 !!!
+[00.1768] PROCSERV |  proc_syscall_postaction():     Releasing process 2042 [/fileserv/test_user]...
+[00.1769] PROCSERV |  client_watch_notify_death_callback(): Notifying client 2044 [fileserv/timer_server] of the death of 2042 with EP 0x3d5d...
+[00.1770] PROCSERV |  client_watch_notify_death_callback(): Notifying client 2047 [console_server] of the death of 2042 with EP 0x3d64...
+[00.1771] PROCSERV |  proc_parent_reply(): proc_parent_reply childPID 2042 parentPID 2045.
+[00.30] CONSERV |  handle_conserver_death_notification(): ## Console serv Handling death notification...
+[00.31] CONSERV |  handle_conserver_death_notification():      Label: PROCSERV_NOTIFY_DEATH
+[00.32] CONSERV |  handle_conserver_death_notification():      deathID: 2042
+OS_TESTS | Back to Refos OS-level. Quitting.
+[00.1773] PROCSERV |  proc_exit_handler(): Process PID 2045 exiting with status 0 !!!
+[00.1774] PROCSERV |  proc_syscall_postaction():     Releasing process 2045 [test_os]...
+[00.1775] PROCSERV |  client_watch_notify_death_callback(): Notifying client 2047 [console_server] of the death of 2045 with EP 0x3334...
+[00.33] CONSERV |  handle_conserver_death_notification(): ## Console serv Handling death notification...
+[00.34] CONSERV |  handle_conserver_death_notification():      Label: PROCSERV_NOTIFY_DEATH
+[00.35] CONSERV |  handle_conserver_death_notification():      deathID: 2045
+[00.20] TIMESERV |  handle_timeserver_death_notification(): ## Timer server Handling death notification...
+[00.21] TIMESERV |  handle_timeserver_death_notification():      Label: PROCSERV_NOTIFY_DEATH
+[00.22] TIMESERV |  handle_timeserver_death_notification():      deathID: 2042
+[00.0] SELFLOADER |  main(): --- Starting RefOS process selfloader ---
+[00.1] SELFLOADER |  main():     Connect to the server for [/fileserv/terminal]
+[00.138] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.1778] PROCSERV |  client_watch(): Adding client_watch pid 2043 notifyEP 0x417b
+[00.139] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.140] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.2] SELFLOADER |  main():     Mapping the ELF header for reading... [/fileserv/terminal]
+[00.141] FILESERV |  data_open_handler(): Opening terminal...
+[00.142] FILESERV |  data_datamap_handler(): Associating dataspace 5 --> windowID 26
+[00.3] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x00008000 --> 0x00019f7c 
+[00.143] FILESERV |  data_init_data_handler(): Associating dataspace 5 --> external dataspace 285
+[00.4] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x0001a000 --> 0x00058eb9 
+[00.144] FILESERV |  data_init_data_handler(): Associating dataspace 5 --> external dataspace 286
+[00.5] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x0001b000 --> 0x00059000 
+[00.6] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0xbffd0000 --> 0xbfff0000 
+[00.7] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x0005b000 --> 0x0005c000 
+[00.145] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.146] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.8] SELFLOADER |  sl_elf_start(): =============== Jumping into ELF program ==================
+[00.36] CONSERV |  srv_ctable_connect_direct_handler(): Adding new conserver client cID = 3. Hi! (:D)
+[00.1900] PROCSERV |  client_watch(): Adding client_watch pid 2043 notifyEP 0x4212
+[00.37] CONSERV |  serv_ping_handler(): CONSOLE SERVER RECIEVED PING!!! HI THERE! (•_•)
+[00.23] TIMESERV |  srv_ctable_connect_direct_handler(): Adding new timeserver client cID = 1. Hi! (:D)
+[00.1906] PROCSERV |  client_watch(): Adding client_watch pid 2043 notifyEP 0x420d
+[00.24] TIMESERV |  serv_ping_handler(): Timer server RECIEVED PING!!! HI THERE! ʕ•ᴥ•ʔ
+ ______     ______     ______   ______     ______    
+/\  == \   /\  ___\   /\  ___\ /\  __ \   /\  ___\   
+\ \  __<   \ \  __\   \ \  __\ \ \ \/\ \  \ \___  \  
+ \ \_\ \_\  \ \_____\  \ \_\    \ \_____\  \/\_____\ 
+  \/_/ /_/   \/_____/   \/_/     \/_____/   \/_____/ 
+
+-----------------------------------------------------
+    Built on the seL4 microkernel.
+    (c) Copyright 2016 Data61, CSIRO
+-----------------------------------------------------
+refos:/$ help
+RefOS Terminal Help:
+    clear - Clear the screen.
+    help - Display this help screen.
+    exec - Run an executable.
+    exec fileserv/tetris - Run tetris game.
+    exec fileserv/snake - Run snake game.
+    exec fileserv/test_user - Run RefOS userland tests.
+    exec fileserv/terminal - Run another instance of RefOS terminal.
+    cd /fileserv/ - Change current working directory.
+    printenv - Print all environment variables.
+    setenv - Set an environment variable.
+    time - Display the current system time.
+    exit - Exit RefOS terminal.
+refos:/$ printenv
+SHELL=/fileserv/terminal
+PWD=/
+TZ=AEST-10
+refos:/$ time
+Raw epoch time is 89
+Current GMT time is Thursday, January  1 00:01:29 1970
+Current local time (AEST-10) is Thursday, January  1 10:01:29 1970
+refos:/$ exec fileserv/tetris
+[00.1914] PROCSERV |  proc_load_direct(): Allocating PID and PCB...
+[00.1915] PROCSERV |  proc_load_direct(): Allocated PID 2045!...
+[00.1916] PROCSERV |  proc_load_direct(): Configuring process for PID 2045!...
+[00.1917] PROCSERV |  thread_config(): Configuring new thread 0x6c6350..
+[00.0] SELFLOADER |  main(): --- Starting RefOS process selfloader ---
+[00.1] SELFLOADER |  main():     Connect to the server for [/fileserv/tetris]
+[00.147] FILESERV |  srv_ctable_connect_direct_handler(): Adding new fileserver client cID = 1. Hi! (:D)
+[00.1920] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x43e3
+[00.148] FILESERV |  serv_ping_handler(): FILE SERVER RECIEVED PING!!! HI THERE! (╯°□°）╯︵ ┻━┻
+[00.149] FILESERV |  srv_ctable_set_param_buffer_handler(): Set param buffer for client cID = 1...
+[00.2] SELFLOADER |  main():     Mapping the ELF header for reading... [/fileserv/tetris]
+[00.150] FILESERV |  data_open_handler(): Opening tetris...
+[00.151] FILESERV |  data_datamap_handler(): Associating dataspace 6 --> windowID 39
+[00.3] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x00008000 --> 0x00017cb0 
+[00.152] FILESERV |  data_init_data_handler(): Associating dataspace 6 --> external dataspace 290
+[00.4] SELFLOADER |  sl_elf_load_region(): Loading elf segment 0x00018000 --> 0x00057600 
+[00.153] FILESERV |  data_init_data_handler(): Associating dataspace 6 --> external dataspace 291
+[00.5] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x00019000 --> 0x00058000 
+[00.6] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0xbffd0000 --> 0xbfff0000 
+[00.7] SELFLOADER |  sl_create_zero_segment(): Loading zero segment 0x00059000 --> 0x0005a000 
+[00.154] FILESERV |  serv_disconnect_direct_handler(): Fileserver disconnecting client cID = 1. Bye! (D:)
+[00.155] FILESERV |  srv_ctable_disconnect_direct_handler(): Disconnecting fileserver client cID = 1. Bye! (D:)
+[00.8] SELFLOADER |  sl_elf_start(): =============== Jumping into ELF program ==================
+[00.38] CONSERV |  srv_ctable_connect_direct_handler(): Adding new conserver client cID = 4. Hi! (:D)
+[00.2042] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x44b0
+[00.39] CONSERV |  serv_ping_handler(): CONSOLE SERVER RECIEVED PING!!! HI THERE! (•_•)
+[00.25] TIMESERV |  srv_ctable_connect_direct_handler(): Adding new timeserver client cID = 2. Hi! (:D)
+[00.2045] PROCSERV |  client_watch(): Adding client_watch pid 2045 notifyEP 0x44af
+[00.26] TIMESERV |  serv_ping_handler(): Timer server RECIEVED PING!!! HI THERE! ʕ•ᴥ•ʔ
+
+
+  ████████╗███████╗████████╗██████╗ ██╗███████╗
+  ╚══██╔══╝██╔════╝╚══██╔══╝██╔══██╗██║██╔════╝
+     ██║   █████╗     ██║   ██████╔╝██║███████╗
+     ██║   ██╔══╝     ██║   ██╔══██╗██║╚════██║
+     ██║   ███████╗   ██║   ██║  ██║██║███████║
+     ╚═╝   ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝
+      Press the space bar to continue...
+
+
+                                                     j     - left
+                                                     k     - rotate
+                                                     l     - right
+                                                     space - drop
+                                                     p     - pause
+                                                     q     - quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   
+                                                     Level  : 1
+                                                     Points : 6
+                                                   
+                                                     Preview:
+                                                           
+                                                             
+                                                           
+                                                   
+                                                     Keys:
+                                                     j     - left
+                                                     k     - rotate
+                                                     l     - right
+                                                     space - drop
+                                                     p     - pause
+                                                     q     - quit
+                                                   
+                                                   
+                                                   
+                                                   
+                                                   
+
+
+
+Game over! You reached 6 points.
+[00.2050] PROCSERV |  proc_exit_handler(): Process PID 2045 exiting with status 0 !!!
+[00.2051] PROCSERV |  proc_syscall_postaction():     Releasing process 2045 [/fileserv/tetris]...
+[00.2052] PROCSERV |  client_watch_notify_death_callback(): Notifying client 2044 [fileserv/timer_server] of the death of 2045 with EP 0x44af...
+[00.2053] PROCSERV |  client_watch_notify_death_callback(): Notifying client 2047 [console_server] of the death of 2045 with EP 0x44b0...
+[00.2054] PROCSERV |  proc_parent_reply(): proc_parent_reply childPID 2045 parentPID 2043.
+[00.40] CONSERV |  handle_conserver_death_notification(): ## Console serv Handling death notification...
+[00.41] CONSERV |  handle_conserver_death_notification():      Label: PROCSERV_NOTIFY_DEATH
+[00.42] CONSERV |  handle_conserver_death_notification():      deathID: 2045
+[00.27] TIMESERV |  handle_timeserver_death_notification(): ## Timer server Handling death notification...
+[00.28] TIMESERV |  handle_timeserver_death_notification():      Label: PROCSERV_NOTIFY_DEATH
+[00.29] TIMESERV |  handle_timeserver_death_notification():      deathID: 2045
+refos:/$ q
+-terminal: q: command not found
+refos:/$ exit
+
+[00.2056] PROCSERV |  proc_exit_handler(): Process PID 2043 exiting with status 0 !!!
+[00.2057] PROCSERV |  proc_syscall_postaction():     Releasing process 2043 [/fileserv/terminal]...
+[00.2058] PROCSERV |  client_watch_notify_death_callback(): Notifying client 2044 [fileserv/timer_server] of the death of 2043 with EP 0x420d...
+[00.2059] PROCSERV |  client_watch_notify_death_callback(): Notifying client 2047 [console_server] of the death of 2043 with EP 0x4212...
+[00.43] CONSERV |  handle_conserver_death_notification(): ## Console serv Handling death notification...
+[00.44] CONSERV |  handle_conserver_death_notification():      Label: PROCSERV_NOTIFY_DEATH
+[00.45] CONSERV |  handle_conserver_death_notification():      deathID: 2043
+[00.30] TIMESERV |  handle_timeserver_death_notification(): ## Timer server Handling death notification...
+[00.31] TIMESERV |  handle_timeserver_death_notification():      Label: PROCSERV_NOTIFY_DEATH
+[00.32] TIMESERV |  handle_timeserver_death_notification():      deathID: 2043
+QEMU: Terminated
