@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xwindow_2eh_10078',['xwindow.h',['../xwindow_8h.html',1,'']]],
-  ['xwindowp_2eh_10079',['xwindowp.h',['../xwindowp_8h.html',1,'']]]
+  ['xwindow_2eh_10076',['xwindow.h',['../xwindow_8h.html',1,'']]],
+  ['xwindowp_2eh_10077',['xwindowp.h',['../xwindowp_8h.html',1,'']]]
 ];

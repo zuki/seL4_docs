@@ -174,7 +174,7 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Process selfloader system application for RefOS. </p>
 <p>Selfloader is a tiny system application that starts in the same address space as the application being boosted. Selfloader then acts on behalf of the starting process, setting up its vspace and loading the ELF segments before jumping into the entry point of the process. In order to avoid vspace address conflicts with the booting process, the Sselfloader process linker script compiles it into a very high RefOS reserved region, away from the vspace of the booting process.</p>
-<p>See <a class="el" href="design.html#Startup">Startup</a> </p>
+<p>See Startup </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6d4ed7b4ceed7d4aef1a7763861716a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d4ed7b4ceed7d4aef1a7763861716a7">&#9670;&nbsp;</a></span>SELFLOADER_ELF_HEADER_SIZE</h2>
@@ -838,7 +838,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_9654b8d08f4bba4e84b362c5fd320bee.html">apps</a></li><li class="navelem"><a class="el" href="dir_97a8af02729015cd81823a7e845b3d01.html">selfloader</a></li><li class="navelem"><a class="el" href="dir_e5f169887496c8648fe7a010e844a71c.html">src</a></li><li class="navelem"><a class="el" href="selfloader_8c.html">selfloader.c</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 10:14:24 for RefOS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 10 2023 17:16:02 for RefOS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

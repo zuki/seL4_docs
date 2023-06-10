@@ -244,10 +244,10 @@ var NAVTREEINDEX6 =
 "def__os2_8h_source.html":[5,0,0,2,0,0,0,13],
 "design.html":[2],
 "design.html#Dataspace":[2,0],
-"design.html#Dispatcher":[2,4],
-"design.html#Interfaces":[2,1],
-"design.html#Startup":[2,2],
 "design.html#page_faults":[2,3],
+"design.html#インタフェース":[2,1],
+"design.html#ディスパッチャ":[2,4],
+"design.html#起動":[2,2],
 "design_8h.html":[5,0,1,0,1],
 "design_8h_source.html":[5,0,1,0,1]
 };

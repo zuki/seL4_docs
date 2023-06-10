@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RefOS: Design Overview</title>
+<title>RefOS: 設計の概要</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,87 +86,90 @@ $(document).ready(function(){initNavTree('design.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Design Overview </div>  </div>
+<div class="title">設計の概要 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="Dataspace"></a>
 Dataspace</h1>
-<p>The overall design of RefOS revolves around the abstraction of a dataspace and the interfaces needed to manage them.</p>
-<p>A dataspace is a memory space and is represented by a stream of bytes. Dataspaces may represent entities such as: </p><ul>
+<p>RefOSの全体的な設計はdataspaceの抽象化とそれを管理するために必要な インタフェースを中心に展開されています。</p>
+<p>dataspaceはメモリ空間であり、バイトストリームで表現されます。dataspaceは 次のような実体を表現できます。</p>
+<ul>
 <li>
-A physical file on disk (e.g. unix /bin/sh)  </li>
+ディスク上の物理ファイル（例: unixの/bin/sh）  </li>
 <li>
-A hardware device (e.g. unix /dev/hda1)  </li>
+ハードウェアデバイス（例: unixの/dev/hda1）  </li>
 <li>
-A bit of anonymous memory (e.g. physical RAM)  </li>
+匿名メモリのビット（例: 物理RAM）  </li>
 <li>
-A stream of bytes (e.g. unix /dev/urandom)  </li>
+バイトストリーム（例: unixの/dev/urandom）  </li>
 </ul>
 <div class="image">
 <img src="dataspace_example.png" alt=""/>
 <div class="caption">
-Figure 1 - Example Dataspace Setup</div></div>
-<p>Dataspace servers (dataservers) implement the dataspace protocol interface and provide a dataspace abstraction service to clients. For example, in Figure 1, a portion of dataspace A is mapped into a client's memory window (client's virtual memory). When the client reads this memory, the client effectively reads the content in dataspace A. Another aspect of this figure is that dataspace A could initialise dataspace B with dataspace A's contents.</p>
-<h1><a class="anchor" id="Interfaces"></a>
-Interfaces</h1>
-<p>The two main interfaces in RefOS are the process server and the data server. In addition to these two interfaces, there are a number of less major (but still important) interfaces, such as the name server interface, that provide additional functionality.</p>
-<h3>Process Server Interface</h3>
-<p>The process server interface creates process abstractions. The process server interface provides methods for: </p><ul>
+図1 - Dataspaceの設定例</div></div>
+<p>Dataspaceサーバ (dataservers) はdataspaceプロトコルインタフェースを実装し、 dataspace抽象化サービスをクライアントに提供します。たとえば、図1において、 dataspace Aの一部は、クライアントのメモリウィンドウ（クライアントの仮想メモリ）に マッピングされています。この図のもう一つの側面はdataspace Aがdataspace Aの コンテンツでdataspace Bを初期化することができることです。</p>
+<h1><a class="anchor" id="インタフェース"></a>
+インタフェース</h1>
+<p>RefOSの主要なインタフェースはプロセスサーバとデータサーバです。この2つの インタフェースに加え、ネームサーバインタフェースなど、あまりメジャーでは ない（が重要な）インタフェースも多数あり、追加機能を提供しています。</p>
+<h3>プロセスサーバインタフェース</h3>
+<p>プロセスサーバインターフェイスはプロセスの抽象化を行います。プロセスサーバ インタフェースは次のようなメソッドを提供しています。</p>
+<ul>
 <li>
-Starting, ending and managing processes and threads  </li>
+プロセスとスレッドの開始、終了、管理  </li>
 <li>
-Creating, deleting and managing memory windows  </li>
+メモリウィンドウの作成、削除、管理  </li>
 <li>
-Handling and delegating kernel page faults  </li>
+カーネルページフォールトの処理と委譲  </li>
 </ul>
-<h3>Data Server Interface</h3>
-<p>The main goal of the data server interface is to provide dataspace abstraction. The data server interface provides methods for: </p><ul>
+<h3>データサーバインタフェース</h3>
+<p>データサーバインタフェースの主な目的はdataspaceの抽象化を提供することです。 データサーバインタフェースは次のようなメソッドを提供しています。</p>
+<ul>
 <li>
-Creating, deleting and managing dataspaces  </li>
+dataspaceの作成、削除、管理  </li>
 <li>
-Mapping dataspaces to memory windows and thus allowing access to the contents of dataspaces  </li>
+dataspaceのメモリウィンドウへのマッピングとdataspaceの内容へのアクセス提供  </li>
 <li>
-Initialising dataspaces with the contents of other dataspaces  </li>
+他のdataspaceの内容によるdataspaceの初期化  </li>
 <li>
-Establishing pager services to map memory frames for memory windows mapped to dataspaces  </li>
+dataspaceにマッピングされるメモリウィドウ用のメモリフレームをマッピングするためのページャサービスの確立  </li>
 </ul>
-<h1><a class="anchor" id="Startup"></a>
-Startup</h1>
+<h1><a class="anchor" id="起動"></a>
+起動</h1>
 <div class="image">
 <img src="startup.png" alt=""/>
 <div class="caption">
-Figure 2 - RefOS Boot Protocol</div></div>
-<p>In the RefOS boot protocol, the process server is started and initialises itself. Once the process server is running, the process server uses its interal ELF loader to start the file server and then starts the selfloader.</p>
+図2 - RefOSブートプロトコル</div></div>
+<p>RefOSブートプロトコルでは、プロセスサーバが起動し、自身を初期化します。 プロセスサーバが起動すると、プロセスサーバは内蔵のELFローダを使って ファイルサーバを起動し、次いで、selfloaderを起動します。</p>
 <div class="image">
 <img src="elfload.png" alt=""/>
 <div class="caption">
-Figure 3 - ELF Loading</div></div>
-<p>The selfloader is a process that the process server spawns, and it is used for starting user processes. The selfloader runs in the same address space as the process it is starting. The selfloader establishes a connection to the file server, reads the ELF executable headers and then creates memory windows mapped to the bytes of the file content served by the file server. The selfloader also sets up a memory window for the stack pointer. After performing these tasks, the selfloader jumps to the entry point of the executable which causes a page fault on the first instruction read.</p>
+図3 - ELFローディング</div></div>
+<p>selfloaderはプロセスサーバが起動するプロセスであり、ユーザプロセスの起動に 使用されます。selfloaderは起動したプロセスと同じアドレス空間で実行します。 selfloaderはファイルサーバへの接続を確立し、ELF実行可能ヘッダーを読み、 ファイルサーバにより提供されたファイルコンテンツのバイトにマッピングされた メモリウィンドウを作成します。selfloaderはスタックポインタのためのメモリ ウィンドウも設定します。これらの作業を行った後、selfloaderは実行ファイルの エントリポイントにジャンプします。すると、最初に読み込んだ命令でページフォルトが 発生します。</p>
 <h1><a class="anchor" id="page_faults"></a>
-Page Faults</h1>
+ページフォルト</h1>
 <div class="image">
 <img src="fault.png" alt=""/>
 <div class="caption">
-Figure 4 - Page Fault Handling</div></div>
-<p>When a page fault occurs in a client program, the process server receives a page fault notification from the kernel. Since the selfloader initialised the memory windows for the client, the window that the client faulted in is data mapped to one of the process server's own dataspaces (representing anonymous memory).</p>
-<p>The process server then notifies the file server that a page fault occurred. Having received the notifiction, the file server registers the fault event, handles the fault event and replies via interprocess communication. The file server provides any data that the process server asked for in its notification such as the window capability, the window offset and the memory page address.</p>
-<p>The process server then copies the contents of the memory page to its own RAM dataspace and replies to the faulting message with the contents of the memory page, which causes the client to resume execution.</p>
-<h1><a class="anchor" id="Dispatcher"></a>
-Dispatcher</h1>
-<p>RefOS's servers use a dispatcher algorithm to handle messages that they receive.</p>
+図4 - ページフォルトの処理</div></div>
+<p>クライアントプログラムでページフォルトが発生すると、プロセスサーバはカーネルから ページフォルト通知を受け取ります。selfloaderはクライアント用のメモリウィンドウを 初期化しているため、クライアントがフォールトしたウィンドウはプロセスサーバ自身の dataspace（匿名メモリを表す）にマッピングされたデータです。</p>
+<p>プロセスサーバはファイルサーバにページフォルトが発生したことを通知します。 通知を受けたファイルサーバはフォールトイベントを登録し、そのフォールトイベントを 処理し、プロセス間通信を通じて応答します。ファイルサーバはプロセスサーバが通知で 要求した（ウィンドウケーパビリティ、ウィンドウオフセット、メモリページ アドレスなど）任意のデータを提供します。</p>
+<p>プロセスサーバはメモリページの内容を自身のRAM dataspaceにコピーし、メモリページの 内容をつけてフォールトメッセージに応答します。これによりクライアントは実行を再開 させます。</p>
+<h1><a class="anchor" id="ディスパッチャ"></a>
+ディスパッチャ</h1>
+<p>RefOSのサーバは受信したメッセージの処理にディスパッチャアルゴリズムを使用します。</p>
 <div class="image">
 <img src="dispatcher.png" alt=""/>
 <div class="caption">
-Figure 5 - Dispatcher Design Overview</div></div>
-<p>The best way to illustrate the RefOS dispatcher algorithm is through an example. Say a server receives a message. The message is analysed by dispatcher 1. If dispatcher 1 determines that the message is the type of message that it handles, dispatcher 1 handles the message. Otherwise, dispatcher 1 passes the message onto dispatcher 2. If dispatcher 1 passes the message onto dispatcher 2, dispatcher 2 also analyses the message and determines whether the message is the type of message that it handles. Just like dispatcher 1, dispatcher 2 either handles the message or passes the message onto dispatcher 3. This algorithm is repeated until the final dispatcher if necessary. If a dispatcher determines that a message is the correct message type for it to handle, the dispatcher handles the message by calling the appropriate handler function depending on the message contents. Of course, if a dispatcher handles a message, the message is now processed and is not passed onto the next dispatcher. If the final dispatcher determines that the message is not the correct message type for it to handle, the server produces an error message.</p>
-<p>Note that in implementation each server does not necessarily have exactly four dispactchers. </p>
+図5 - ディスパッチャの設計概要</div></div>
+<p>RefOSのディスパッチャアルゴリズムを説明するには例を挙げるのが一番です。 あるサーバーがメッセージを受信したとします。そのメッセージはディスパッチャ1に より分析されます。ディスパッチャ1がそのメッセージを自分が処理するタイプの メッセージであると判断した場合、ディスパッチャ1がそのメッセージを処理します。 そうでない場合、ディスパッチャ1はメッセージをディスパッチャ2に渡します。 ディスパッチャ1がディスパッチャ2にメッセージを渡すと、ディスパッチャ2もその メッセージを分析し、そのメッセージが自分が処理するタイプのメッセージであるかを 判断します。ディスパッチャー1と同様に、ディスパッチャー2もメッセージを処理するか、 ディスパッチャ3にメッセージを渡します。このアルゴリズムは必要に応じて最後の ディスパッチャまで繰り返されます。ディスパッチャはメッセージが自分の処理すべき タイプのメッセージであると判断した場合、メッセージの内容に応じて適切なハンドラ 関数を呼び出してメッセージを処理します。もちろん、ディスパッチャがメッセージを 処理した場合はメッセージは処理済みになりますので、次のディスパッチャに渡される ことはありません。最後のディスパッチャが自分が処理すべきタイプのメッセージでは ないと判断した場合、サーバはエラーメッセージを生成します。</p>
+<p>実装において各サーバが必ずしも4つのディスパッチャを持っているわけではないことに 注意してください。 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 10 2023 10:14:24 for RefOS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 10 2023 17:16:02 for RefOS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

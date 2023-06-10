@@ -25,24 +25,24 @@
 var NAVTREE =
 [
   [ "RefOS", "index.html", [
-    [ "Code Documentation", "index.html", null ],
-    [ "Components", "components.html", [
-      [ "Process server", "components.html#procserv", null ],
-      [ "File server", "components.html#fileserv", null ],
-      [ "Console Server", "components.html#conserv", null ],
-      [ "Timer Server", "components.html#timeserv", null ]
+    [ "コードドキュメント", "index.html", null ],
+    [ "コンポーネント", "components.html", [
+      [ "プロセスサーバ", "components.html#procserv", null ],
+      [ "ファイルサーバ", "components.html#fileserv", null ],
+      [ "コンソールサーバ", "components.html#conserv", null ],
+      [ "タイマーサーバ", "components.html#timeserv", null ]
     ] ],
-    [ "Design Overview", "design.html", [
+    [ "設計の概要", "design.html", [
       [ "Dataspace", "design.html#Dataspace", null ],
-      [ "Interfaces", "design.html#Interfaces", null ],
-      [ "Startup", "design.html#Startup", null ],
-      [ "Page Faults", "design.html#page_faults", null ],
-      [ "Dispatcher", "design.html#Dispatcher", null ]
+      [ "インタフェース", "design.html#インタフェース", null ],
+      [ "起動", "design.html#起動", null ],
+      [ "ページフォルト", "design.html#page_faults", null ],
+      [ "ディスパッチャ", "design.html#ディスパッチャ", null ]
     ] ],
-    [ "Testing", "testing.html", [
-      [ "Root Level Tests", "testing.html#root_level_tests", null ],
-      [ "Operating System Level Tests", "testing.html#os_level_tests", null ],
-      [ "User Level Tests", "testing.html#user_level_tests", null ]
+    [ "テスト", "testing.html", [
+      [ "ルートレベルのテスト", "testing.html#root_level_tests", null ],
+      [ "オペレーティングシステムレベルのテスト", "testing.html#os_level_tests", null ],
+      [ "ユーザレベルのテスト", "testing.html#user_level_tests", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],

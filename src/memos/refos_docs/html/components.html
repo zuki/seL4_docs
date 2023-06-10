@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RefOS: Components</title>
+<title>RefOS: コンポーネント</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,79 +86,79 @@ $(document).ready(function(){initNavTree('components.html',''); initResizable();
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Components </div>  </div>
+<div class="title">コンポーネント </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>RefOS embraces the component-based multi-server operating system design. RefOS's two main components are a process server and a fileserver. The process server runs as the initial thread, and it is responsible for starting the rest of the sysem. Other components of the system include clients, device drivers, file servers, terminal programs, tetris and snake.</p>
+<div class="textblock"><p>RefOSはコンポーネントベースのマルチサーバオペレーティングシステム デザインを採用しています。RefOSの2つの主要コンポーネントは プロセスサーバとファイルサーバです。プロセスサーバは初期スレッドと して実行され、残りのシステムの起動を担当します。その他のコンポーネント にはクライアント、デバイスドライバ、ファイルサーバ、ターミナルプログラム、 テトリス、スネークがあります。</p>
 <div class="image">
 <img src="component_design.png" alt=""/>
 <div class="caption">
-Figure 1 - RefOS Components</div></div>
+図1 - RefOSのコンポーネント</div></div>
 <h1><a class="anchor" id="procserv"></a>
-Process server</h1>
+プロセスサーバ</h1>
 <div class="image">
 <img src="procserv.png" alt=""/>
 <div class="caption">
-Figure 2 - Process Server</div></div>
-<p>The process server is the most trusted component in the system. It runs as the initial kernel thread and does not depend on any other component (this avoids deadlock). The process server implementation is single-threaded. The process server also implements the dataspace interface for anonymous memory and acts as the memory manager.</p>
-<p>The process server implements the following interfaces:</p>
+図2 - プロセスサーバ</div></div>
+<p>プロセスサーバはシステムで最も信頼できるコンポーネントです。最初のカーネル スレッドとして実行され、他のいかなるコンポーネントにも依存しません （これによりデッドロックが回避されます）。プロセスサーバの実装はシングル スレッドです。プロセスサーバは匿名メモリ用のDataspaceインタフェースも 実装しており、メモリマネージャとして機能します。</p>
+<p>プロセスサーバは次のインタフェースを実装しています。</p>
 <ul>
 <li>
-Process server interface (naming, memory windows, processes and so on)  </li>
+プロセスサーバインタフェース（名前付け、メモリウィンドウ、プロセスなど）  </li>
 <li>
-Dataspace server interface (for anonymous memory)  </li>
+Dataspaceサーバインターフェイス（匿名メモリ用）  </li>
 <li>
-Name server interface (acts as the root name server)  </li>
+ネームサーバインタフェース（ルートネームサーバとして機能）  </li>
 </ul>
 <center>See code here: <a class="el" href="main_8c.html">apps/process_server/src/main.c</a> </center><h1><a class="anchor" id="fileserv"></a>
-File server</h1>
+ファイルサーバ</h1>
 <div class="image">
 <img src="fileserv.png" alt=""/>
 <div class="caption">
-Figure 3 - File Server</div></div>
-<p>The file server is more trusted than clients, but it is less trusted than the process server (this avoids deadlock). In RefOS, the file server does not use a disk driver, and the actual file contents are compiled into the file server executable itself using a cpio archive. The file server acts as the main data server in the system.</p>
-<p>The file server implements the following interfaces:</p>
+図3 - ファイルサーバ</div></div>
+<p>ファイルサーバはクライアントよりも信頼できますが、プロセスサーバよりは 信頼できません（これによりデッドロックは回避されます）。RefOSでは ファイルサーバはディスクドライバを使用せず、実際のファイルコンテンツは cpioアーカイブを使用してファイルサーバ実行ファイル自体にコンパイルされて います。ファイルサーバはシステムの主たるデータサーバとして機能します。</p>
+<p>ファイルサーバは次のインターフェイスを実装しています。</p>
 <ul>
 <li>
-Dataspace server interface (for stored file data)  </li>
+Dataspaceサーバインタフェース（保存ファイルデータ用）  </li>
 <li>
-Server connection interface (for clients to connect to it)  </li>
+サーバ接続インタフェース（クライアントの接続用）  </li>
 </ul>
-<center>See code here: <a class="el" href="file__server_8c.html">apps/file_server/src/file_server.c</a> </center><h1><a class="anchor" id="conserv"></a>
-Console Server</h1>
+<center>次のコードを参照: <a class="el" href="file__server_8c.html">apps/file_server/src/file_server.c</a> </center><h1><a class="anchor" id="conserv"></a>
+コンソールサーバ</h1>
 <div class="image">
 <img src="conserv.png" alt=""/>
 <div class="caption">
-Figure 4 - Console Server</div></div>
-<p>The console server provides serial and EGA input and output functionality, which is exposed through the dataspace interface. The console server also provides terminal emulation for EGA screen output.</p>
-<p>The console server implements the following interfaces:</p>
+図4 - コンソールサーバ</div></div>
+<p>コンソールサーバはシリアルとEGAの入出力機能を提供します。これはdataspace インタフェースを通じて公開されます。コンソールサーバはEGA画面出力のための ターミナルエミュレーションも提供しています。</p>
+<p>コンソールサーバーは次のインターフェイスを実装しています。</p>
 <ul>
 <li>
-Dataspace server interface (for serial input and output and EGA screen devices)  </li>
+Dataspaceサーバインタフェース（シリアル入出力とEGA画面デバイス用）  </li>
 <li>
-Server connection interface (for clients to connect to it)  </li>
+サーバ接続インタフェース（クライアントの接続用）  </li>
 </ul>
-<center>See code here: <a class="el" href="console__server_8c.html">apps/console_server/src/console_server.c</a> </center><h1><a class="anchor" id="timeserv"></a>
-Timer Server</h1>
+<center>次のコードを参照: <a class="el" href="console__server_8c.html">apps/console_server/src/console_server.c</a> </center><h1><a class="anchor" id="timeserv"></a>
+タイマーサーバ</h1>
 <div class="image">
 <img src="timeserv.png" alt=""/>
 <div class="caption">
-Figure 5 - Timer Server</div></div>
-<p>The timer server provides timer get time and sleep functionality, which is exposed through the dataspace interface.</p>
-<p>The timer server implements the following interfaces:</p>
+図5 - タイマーサーバ</div></div>
+<p>タイマーサーバはタイマーの時刻取得とスリープ機能を提供します。これは dataspaceインタフェースを通じて公開されます。</p>
+<p>タイマーサーバは次のインターフェイスを実装しています。</p>
 <ul>
 <li>
-Dataspace server interface (for timer devices)  </li>
+Dataspaceサーバインタフェース（タイマーデバイス用）  </li>
 <li>
-Server connection interface (for clients to connect to it)  </li>
+サーバ接続インタフェース（クライアントの接続用）  </li>
 </ul>
-<center>See code here: <a class="el" href="timer__server_8c.html">apps/timer_server/src/timer_server.c</a> </center> </div></div><!-- contents -->
+<center>次のコードを参照: <a class="el" href="timer__server_8c.html">apps/timer_server/src/timer_server.c</a> </center> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 10 2023 10:14:24 for RefOS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 10 2023 17:16:02 for RefOS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

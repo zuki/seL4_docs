@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RefOS: Testing</title>
+<title>RefOS: テスト</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,38 +86,39 @@ $(document).ready(function(){initNavTree('testing.html',''); initResizable(); })
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Testing </div>  </div>
+<div class="title">テスト </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><div class="image">
 <img src="testing_levels.png" alt=""/>
 <div class="caption">
-Figure 1 - RefOS Testing Levels</div></div>
-<p>Testing in RefOS is divided into three levels: </p><ul>
+図1 - RefOSのテストレベル</div></div>
+<p>RefOSのテストは次の3つのレベルに分けられます。</p>
+<ul>
 <li>
-Root Level Tests  </li>
+ルートレベルのテスト  </li>
 <li>
-Operating System Level Tests  </li>
+オペレーティングシステムレベルのテスト  </li>
 <li>
-User Level Tests  </li>
+ユーザレベルのテスト  </li>
 </ul>
-<p>The reason for having three testing levels is to be able to test different parts of the system. For example, if the root task process server is not working correctly, the operating system level tests are quite unlikely to pass, and thus as programmers we require a lower level test to identify the problem. Dividing the tests into three layers creates better usability and test coverage.</p>
+<p>3つのテストレベルを持つ理由はシステムの様々な部分をテストできるように するためです。たとえば、ルートタスクプロセスサーバが正しく動作していない場合、 オペレーティングシステムレベルのテストが合格する可能性は極めて低いため、 プログラマとしては問題を特定するために低レベルのテストを必要とします。 テストを3つの層に分けることで、より良い使い勝手とテストカバレッジが実現します。</p>
 <h1><a class="anchor" id="root_level_tests"></a>
-Root Level Tests</h1>
-<p>Root level tests verify that the the process server works as expected. These tests verify (among other things) that the process server is bootstrapped correctly, that the lowest level kernel libraries perform correctly, that kernel object allocation works correctly and that static heap allocation works correctly. If this test suite fails, it is very unlikely that system applications will run successfully. Root level test failures indicate that the process server is not behaving correctly.</p>
+ルートレベルのテスト</h1>
+<p>ルートレベルのテストはプロセスサーバが期待通りに動作することを検証します。 これらのテストは（中でも）プロセスサーバが正しく起動すること、最下層の カーネルライブラリが正しく動作すること、カーネルオブジェクトの割り当てが 正しく動作すること、静的ヒープの割り当てが正しく動作することを検証します。 このテストスイートが失敗した場合、システムアプリケーションが正常に実行される 可能性は非常に低くなります。ルートレベルのテストに失敗した場合は、プロセス サーバが正しく動作していないことを示しています。</p>
 <h1><a class="anchor" id="os_level_tests"></a>
-Operating System Level Tests</h1>
-<p>Operating system level tests ensure that the low level RefOS environment operates correctly and that the RefOS system level servers have been started and function as expected. These tests verify (among other things) that stack and heap memory space behave as expected, that anonymous dataspaces behave as expected and that dataspace mappping operations work correctly. If the operating system level environment is broken, the userland selfloader will quite likely not be able to start userland processes. If this test suite fails, there is likely something wrong with the file server, a device server, a low-level library or a remote procedure call.</p>
+オペレーティングシステムレベルのテスト</h1>
+<p>オペレーティングシステムレベルのテストは、低レベルのRefOS環境が正しく動作する こと、RefOSのシステムレベルのサーバが起動し、期待通りに機能することを確認します。 これらのテストでは（中でも）スタックとヒープのメモリ空間が期待通りに動作すること、 匿名dataspaceが期待通りに動作すること、dataspaceのマッピング操作が正しく動作する ことが検証されます。オペレーティングシステムレベルの環境が壊れている場合、 ユーザランドのselfloaderがユーザランドプロセスを開始できない可能性が極めて高いです。 このテストスイートが失敗した場合、ファイルサーバ、デバイスサーバ、低レベル ライブラリ、リモートプロシージャコールに何か問題がある可能性があります。</p>
 <h1><a class="anchor" id="user_level_tests"></a>
-User Level Tests</h1>
-<p>User level tests are the highest level of RefOS tests. They ensure that the userland environment behaves correctly. These tests include verifying that the dynamic heap and mmap work correctly, that files can be opened and closed correctly and that time functionality works correctly. If this test suite fails, it is possible that userland programs will not work correctly. </p>
+ユーザレベルのテスト</h1>
+<p>ユーザレベルのテストはRefOSのテストの中で最も高レベルのテストです。ユーザレベルの テストはユーザランド環境が正しく動作することを確認します。これらのテストには 動的なヒープとmmapが正しく動作すること、ファイルを正しくオープン/クローズできること、 時間機能が正しく動作することの確認などが含まれます。このテストスイートが失敗した場合、 ユーザランドのプログラムが正しく動作しない可能性があります。 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 10 2023 10:14:24 for RefOS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 10 2023 17:16:02 for RefOS by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
